@@ -13,21 +13,228 @@ tracking:
     product: ubuntu
     match_depth: 2
     lts_only: true
+    update_templates:
+      type: static
+      category: linux
+      homepage: https://ubuntu.com/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: ubuntu-{cycle}-desktop
+        name_template: "Ubuntu {latest} LTS"
+        arch: amd64
+        edition: Desktop
+        url_template: 
+          https://releases.ubuntu.com/{cycle}/ubuntu-{latest}-desktop-amd64.iso
+        checksums_url: https://releases.ubuntu.com/{cycle}/SHA256SUMS
+        filename_pattern: ubuntu-{latest}-desktop-amd64.iso
+      - id_template: ubuntu-{cycle}-server
+        name_template: "Ubuntu {latest} LTS"
+        arch: amd64
+        edition: Server
+        url_template: 
+          https://releases.ubuntu.com/{cycle}/ubuntu-{latest}-live-server-amd64.iso
+        checksums_url: https://releases.ubuntu.com/{cycle}/SHA256SUMS
+        filename_pattern: ubuntu-{latest}-live-server-amd64.iso
+      - id_template: ubuntu-{cycle}-desktop-arm64
+        name_template: "Ubuntu {latest} LTS"
+        arch: arm64
+        edition: Desktop
+        url_template: 
+          https://cdimage.ubuntu.com/ubuntu/releases/{cycle}/release/ubuntu-{latest}-desktop-arm64.iso
+        checksums_url: 
+          https://cdimage.ubuntu.com/ubuntu/releases/{cycle}/release/SHA256SUMS
+        filename_pattern: ubuntu-{latest}-desktop-arm64.iso
+      - id_template: ubuntu-{cycle}-server-arm64
+        name_template: "Ubuntu {latest} LTS"
+        arch: arm64
+        edition: Server
+        url_template: 
+          https://cdimage.ubuntu.com/releases/{cycle}/release/ubuntu-{latest}-live-server-arm64.iso
+        checksums_url: 
+          https://cdimage.ubuntu.com/releases/{cycle}/release/SHA256SUMS
+        filename_pattern: ubuntu-{latest}-live-server-arm64.iso
   debian:
     product: debian
     match_depth: 1
+    update_templates:
+      type: static
+      category: linux
+      homepage: https://www.debian.org/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: debian-{cycle}-netinst
+        name_template: "Debian {latest}"
+        arch: amd64
+        edition: netinst
+        url_template: 
+          https://cdimage.debian.org/cdimage/archive/{latest}.0/amd64/iso-cd/debian-{latest}.0-amd64-netinst.iso
+        checksums_url: 
+          https://cdimage.debian.org/cdimage/archive/{latest}.0/amd64/iso-cd/SHA256SUMS
+        filename_pattern: debian-{latest}.0-amd64-netinst.iso
+      - id_template: debian-{cycle}-netinst-arm64
+        name_template: "Debian {latest}"
+        arch: arm64
+        edition: netinst
+        url_template: 
+          https://cdimage.debian.org/cdimage/archive/{latest}.0/arm64/iso-cd/debian-{latest}.0-arm64-netinst.iso
+        checksums_url: 
+          https://cdimage.debian.org/cdimage/archive/{latest}.0/arm64/iso-cd/SHA256SUMS
+        filename_pattern: debian-{latest}.0-arm64-netinst.iso
   fedora:
     product: fedora
     match_depth: 1
+    update_templates:
+      type: directory_parse
+      category: linux
+      homepage: https://fedoraproject.org/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: fedora-{cycle}-workstation
+        name_template: "Fedora {cycle} Workstation"
+        arch: x86_64
+        edition: Workstation Live
+        dir_url: 
+          https://download.fedoraproject.org/pub/fedora/linux/releases/{cycle}/Workstation/x86_64/iso/
+        filename_regex: Fedora-Workstation-Live-{cycle}-\d+\.\d+\.x86_64\.iso
+        checksums_url: 
+          https://download.fedoraproject.org/pub/fedora/linux/releases/{cycle}/Workstation/x86_64/iso/Fedora-Workstation-{cycle}-*-x86_64-CHECKSUM
+      - id_template: fedora-{cycle}-server
+        name_template: "Fedora {cycle} Server"
+        arch: x86_64
+        edition: Server netinst
+        dir_url: 
+          https://download.fedoraproject.org/pub/fedora/linux/releases/{cycle}/Server/x86_64/iso/
+        filename_regex: Fedora-Server-netinst-x86_64-{cycle}-\d+\.\d+\.iso
+        checksums_url: 
+          https://download.fedoraproject.org/pub/fedora/linux/releases/{cycle}/Server/x86_64/iso/Fedora-Server-{cycle}-*-x86_64-CHECKSUM
+      - id_template: fedora-{cycle}-workstation-arm64
+        name_template: "Fedora {cycle} Workstation"
+        arch: aarch64
+        edition: Workstation Live
+        dir_url: 
+          https://download.fedoraproject.org/pub/fedora/linux/releases/{cycle}/Workstation/aarch64/iso/
+        filename_regex: Fedora-Workstation-Live-{cycle}-\d+\.\d+\.aarch64\.iso
+        checksums_url: 
+          https://download.fedoraproject.org/pub/fedora/linux/releases/{cycle}/Workstation/aarch64/iso/Fedora-Workstation-{cycle}-*-aarch64-CHECKSUM
+      - id_template: fedora-{cycle}-server-arm64
+        name_template: "Fedora {cycle} Server"
+        arch: aarch64
+        edition: Server netinst
+        dir_url: 
+          https://download.fedoraproject.org/pub/fedora/linux/releases/{cycle}/Server/aarch64/iso/
+        filename_regex: Fedora-Server-netinst-aarch64-{cycle}-\d+\.\d+\.iso
+        checksums_url: 
+          https://download.fedoraproject.org/pub/fedora/linux/releases/{cycle}/Server/aarch64/iso/Fedora-Server-{cycle}-*-aarch64-CHECKSUM
   rocky:
     product: rocky-linux
     match_depth: 1
+    update_templates:
+      type: directory_parse
+      category: linux
+      homepage: https://rockylinux.org/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: rocky-{latest}-dvd
+        name_template: "Rocky Linux {latest}"
+        arch: x86_64
+        edition: DVD
+        dir_url: https://download.rockylinux.org/pub/rocky/{major}/isos/x86_64/
+        filename_regex: Rocky-{latest}-x86_64-dvd\d*\.iso
+        checksums_url: 
+          https://download.rockylinux.org/pub/rocky/{major}/isos/x86_64/CHECKSUM
+      - id_template: rocky-{latest}-minimal
+        name_template: "Rocky Linux {latest}"
+        arch: x86_64
+        edition: Minimal
+        dir_url: https://download.rockylinux.org/pub/rocky/{major}/isos/x86_64/
+        filename_regex: Rocky-{latest}-x86_64-minimal\.iso
+        checksums_url: 
+          https://download.rockylinux.org/pub/rocky/{major}/isos/x86_64/CHECKSUM
+      - id_template: rocky-{latest}-dvd-arm64
+        name_template: "Rocky Linux {latest}"
+        arch: aarch64
+        edition: DVD
+        dir_url: https://download.rockylinux.org/pub/rocky/{major}/isos/aarch64/
+        filename_regex: Rocky-{latest}-aarch64-dvd\d*\.iso
+        checksums_url: 
+          https://download.rockylinux.org/pub/rocky/{major}/isos/aarch64/CHECKSUM
+      - id_template: rocky-{latest}-minimal-arm64
+        name_template: "Rocky Linux {latest}"
+        arch: aarch64
+        edition: Minimal
+        dir_url: https://download.rockylinux.org/pub/rocky/{major}/isos/aarch64/
+        filename_regex: Rocky-{latest}-aarch64-minimal\.iso
+        checksums_url: 
+          https://download.rockylinux.org/pub/rocky/{major}/isos/aarch64/CHECKSUM
   almalinux:
     product: almalinux
     match_depth: 1
+    update_templates:
+      type: static
+      category: linux
+      homepage: https://almalinux.org/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: alma-{latest}-dvd
+        name_template: "AlmaLinux {latest}"
+        arch: x86_64
+        edition: DVD
+        url_template: 
+          https://repo.almalinux.org/almalinux/{major}/isos/x86_64/AlmaLinux-{latest}-x86_64-dvd.iso
+        checksums_url: 
+          https://repo.almalinux.org/almalinux/{major}/isos/x86_64/CHECKSUM
+        filename_pattern: AlmaLinux-{latest}-x86_64-dvd.iso
+      - id_template: alma-{latest}-minimal
+        name_template: "AlmaLinux {latest}"
+        arch: x86_64
+        edition: Minimal
+        url_template: 
+          https://repo.almalinux.org/almalinux/{major}/isos/x86_64/AlmaLinux-{latest}-x86_64-minimal.iso
+        checksums_url: 
+          https://repo.almalinux.org/almalinux/{major}/isos/x86_64/CHECKSUM
+        filename_pattern: AlmaLinux-{latest}-x86_64-minimal.iso
+      - id_template: alma-{latest}-dvd-arm64
+        name_template: "AlmaLinux {latest}"
+        arch: aarch64
+        edition: DVD
+        url_template: 
+          https://repo.almalinux.org/almalinux/{major}/isos/aarch64/AlmaLinux-{latest}-aarch64-dvd.iso
+        checksums_url: 
+          https://repo.almalinux.org/almalinux/{major}/isos/aarch64/CHECKSUM
+        filename_pattern: AlmaLinux-{latest}-aarch64-dvd.iso
+      - id_template: alma-{latest}-minimal-arm64
+        name_template: "AlmaLinux {latest}"
+        arch: aarch64
+        edition: Minimal
+        url_template: 
+          https://repo.almalinux.org/almalinux/{major}/isos/aarch64/AlmaLinux-{latest}-aarch64-minimal.iso
+        checksums_url: 
+          https://repo.almalinux.org/almalinux/{major}/isos/aarch64/CHECKSUM
+        filename_pattern: AlmaLinux-{latest}-aarch64-minimal.iso
   centos-stream:
     product: centos-stream
     match_depth: 1
+    update_templates:
+      type: static
+      category: linux
+      homepage: https://www.centos.org/centos-stream/
+      rolling_checksum: true
+      checksum_algorithm: sha256
+      variants:
+      - id_template: centos-stream-{major}-dvd
+        name_template: "CentOS Stream {major}"
+        arch: x86_64
+        edition: DVD
+        checksums_url: 
+          https://mirror.stream.centos.org/{major}-stream/BaseOS/x86_64/iso/SHA256SUM
+        filename_pattern: CentOS-Stream-{major}-latest-x86_64-dvd1.iso
+      - id_template: centos-stream-{major}-dvd-arm64
+        name_template: "CentOS Stream {major}"
+        arch: aarch64
+        edition: DVD
+        checksums_url: 
+          https://mirror.stream.centos.org/{major}-stream/BaseOS/aarch64/iso/SHA256SUM
+        filename_pattern: CentOS-Stream-{major}-latest-aarch64-dvd1.iso
   opensuse:
     product: opensuse
     match_depth: 2
@@ -40,18 +247,124 @@ tracking:
     product: freebsd
     match_depth: 2
     eol_auto: false
+    update_templates:
+      type: static
+      category: bsd
+      homepage: https://www.freebsd.org/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: freebsd-{latest}
+        name_template: "FreeBSD {latest}-RELEASE"
+        arch: amd64
+        edition: disc1
+        url_template: 
+          https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{latest}/FreeBSD-{latest}-RELEASE-amd64-disc1.iso
+        checksums_url: 
+          https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{latest}/CHECKSUM.SHA256-FreeBSD-{latest}-RELEASE-amd64
+        filename_pattern: FreeBSD-{latest}-RELEASE-amd64-disc1.iso
+      - id_template: freebsd-{latest}-arm64
+        name_template: "FreeBSD {latest}-RELEASE"
+        arch: aarch64
+        edition: disc1
+        url_template: 
+          https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{latest}/FreeBSD-{latest}-RELEASE-arm64-aarch64-disc1.iso
+        checksums_url: 
+          https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{latest}/CHECKSUM.SHA256-FreeBSD-{latest}-RELEASE-arm64-aarch64
+        filename_pattern: FreeBSD-{latest}-RELEASE-arm64-aarch64-disc1.iso
   openbsd:
     product: openbsd
     match_depth: 2
+    update_templates:
+      type: static
+      category: bsd
+      homepage: https://www.openbsd.org/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: openbsd-{cycle}
+        name_template: "OpenBSD {cycle}"
+        arch: amd64
+        edition: install
+        url_template: 
+          https://cdn.openbsd.org/pub/OpenBSD/{cycle}/amd64/install{version_no_dots}.iso
+        checksums_url: https://cdn.openbsd.org/pub/OpenBSD/{cycle}/amd64/SHA256
+        filename_pattern: install{version_no_dots}.iso
+      - id_template: openbsd-{cycle}-arm64
+        name_template: "OpenBSD {cycle}"
+        arch: arm64
+        edition: install
+        url_template: 
+          https://cdn.openbsd.org/pub/OpenBSD/{cycle}/arm64/install{version_no_dots}.iso
+        checksums_url: https://cdn.openbsd.org/pub/OpenBSD/{cycle}/arm64/SHA256
+        filename_pattern: install{version_no_dots}.iso
   netbsd:
     product: netbsd
     match_depth: 1
+    update_templates:
+      type: static
+      category: bsd
+      homepage: https://www.netbsd.org/
+      checksum_algorithm: sha512
+      variants:
+      - id_template: netbsd-{latest}
+        name_template: "NetBSD {latest}"
+        arch: amd64
+        edition: install
+        url_template: 
+          https://cdn.netbsd.org/pub/NetBSD/NetBSD-{latest}/images/NetBSD-{latest}-amd64.iso
+      - id_template: netbsd-{latest}-arm64
+        name_template: "NetBSD {latest}"
+        arch: arm64
+        edition: install
+        url_template: 
+          https://cdn.netbsd.org/pub/NetBSD/NetBSD-{latest}/images/NetBSD-{latest}-evbarm-aarch64.iso
   alpine:
     product: alpine
     match_depth: 2
+    update_templates:
+      type: static
+      category: linux
+      homepage: https://alpinelinux.org/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: alpine-{cycle}
+        name_template: "Alpine Linux {latest}"
+        arch: x86_64
+        edition: Standard
+        url_template: 
+          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/x86_64/alpine-standard-{latest}-x86_64.iso
+        checksums_url: 
+          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/x86_64/alpine-standard-{latest}-x86_64.iso.sha256
+        filename_pattern: alpine-standard-{latest}-x86_64.iso
+      - id_template: alpine-{cycle}-arm64
+        name_template: "Alpine Linux {latest}"
+        arch: aarch64
+        edition: Standard
+        url_template: 
+          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/aarch64/alpine-standard-{latest}-aarch64.iso
+        checksums_url: 
+          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/aarch64/alpine-standard-{latest}-aarch64.iso.sha256
+        filename_pattern: alpine-standard-{latest}-aarch64.iso
   oracle:
     product: oracle-linux
     match_depth: 1
+    update_templates:
+      type: static
+      category: linux
+      homepage: https://www.oracle.com/linux/
+      checksum_algorithm: sha256
+      variants:
+      - id_template: oracle-{latest}-dvd
+        name_template: "Oracle Linux {latest}"
+        arch: x86_64
+        edition: DVD
+        url_template: 
+          https://yum.oracle.com/ISOS/OracleLinux/OL{major}/u{minor}/x86_64/OracleLinux-R{major}-U{minor}-x86_64-dvd.iso
+      - id_template: oracle-{latest}-dvd-arm64
+        name_template: "Oracle Linux {latest}"
+        arch: aarch64
+        edition: DVD
+        url_template: 
+          https://yum.oracle.com/ISOS/OracleLinux/OL{major}/u{minor}/aarch64/OracleLinux-R{major}-U{minor}-aarch64-dvd.iso
 images:
 - id: ubuntu-20.04-desktop
   name: Ubuntu 20.04.6 LTS
@@ -1055,7 +1368,7 @@ images:
   edition: disc1
   arch: amd64
   release_type: stable
-  url:
+  url: 
     https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/15.0/FreeBSD-15.0-RELEASE-amd64-disc1.iso
   homepage: https://www.freebsd.org/
   checksum:
@@ -1795,7 +2108,7 @@ images:
   edition: disc1
   arch: aarch64
   release_type: stable
-  url:
+  url: 
     https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/15.0/FreeBSD-15.0-RELEASE-arm64-aarch64-disc1.iso
   homepage: https://www.freebsd.org/
   checksum:
