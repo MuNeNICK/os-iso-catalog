@@ -43,6 +43,9 @@ meta:
     arch:
       name: Arch Linux
       homepage: https://archlinux.org/
+    archlinux:
+      name: Arch Linux
+      homepage: https://archlinux.org/
     manjaro:
       name: Manjaro
       homepage: https://manjaro.org/
@@ -85,6 +88,9 @@ meta:
     windows:
       name: Microsoft Windows
       homepage: https://www.microsoft.com/windows
+    windows-server:
+      name: Windows Server
+      homepage: https://www.microsoft.com/en-us/windows-server
     freebsd:
       name: FreeBSD
       homepage: https://www.freebsd.org/
