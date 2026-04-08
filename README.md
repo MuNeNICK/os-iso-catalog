@@ -6,6 +6,13 @@ Served as static JSON via GitHub Pages. Updated daily via GitHub Actions.
 
 [![Daily Checks](https://github.com/MuNeNICK/os-iso-catalog/actions/workflows/daily-check.yml/badge.svg)](https://github.com/MuNeNICK/os-iso-catalog/actions/workflows/daily-check.yml)
 
+## Web UI
+
+Browse the catalog with filtering, search, and EOL status at a glance:
+
+- **Dashboard**: https://munenick.github.io/os-iso-catalog/
+- **API Docs (Swagger)**: https://munenick.github.io/os-iso-catalog/api.html
+
 ## API Endpoints
 
 Base URL: `https://MuNeNICK.github.io/os-iso-catalog`
