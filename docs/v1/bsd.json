@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:31:07Z",
-    "count": 9
+    "generated_at": "2026-04-08T05:51:02Z",
+    "count": 13
   },
   "images": [
     {
@@ -200,6 +200,97 @@
       "checksum": {
         "algorithm": "sha256",
         "value": "3662b0e4502a24c8186ac0754e962650ed1f7c98f44cb1f74c78ea7533581bc1"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Current stable"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "openbsd-7.7-arm64",
+      "name": "OpenBSD 7.7",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.7",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.7/arm64/install77.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "217c19dc76fcbcdec7ca17dcd094d35f8c22180f208f0a4358d91bf650a4dc0e"
+      },
+      "eol": {
+        "standard": "2026-05-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "openbsd-7.8-arm64",
+      "name": "OpenBSD 7.8",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.8",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.8/arm64/install78.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "29ce7eda86ee14a5a30776f18523b416a5572db03ee32d9a1109c446cb3949b3"
+      },
+      "eol": {
+        "standard": "2027-05-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "netbsd-9.4-arm64",
+      "name": "NetBSD 9.4",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "9.4",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-9.4/images/NetBSD-9.4-evbarm-aarch64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "6857aa55bac2bb3bb14ffc17214ecb7f1312258cf995b48e772a2ead313bfbac2b53d42c2f86f8d97b795e6a0a2d7c7d918c5b031621df214ffc64b2097b47ee"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until NetBSD 11.0 release + 1 month"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "netbsd-10.1-arm64",
+      "name": "NetBSD 10.1",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "10.1",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-10.1/images/NetBSD-10.1-evbarm-aarch64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "155dba2cad71856c3ac1cd4c0f8f5ff70867ca3ff8625e6453fe1d692d70176c41a3974c6c867fd1d8758a5ee24e47c83faa0ab87b23a0185b1a602aa88ada07"
       },
       "eol": {
         "standard": null,

@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:31:07Z",
-    "count": 17
+    "generated_at": "2026-04-08T05:51:02Z",
+    "count": 31
   },
   "images": [
     {
@@ -387,6 +387,327 @@
         "extended": null,
         "is_rolling": false,
         "note": "Supported until ~1 month after NixOS 26.05 release"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "ubuntu-22.04-server-arm64",
+      "name": "Ubuntu 22.04.5 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Jammy Jellyfish",
+      "version": "22.04.5",
+      "edition": "Server",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.ubuntu.com/releases/22.04/release/ubuntu-22.04.5-live-server-arm64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "eafec62cfe760c30cac43f446463e628fada468c2de2f14e0e2bc27295187505"
+      },
+      "eol": {
+        "standard": "2027-04-01",
+        "extended": "2032-04-01",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "debian-12-netinst-arm64",
+      "name": "Debian 12.13 Bookworm",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bookworm",
+      "version": "12.13",
+      "edition": "netinst",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.13.0/arm64/iso-cd/debian-12.13.0-arm64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "71d0436089d6dc16839b0b64e1d3198a1a0d983e100223e737a40c5bab480400"
+      },
+      "eol": {
+        "standard": "2028-06-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "centos-stream-9-dvd-arm64",
+      "name": "CentOS Stream 9",
+      "category": "linux",
+      "distro": "centos-stream",
+      "version": "9",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "rolling",
+      "url": "https://mirror.stream.centos.org/9-stream/BaseOS/aarch64/iso/CentOS-Stream-9-latest-aarch64-dvd1.iso",
+      "homepage": "https://www.centos.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2e1081eb75973bd845255c18dcdbf7ecb6e104a23a40d86039c249bd969358ca"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": null,
+        "is_rolling": true,
+        "note": "Rolling build - checksum changes with each rebuild"
+      },
+      "status": "supported",
+      "notes": "Checksum as of 2026-04-06. Verify latest at mirror."
+    },
+    {
+      "id": "centos-stream-10-dvd-arm64",
+      "name": "CentOS Stream 10",
+      "category": "linux",
+      "distro": "centos-stream",
+      "version": "10",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "rolling",
+      "url": "https://mirror.stream.centos.org/10-stream/BaseOS/aarch64/iso/CentOS-Stream-10-latest-aarch64-dvd1.iso",
+      "homepage": "https://www.centos.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "96db01ec7a57a417565e30ed150565574a2751873dfca0ac239b3732821e3d6b"
+      },
+      "eol": {
+        "standard": "2030-01-01",
+        "extended": null,
+        "is_rolling": true,
+        "note": "Rolling build - checksum changes with each rebuild"
+      },
+      "status": "supported",
+      "notes": "Checksum as of 2026-04-06. Verify latest at mirror."
+    },
+    {
+      "id": "oracle-9.7-dvd-arm64",
+      "name": "Oracle Linux 9.7",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "9.7",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL9/u7/aarch64/OracleLinux-R9-U7-aarch64-dvd.iso",
+      "homepage": "https://www.oracle.com/linux/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3acd0a0f3be3e08b99fd6c2bc224b7a6916df59a5492b733e6b34899125f3202"
+      },
+      "eol": {
+        "standard": "2032-06-01",
+        "extended": "2034-06-01",
+        "is_rolling": false,
+        "note": "Premier Support 10 years + Extended Support"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "oracle-10.1-dvd-arm64",
+      "name": "Oracle Linux 10.1",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "10.1",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL10/u1/aarch64/OracleLinux-R10-U1-aarch64-dvd.iso",
+      "homepage": "https://www.oracle.com/linux/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "021cabde0d7bc9ac8f30f12e7c7b4b5a250a6994d87bb93aa93894cce8b3bc16"
+      },
+      "eol": {
+        "standard": "2035-07-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Premier Support 10 years"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "kali-2026.1-arm64",
+      "name": "Kali Linux 2026.1",
+      "category": "linux",
+      "distro": "kali",
+      "version": "2026.1",
+      "edition": "Installer",
+      "arch": "arm64",
+      "release_type": "rolling",
+      "url": "https://cdimage.kali.org/kali-2026.1/kali-linux-2026.1-installer-arm64.iso",
+      "homepage": "https://www.kali.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c92c79d7267c93245962cf696c9da8105bf40855744513fbaaec41db17d307e1"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.21-arm64",
+      "name": "Alpine Linux 3.21.6",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.21.6",
+      "edition": "Standard",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/aarch64/alpine-standard-3.21.6-aarch64.iso",
+      "homepage": "https://alpinelinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "cd1dcf035f4329484d598d94822ef9a3786ec2288e6744c23ce2b9882338c234"
+      },
+      "eol": {
+        "standard": "2026-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.22-arm64",
+      "name": "Alpine Linux 3.22.3",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.22.3",
+      "edition": "Standard",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/aarch64/alpine-standard-3.22.3-aarch64.iso",
+      "homepage": "https://alpinelinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3841fb0edc6a9d559ad4425b40ab10599a5185df505f99bc8394dd214287df44"
+      },
+      "eol": {
+        "standard": "2027-05-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "opensuse-leap-15.6-dvd-arm64",
+      "name": "openSUSE Leap 15.6",
+      "category": "linux",
+      "distro": "opensuse",
+      "version": "15.6",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.opensuse.org/distribution/leap/15.6/iso/openSUSE-Leap-15.6-DVD-aarch64-Media.iso",
+      "homepage": "https://www.opensuse.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "6ecade658ef3e4dd7175176781f80fcd070250fe7e922f6240224ff810755ac6"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "openbsd-7.7-arm64",
+      "name": "OpenBSD 7.7",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.7",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.7/arm64/install77.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "217c19dc76fcbcdec7ca17dcd094d35f8c22180f208f0a4358d91bf650a4dc0e"
+      },
+      "eol": {
+        "standard": "2026-05-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "openbsd-7.8-arm64",
+      "name": "OpenBSD 7.8",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.8",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.8/arm64/install78.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "29ce7eda86ee14a5a30776f18523b416a5572db03ee32d9a1109c446cb3949b3"
+      },
+      "eol": {
+        "standard": "2027-05-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "netbsd-9.4-arm64",
+      "name": "NetBSD 9.4",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "9.4",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-9.4/images/NetBSD-9.4-evbarm-aarch64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "6857aa55bac2bb3bb14ffc17214ecb7f1312258cf995b48e772a2ead313bfbac2b53d42c2f86f8d97b795e6a0a2d7c7d918c5b031621df214ffc64b2097b47ee"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until NetBSD 11.0 release + 1 month"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "netbsd-10.1-arm64",
+      "name": "NetBSD 10.1",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "10.1",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-10.1/images/NetBSD-10.1-evbarm-aarch64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "155dba2cad71856c3ac1cd4c0f8f5ff70867ca3ff8625e6453fe1d692d70176c41a3974c6c867fd1d8758a5ee24e47c83faa0ab87b23a0185b1a602aa88ada07"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Current stable"
       },
       "status": "supported"
     }
