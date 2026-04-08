@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:56:06Z",
-    "count": 41
+    "generated_at": "2026-04-08T06:02:02Z",
+    "count": 42
   },
   "images": [
     {
@@ -52,6 +52,29 @@
       },
       "status": "supported",
       "notes": "Image format is .img.xz (not ISO). Flash with Raspberry Pi Imager."
+    },
+    {
+      "id": "gentoo-minimal-arm64",
+      "name": "Gentoo Minimal Install",
+      "category": "linux",
+      "distro": "gentoo",
+      "version": "20260405",
+      "edition": "Minimal Install",
+      "arch": "aarch64",
+      "release_type": "rolling",
+      "url": "https://distfiles.gentoo.org/releases/arm64/autobuilds/current-install-arm64-minimal/install-arm64-minimal-20260405T234602Z.iso",
+      "homepage": "https://www.gentoo.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2b0fc3afafb04f23a073ede4bfa901b2ae73e4a33cb1235fb26b4349047ec872"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true,
+        "note": "Rolling release - ISO is a bootstrap snapshot"
+      },
+      "status": "supported"
     },
     {
       "id": "ubuntu-24.04-desktop-arm64",

@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:56:06Z",
-    "count": 102
+    "generated_at": "2026-04-08T06:02:02Z",
+    "count": 110
   },
   "images": [
     {
@@ -1452,6 +1452,188 @@
         "extended": null,
         "is_rolling": true,
         "note": "Arch-based rolling release by DHH/Basecamp"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "gentoo-livegui",
+      "name": "Gentoo LiveGUI",
+      "category": "linux",
+      "distro": "gentoo",
+      "version": "20260215",
+      "edition": "LiveGUI",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-20260215T164556Z.iso",
+      "homepage": "https://www.gentoo.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a9cc1516ca11266d5655363ba5013ed6045a7191a9ecaa2624d5b0ac1e1597d9"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true,
+        "note": "Rolling release - ISO is a bootstrap snapshot"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "gentoo-minimal",
+      "name": "Gentoo Minimal Install",
+      "category": "linux",
+      "distro": "gentoo",
+      "version": "20260405",
+      "edition": "Minimal Install",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://distfiles.gentoo.org/releases/amd64/autobuilds/current-install-amd64-minimal/install-amd64-minimal-20260405T170105Z.iso",
+      "homepage": "https://www.gentoo.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e19b77171c4d668c02caef40651d209ae83e20f395ac465bfbd6caa702cf066c"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true,
+        "note": "Rolling release - ISO is a bootstrap snapshot"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "kubuntu-24.04-desktop",
+      "name": "Kubuntu 24.04.4 LTS",
+      "category": "linux",
+      "distro": "kubuntu",
+      "codename": "Noble Numbat",
+      "version": "24.04.4",
+      "edition": "Desktop",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.ubuntu.com/kubuntu/releases/24.04/release/kubuntu-24.04.4-desktop-amd64.iso",
+      "homepage": "https://kubuntu.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "02cda2568cb96c090b0438a31a7d2e7b07357fde16217c215e7c3f45263bcc49"
+      },
+      "eol": {
+        "standard": "2027-04-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Follows Ubuntu 24.04 LTS support cycle (3 years)"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "xubuntu-24.04-desktop",
+      "name": "Xubuntu 24.04.4 LTS",
+      "category": "linux",
+      "distro": "xubuntu",
+      "codename": "Noble Numbat",
+      "version": "24.04.4",
+      "edition": "Desktop",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.ubuntu.com/xubuntu/releases/24.04/release/xubuntu-24.04.4-desktop-amd64.iso",
+      "homepage": "https://xubuntu.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "fc2e995bb05c41ea19f1dbfd91f6deea7b2aed7a83b9934d98fc9d9cac527d97"
+      },
+      "eol": {
+        "standard": "2027-04-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Follows Ubuntu 24.04 LTS support cycle (3 years)"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "slackware-15.0-dvd",
+      "name": "Slackware 15.0",
+      "category": "linux",
+      "distro": "slackware",
+      "version": "15.0",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://mirrors.slackware.com/slackware/slackware-iso/slackware64-15.0-iso/slackware64-15.0-install-dvd.iso",
+      "homepage": "http://www.slackware.com/",
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Current stable. Security patches still being released."
+      },
+      "status": "supported"
+    },
+    {
+      "id": "zorin-18-core",
+      "name": "Zorin OS 18 Core",
+      "category": "linux",
+      "distro": "zorin",
+      "version": "18",
+      "edition": "Core",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://zrn.co/18core64",
+      "homepage": "https://zorin.com/os/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "09959ce793b8a065b70207e46cd646b1de805fc7e0bad925ce28df6e04b7f807"
+      },
+      "eol": {
+        "standard": "2029-04-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Based on Ubuntu 24.04 LTS"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "zorin-17.3-core",
+      "name": "Zorin OS 17.3 Core",
+      "category": "linux",
+      "distro": "zorin",
+      "version": "17.3",
+      "edition": "Core",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://zrn.co/17core64",
+      "homepage": "https://zorin.com/os/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c1510d1e16ec50c884faeb4e32326ba8d2e38d2cf22698b649168011d00220f6"
+      },
+      "eol": {
+        "standard": "2027-04-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Based on Ubuntu 22.04 LTS"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "gentoo-minimal-arm64",
+      "name": "Gentoo Minimal Install",
+      "category": "linux",
+      "distro": "gentoo",
+      "version": "20260405",
+      "edition": "Minimal Install",
+      "arch": "aarch64",
+      "release_type": "rolling",
+      "url": "https://distfiles.gentoo.org/releases/arm64/autobuilds/current-install-arm64-minimal/install-arm64-minimal-20260405T234602Z.iso",
+      "homepage": "https://www.gentoo.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2b0fc3afafb04f23a073ede4bfa901b2ae73e4a33cb1235fb26b4349047ec872"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true,
+        "note": "Rolling release - ISO is a bootstrap snapshot"
       },
       "status": "supported"
     },
