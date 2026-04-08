@@ -10,7 +10,7 @@ info:
     name: MIT
 
 servers:
-  - url: https://YOUR_USERNAME.github.io/os-iso-catalog
+  - url: https://MuNeNICK.github.io/os-iso-catalog
     description: GitHub Pages
 
 paths:

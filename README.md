@@ -4,11 +4,11 @@ Machine-readable catalog of OS ISO images with download URLs, checksums, and EOL
 
 Served as static JSON via GitHub Pages. Updated daily via GitHub Actions.
 
-[![Daily Checks](https://github.com/YOUR_USERNAME/os-iso-catalog/actions/workflows/daily-check.yml/badge.svg)](https://github.com/YOUR_USERNAME/os-iso-catalog/actions/workflows/daily-check.yml)
+[![Daily Checks](https://github.com/MuNeNICK/os-iso-catalog/actions/workflows/daily-check.yml/badge.svg)](https://github.com/MuNeNICK/os-iso-catalog/actions/workflows/daily-check.yml)
 
 ## API Endpoints
 
-Base URL: `https://YOUR_USERNAME.github.io/os-iso-catalog`
+Base URL: `https://MuNeNICK.github.io/os-iso-catalog`
 
 | Endpoint | Description |
 |----------|-------------|
@@ -25,7 +25,7 @@ Base URL: `https://YOUR_USERNAME.github.io/os-iso-catalog`
 
 ```bash
 # Get all supported Linux images
-curl -s https://YOUR_USERNAME.github.io/os-iso-catalog/v1/supported.json \
+curl -s https://MuNeNICK.github.io/os-iso-catalog/v1/supported.json \
   | jq '.images[] | select(.category == "linux") | {name, url}'
 ```
 
