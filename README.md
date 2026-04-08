@@ -13,6 +13,9 @@ Browse the catalog with filtering, search, and EOL status at a glance:
 - **Dashboard**: https://munenick.github.io/os-iso-catalog/
 - **API Docs (Swagger)**: https://munenick.github.io/os-iso-catalog/api.html
 
+<img width="1267" height="993" alt="image" src="https://github.com/user-attachments/assets/8865f535-4fda-4df5-9c8e-982db8219dc8" />
+
+
 ## API Endpoints
 
 Base URL: `https://MuNeNICK.github.io/os-iso-catalog`
