@@ -326,17 +326,18 @@
 
       let html = '<div class="detail-panel">';
 
-      // Download URL
+      // Download URL (only for direct links)
       html += '<div class="detail-section">';
-      html += '<h4>Download URL</h4>';
       if (img.url) {
+        html += '<h4>Download URL</h4>';
         html += `<div class="detail-url"><a href="${esc(img.url)}" target="_blank" rel="noopener">${esc(img.url)}</a></div>`;
-      }
-      if (img.download_page) {
-        html += `<div class="detail-url"><a href="${esc(img.download_page)}" target="_blank" rel="noopener">${esc(img.download_page)}</a></div>`;
-      }
-      if (!img.url && !img.download_page) {
-        html += '<div class="detail-value" style="color:var(--muted)">No URL available</div>';
+      } else {
+        html += '<h4>Download Page</h4>';
+        if (img.download_page) {
+          html += `<div class="detail-url"><a href="${esc(img.download_page)}" target="_blank" rel="noopener">${esc(img.download_page)}</a></div>`;
+        } else {
+          html += '<div class="detail-value" style="color:var(--muted)">No URL available</div>';
+        }
       }
       html += '</div>';
 
