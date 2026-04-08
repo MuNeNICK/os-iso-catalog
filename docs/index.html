@@ -144,6 +144,11 @@
     .badge-windows { background: var(--blue-bg); color: var(--blue); }
     .badge-bsd { background: var(--yellow-bg); color: var(--yellow); }
     .badge-rolling { background: var(--gray-bg); color: var(--gray); font-size: 0.65rem; }
+    .edition-tag {
+      display: inline-block; font-size: 0.68rem; color: var(--muted);
+      margin-left: 0.4rem; padding: 0.1rem 0.35rem;
+      border: 1px solid var(--border); border-radius: 3px;
+    }
 
     /* EOL */
     .eol-date { white-space: nowrap; }
@@ -402,12 +407,13 @@
         const statusCls = `badge-${img.status}`;
         const catCls = `badge-${img.category}`;
         const rollingBadge = img.eol?.is_rolling ? ' <span class="badge badge-rolling">rolling</span>' : '';
+        const editionTag = img.edition ? `<span class="edition-tag">${esc(img.edition)}</span>` : '';
         const isExpanded = expandedId === img.id;
         const dlUrl = img.url || img.download_page || '';
         const dlLabel = img.url ? 'ISO' : 'Page';
 
         html += `<tr class="image-row${isExpanded ? ' expanded' : ''}" data-id="${esc(img.id)}">
-          <td><strong>${esc(img.name)}</strong>${rollingBadge}</td>
+          <td><strong>${esc(img.name)}</strong>${editionTag}${rollingBadge}</td>
           <td><span class="badge ${catCls}">${esc(img.category)}</span></td>
           <td>${esc(String(img.version))}</td>
           <td>${esc(img.arch)}</td>

@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T04:27:25Z",
+    "generated_at": "2026-04-08T04:35:11Z",
     "count": 7
   },
   "images": [
@@ -120,6 +120,7 @@
       "distro": "netbsd",
       "version": "9.4",
       "arch": "amd64",
+      "edition": "install",
       "release_type": "stable",
       "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-9.4/images/NetBSD-9.4-amd64.iso",
       "checksum": {
@@ -141,6 +142,7 @@
       "distro": "netbsd",
       "version": "10.1",
       "arch": "amd64",
+      "edition": "install",
       "release_type": "stable",
       "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-10.1/images/NetBSD-10.1-amd64.iso",
       "checksum": {

@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T04:27:25Z",
+    "generated_at": "2026-04-08T04:35:11Z",
     "count": 45
   },
   "images": [
@@ -523,6 +523,7 @@
       "distro": "archlinux",
       "version": "2026.04.01",
       "arch": "x86_64",
+      "edition": "CLI",
       "release_type": "rolling",
       "url": "https://geo.mirror.pkgbuild.com/iso/2026.04.01/archlinux-2026.04.01-x86_64.iso",
       "checksum": {
@@ -739,6 +740,7 @@
       "distro": "mx-linux",
       "version": "25.1",
       "arch": "amd64",
+      "edition": "Xfce",
       "release_type": "stable",
       "url": "https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-25.1_Xfce_x64.iso/download",
       "checksum": {
@@ -759,6 +761,7 @@
       "distro": "pop-os",
       "version": "24.04",
       "arch": "amd64",
+      "edition": "Generic",
       "release_type": "stable",
       "url": "https://iso.pop-os.org/24.04/amd64/generic/23/pop-os_24.04_amd64_generic_23.iso",
       "checksum": {
@@ -779,6 +782,7 @@
       "distro": "pop-os",
       "version": "24.04",
       "arch": "amd64",
+      "edition": "NVIDIA",
       "release_type": "stable",
       "url": "https://iso.pop-os.org/24.04/amd64/nvidia/23/pop-os_24.04_amd64_nvidia_23.iso",
       "checksum": {
@@ -799,6 +803,7 @@
       "distro": "cachyos",
       "version": "260308",
       "arch": "amd64",
+      "edition": "Desktop",
       "release_type": "rolling",
       "url": "https://iso.cachyos.org/desktop/260308/cachyos-desktop-linux-260308.iso",
       "checksum": {
@@ -819,6 +824,7 @@
       "distro": "endeavouros",
       "version": "2026.03.06",
       "arch": "amd64",
+      "edition": "Desktop",
       "release_type": "rolling",
       "url": "https://mirrors.urbanwave.co.za/endeavouros/iso/EndeavourOS_Titan-2026.03.06.iso",
       "checksum": {
@@ -839,6 +845,7 @@
       "distro": "nixos",
       "version": "25.11",
       "arch": "amd64",
+      "edition": "Graphical",
       "release_type": "stable",
       "url": "https://channels.nixos.org/nixos-25.11/latest-nixos-graphical-x86_64-linux.iso",
       "checksum": {
@@ -860,6 +867,7 @@
       "distro": "nixos",
       "version": "25.11",
       "arch": "amd64",
+      "edition": "Minimal",
       "release_type": "stable",
       "url": "https://channels.nixos.org/nixos-25.11/latest-nixos-minimal-x86_64-linux.iso",
       "checksum": {
@@ -881,6 +889,7 @@
       "distro": "tails",
       "version": "7.6",
       "arch": "amd64",
+      "edition": "ISO",
       "release_type": "stable",
       "url": "https://download.tails.net/tails/stable/tails-amd64-7.6/tails-amd64-7.6.iso",
       "checksum": {
@@ -902,6 +911,7 @@
       "distro": "qubes",
       "version": "4.3.0",
       "arch": "amd64",
+      "edition": "Desktop",
       "release_type": "stable",
       "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.0-x86_64.iso",
       "checksum": {
@@ -923,6 +933,7 @@
       "distro": "opensuse-tumbleweed",
       "version": "20260405",
       "arch": "amd64",
+      "edition": "DVD",
       "release_type": "rolling",
       "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
       "checksum": {
@@ -944,6 +955,7 @@
       "distro": "opensuse-tumbleweed",
       "version": "20260405",
       "arch": "amd64",
+      "edition": "NET",
       "release_type": "rolling",
       "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso",
       "checksum": {
@@ -965,6 +977,7 @@
       "distro": "omarchy",
       "version": "3.5.0",
       "arch": "amd64",
+      "edition": "Desktop",
       "release_type": "rolling",
       "url": "https://iso.omarchy.org/omarchy-3.5.0-2.iso",
       "checksum": {
