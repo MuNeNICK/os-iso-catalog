@@ -354,6 +354,26 @@ images:
       note: "LTS"
     status: supported
 
+  - id: debian-13-live-gnome
+    name: "Debian 13.4 Trixie Live GNOME"
+    category: linux
+    distro: debian
+    codename: "Trixie"
+    version: "13.4"
+    edition: Live GNOME
+    arch: amd64
+    release_type: stable
+    url: https://cdimage.debian.org/cdimage/release/13.4.0-live/amd64/iso-hybrid/debian-live-13.4.0-amd64-gnome.iso
+    checksum:
+      algorithm: sha256
+      value: "2c87761c60115c9323f306f386c2253eb4fc21e050187ab2bceede9da64713e3"
+    eol:
+      standard: "2028-08-01"
+      extended: "2030-06-30"
+      is_rolling: false
+      note: "Full support until 2028/08, LTS until 2030/06"
+    status: supported
+
   - id: debian-13-netinst
     name: "Debian 13.4 Trixie"
     category: linux
@@ -390,6 +410,24 @@ images:
     checksum:
       algorithm: sha256
       value: "98958d80e8a80eabe61275337f969c8e2212adc3a223d9bbdab9411bb1c95cba"
+    eol:
+      standard: "2026-05-13"
+      extended: null
+      is_rolling: false
+    status: supported
+
+  - id: fedora-42-server
+    name: "Fedora 42 Server"
+    category: linux
+    distro: fedora
+    version: "42"
+    edition: Server netinst
+    arch: x86_64
+    release_type: stable
+    url: https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/iso/Fedora-Server-netinst-x86_64-42-1.1.iso
+    checksum:
+      algorithm: sha256
+      value: "231f3e0d1dc8f565c01a9f641b3d16c49cae44530074bc2047fe2373a721c82f"
     eol:
       standard: "2026-05-13"
       extended: null
@@ -437,6 +475,24 @@ images:
       is_rolling: false
     status: supported
 
+  - id: rocky-9.7-minimal
+    name: "Rocky Linux 9.7"
+    category: linux
+    distro: rocky
+    version: "9.7"
+    edition: Minimal
+    arch: x86_64
+    release_type: stable
+    url: https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.7-x86_64-minimal.iso
+    checksum:
+      algorithm: sha256
+      value: "23a1ac1175d8ccada7195863914ef1237f584ff25f73bd53da410d5fffd882b0"
+    eol:
+      standard: "2027-05-31"
+      extended: "2032-05-31"
+      is_rolling: false
+    status: supported
+
   - id: rocky-10.1-dvd
     name: "Rocky Linux 10.1"
     category: linux
@@ -449,6 +505,24 @@ images:
     checksum:
       algorithm: sha256
       value: "55f96d45a052c0ed4f06309480155cb66281a008691eb7f3f359957205b1849a"
+    eol:
+      standard: "2030-05-31"
+      extended: "2035-05-31"
+      is_rolling: false
+    status: supported
+
+  - id: rocky-10.1-minimal
+    name: "Rocky Linux 10.1"
+    category: linux
+    distro: rocky
+    version: "10.1"
+    edition: Minimal
+    arch: x86_64
+    release_type: stable
+    url: https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.1-x86_64-minimal.iso
+    checksum:
+      algorithm: sha256
+      value: "5aafc2c86e606428cd7c5802b0d28c220f34c181a57eefff2cc6f65214714499"
     eol:
       standard: "2030-05-31"
       extended: "2035-05-31"
@@ -473,6 +547,24 @@ images:
       is_rolling: false
     status: supported
 
+  - id: alma-9.7-minimal
+    name: "AlmaLinux 9.7"
+    category: linux
+    distro: almalinux
+    version: "9.7"
+    edition: Minimal
+    arch: x86_64
+    release_type: stable
+    url: https://repo.almalinux.org/almalinux/9/isos/x86_64/AlmaLinux-9.7-x86_64-minimal.iso
+    checksum:
+      algorithm: sha256
+      value: "d51ed22cf272a0f30fcf55579d2748ff6ee1fddd6e36ba728cb386b933ceb7fc"
+    eol:
+      standard: "2027-05-31"
+      extended: "2032-05-31"
+      is_rolling: false
+    status: supported
+
   - id: alma-10.1-dvd
     name: "AlmaLinux 10.1"
     category: linux
@@ -485,6 +577,24 @@ images:
     checksum:
       algorithm: sha256
       value: "4597a7483fd7b49bbb7a46958fe2574b7c575531e5ee64ad4d6c1d2779494400"
+    eol:
+      standard: "2030-05-31"
+      extended: "2035-05-31"
+      is_rolling: false
+    status: supported
+
+  - id: alma-10.1-minimal
+    name: "AlmaLinux 10.1"
+    category: linux
+    distro: almalinux
+    version: "10.1"
+    edition: Minimal
+    arch: x86_64
+    release_type: stable
+    url: https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.1-x86_64-minimal.iso
+    checksum:
+      algorithm: sha256
+      value: "049efd183a5a841dd432b3427eb6faa7deb3bf6c6bf2c63cbffa024b9c651725"
     eol:
       standard: "2030-05-31"
       extended: "2035-05-31"
@@ -616,6 +726,46 @@ images:
       note: "Based on Ubuntu 24.04"
     status: supported
 
+  - id: mint-22.3-mate
+    name: "Linux Mint 22.3 Zena"
+    category: linux
+    distro: linuxmint
+    codename: "Zena"
+    version: "22.3"
+    edition: MATE
+    arch: amd64
+    release_type: stable
+    url: https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-mate-64bit.iso
+    checksum:
+      algorithm: sha256
+      value: "7609294da613b75eea89bb918292125e9f06418a368136fb190466e15bf8c373"
+    eol:
+      standard: "2029-04-01"
+      extended: null
+      is_rolling: false
+      note: "Based on Ubuntu 24.04"
+    status: supported
+
+  - id: mint-22.3-xfce
+    name: "Linux Mint 22.3 Zena"
+    category: linux
+    distro: linuxmint
+    codename: "Zena"
+    version: "22.3"
+    edition: Xfce
+    arch: amd64
+    release_type: stable
+    url: https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-xfce-64bit.iso
+    checksum:
+      algorithm: sha256
+      value: "45a835b5dddaf40e84d776549e0b19b3fbd49673b6cc6434ebddbfcd217df776"
+    eol:
+      standard: "2029-04-01"
+      extended: null
+      is_rolling: false
+      note: "Based on Ubuntu 24.04"
+    status: supported
+
   - id: archlinux-2026.04
     name: "Arch Linux 2026.04.01"
     category: linux
@@ -650,6 +800,61 @@ images:
       standard: null
       extended: null
       is_rolling: true
+    status: supported
+
+  - id: manjaro-26.0-kde
+    name: "Manjaro 26.0.4 KDE"
+    category: linux
+    distro: manjaro
+    version: "26.0.4"
+    edition: KDE
+    arch: x86_64
+    release_type: rolling
+    url: https://download.manjaro.org/kde/26.0.4/manjaro-kde-26.0.4-260327-linux618.iso
+    checksum:
+      algorithm: sha256
+      value: "9d9e5f6b1558a8850bf19ca21af9c71cf3810c69a77ab860130281d09f6a33b9"
+    eol:
+      standard: null
+      extended: null
+      is_rolling: true
+    status: supported
+
+  - id: manjaro-26.0-gnome
+    name: "Manjaro 26.0.4 GNOME"
+    category: linux
+    distro: manjaro
+    version: "26.0.4"
+    edition: GNOME
+    arch: x86_64
+    release_type: rolling
+    url: https://download.manjaro.org/gnome/26.0.4/manjaro-gnome-26.0.4-260327-linux618.iso
+    checksum:
+      algorithm: sha256
+      value: "a5eaa016686a6db171a553e374bf8b3ec48ce320ea0d8e1192c4499ae4264fc1"
+    eol:
+      standard: null
+      extended: null
+      is_rolling: true
+    status: supported
+
+  - id: kali-2026.1-live
+    name: "Kali Linux 2026.1"
+    category: linux
+    distro: kali
+    version: "2026.1"
+    edition: Live
+    arch: amd64
+    release_type: rolling
+    url: https://cdimage.kali.org/kali-2026.1/kali-linux-2026.1-live-amd64.iso.torrent
+    checksum:
+      algorithm: sha256
+      value: "c2096dc2194c915cf94c273b907a84043ea6adfcba18509f15a8c1d1bbfb211c"
+    eol:
+      standard: null
+      extended: null
+      is_rolling: true
+      note: "Torrent download only for Live ISO"
     status: supported
 
   - id: kali-2026.1

@@ -303,7 +303,7 @@
         if (currentStatus === 'supported' && img.status !== 'supported' && img.status !== 'beta') return false;
         if (currentStatus === 'eol' && img.status !== 'eol' && img.status !== 'eol-extended') return false;
         if (query) {
-          const haystack = `${img.name} ${img.distro} ${img.version} ${img.arch} ${img.id}`.toLowerCase();
+          const haystack = `${img.name} ${img.distro} ${img.version} ${img.arch} ${img.id} ${img.edition || ''} ${img.codename || ''} ${img.release_type || ''} ${img.eol?.note || ''}`.toLowerCase();
           if (!haystack.includes(query)) return false;
         }
         return true;
