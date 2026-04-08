@@ -1,0 +1,254 @@
+openapi: 3.0.3
+info:
+  title: OS ISO Catalog API
+  description: |
+    Machine-readable catalog of OS ISO images with download URLs, checksums, and EOL dates.
+
+    All endpoints return static JSON generated daily from `data/images.yaml`.
+  version: "1.0.0"
+  license:
+    name: MIT
+
+servers:
+  - url: https://YOUR_USERNAME.github.io/os-iso-catalog
+    description: GitHub Pages
+
+paths:
+  /v1/all.json:
+    get:
+      summary: All images
+      description: Returns every OS image in the catalog.
+      operationId: getAll
+      tags: [Images]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/supported.json:
+    get:
+      summary: Supported images
+      description: Images with status `supported` or `beta`.
+      operationId: getSupported
+      tags: [Images]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/eol.json:
+    get:
+      summary: End-of-life images
+      description: Images with status `eol` or `eol-extended`.
+      operationId: getEol
+      tags: [Images]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/linux.json:
+    get:
+      summary: Linux images
+      description: Images where `category` is `linux`.
+      operationId: getLinux
+      tags: [Filter by Category]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/windows.json:
+    get:
+      summary: Windows images
+      description: Images where `category` is `windows`.
+      operationId: getWindows
+      tags: [Filter by Category]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/bsd.json:
+    get:
+      summary: BSD images
+      description: Images where `category` is `bsd`.
+      operationId: getBsd
+      tags: [Filter by Category]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/amd64.json:
+    get:
+      summary: amd64 images
+      description: Images with `arch` in `amd64`, `x86_64`, or `x64`.
+      operationId: getAmd64
+      tags: [Filter by Architecture]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/arm64.json:
+    get:
+      summary: arm64 images
+      description: Images with `arch` in `arm64` or `aarch64`.
+      operationId: getArm64
+      tags: [Filter by Architecture]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+components:
+  schemas:
+    ImageResponse:
+      type: object
+      required: [meta, images]
+      properties:
+        meta:
+          $ref: "#/components/schemas/Meta"
+        images:
+          type: array
+          items:
+            $ref: "#/components/schemas/Image"
+
+    Meta:
+      type: object
+      properties:
+        api_version:
+          type: string
+          example: v1
+        generated_at:
+          type: string
+          format: date-time
+          example: "2026-04-08T06:00:00Z"
+        count:
+          type: integer
+          example: 57
+
+    Image:
+      type: object
+      required: [id, name, category, version, arch, status, eol]
+      properties:
+        id:
+          type: string
+          description: Unique identifier
+          example: ubuntu-24.04-desktop
+        name:
+          type: string
+          description: Human-readable name
+          example: "Ubuntu 24.04.2 LTS"
+        category:
+          type: string
+          enum: [linux, windows, bsd]
+          example: linux
+        distro:
+          type: string
+          description: Distribution family slug
+          example: ubuntu
+        codename:
+          type: string
+          description: Release codename (if applicable)
+          example: Noble Numbat
+        version:
+          type: string
+          description: Version number
+          example: "24.04.2"
+        edition:
+          type: string
+          description: "Desktop, Server, DVD, etc."
+          example: Desktop
+        arch:
+          type: string
+          description: CPU architecture
+          example: amd64
+        release_type:
+          type: string
+          enum: [stable, beta, rolling]
+          example: stable
+        url:
+          type: string
+          format: uri
+          description: Direct ISO download URL
+          example: "https://releases.ubuntu.com/24.04/ubuntu-24.04.2-desktop-amd64.iso"
+        download_page:
+          type: string
+          format: uri
+          description: Download page URL (when no direct link is available)
+        checksum:
+          $ref: "#/components/schemas/Checksum"
+        eol:
+          $ref: "#/components/schemas/Eol"
+        status:
+          type: string
+          enum: [supported, eol, eol-extended, beta]
+          description: |
+            - `supported`: Currently receiving updates
+            - `eol`: Past end-of-life
+            - `eol-extended`: Past standard EOL but in extended support
+            - `beta`: Pre-release
+          example: supported
+
+    Checksum:
+      type: object
+      properties:
+        algorithm:
+          type: string
+          enum: [sha256, sha512]
+          example: sha256
+        value:
+          type: string
+          description: Hex-encoded checksum value
+          example: "81fae9..."
+
+    Eol:
+      type: object
+      properties:
+        standard:
+          type: string
+          format: date
+          nullable: true
+          description: Standard support end date
+          example: "2029-05-31"
+        extended:
+          type: string
+          format: date
+          nullable: true
+          description: Extended support end date
+          example: "2034-04-25"
+        is_rolling:
+          type: boolean
+          description: Whether this is a rolling release with no fixed EOL
+          example: false
+        note:
+          type: string
+          nullable: true
+          description: Additional EOL context
+          example: "ESM via Ubuntu Pro"

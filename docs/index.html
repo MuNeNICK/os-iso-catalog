@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OS ISO Catalog</title>
+  <style>
+    :root {
+      --bg: #ffffff; --bg2: #f8f9fa; --fg: #1a1a1a; --muted: #6c757d;
+      --border: #dee2e6; --accent: #0d6efd; --accent-hover: #0b5ed7;
+      --green: #198754; --green-bg: #d1e7dd;
+      --yellow: #cc8a00; --yellow-bg: #fff3cd;
+      --red: #dc3545; --red-bg: #f8d7da;
+      --blue: #0d6efd; --blue-bg: #cfe2ff;
+      --gray: #6c757d; --gray-bg: #e9ecef;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117; --bg2: #161b22; --fg: #e6edf3; --muted: #8b949e;
+        --border: #30363d; --accent: #58a6ff; --accent-hover: #79c0ff;
+        --green: #3fb950; --green-bg: #122117;
+        --yellow: #d29922; --yellow-bg: #272115;
+        --red: #f85149; --red-bg: #2d1214;
+        --blue: #58a6ff; --blue-bg: #121d2f;
+        --gray: #8b949e; --gray-bg: #21262d;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg); color: var(--fg); line-height: 1.5;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1rem; }
+
+    /* Header */
+    header { margin-bottom: 1.5rem; }
+    header h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    header p { color: var(--muted); font-size: 0.9rem; }
+    header nav { margin-top: 0.5rem; font-size: 0.85rem; }
+    header nav a { color: var(--accent); text-decoration: none; margin-right: 1rem; }
+    header nav a:hover { text-decoration: underline; }
+
+    /* Stats */
+    .stats {
+      display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.25rem;
+    }
+    .stat {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; padding: 0.6rem 1rem; min-width: 120px;
+    }
+    .stat-value { font-size: 1.5rem; font-weight: 700; }
+    .stat-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* Controls */
+    .controls {
+      display: flex; gap: 0.75rem; flex-wrap: wrap;
+      align-items: center; margin-bottom: 1rem;
+    }
+    .search {
+      flex: 1; min-width: 200px; padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border); border-radius: 6px;
+      background: var(--bg2); color: var(--fg); font-size: 0.9rem;
+    }
+    .search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+    .filter-group { display: flex; gap: 0.25rem; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 0.35rem 0.7rem; border: 1px solid var(--border); border-radius: 6px;
+      background: var(--bg2); color: var(--fg); cursor: pointer; font-size: 0.8rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: var(--accent); }
+    .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    thead { background: var(--bg2); }
+    th {
+      padding: 0.6rem 0.75rem; text-align: left; font-weight: 600;
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--muted); border-bottom: 1px solid var(--border);
+      cursor: pointer; user-select: none; white-space: nowrap;
+    }
+    th:hover { color: var(--fg); }
+    th .sort-arrow { margin-left: 0.25rem; font-size: 0.7rem; }
+    td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--border); }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--bg2); }
+
+    /* Badges */
+    .badge {
+      display: inline-block; font-size: 0.7rem; font-weight: 600;
+      padding: 0.15rem 0.45rem; border-radius: 4px; white-space: nowrap;
+    }
+    .badge-supported { background: var(--green-bg); color: var(--green); }
+    .badge-eol { background: var(--red-bg); color: var(--red); }
+    .badge-eol-extended { background: var(--yellow-bg); color: var(--yellow); }
+    .badge-beta { background: var(--blue-bg); color: var(--blue); }
+    .badge-linux { background: var(--green-bg); color: var(--green); }
+    .badge-windows { background: var(--blue-bg); color: var(--blue); }
+    .badge-bsd { background: var(--yellow-bg); color: var(--yellow); }
+    .badge-rolling { background: var(--gray-bg); color: var(--gray); font-size: 0.65rem; }
+
+    /* EOL cell */
+    .eol-date { white-space: nowrap; }
+    .eol-soon { color: var(--yellow); font-weight: 600; }
+    .eol-past { color: var(--red); }
+    .eol-ok { color: var(--green); }
+    .eol-rolling { color: var(--muted); font-style: italic; }
+
+    /* Links */
+    .dl-link {
+      color: var(--accent); text-decoration: none; font-size: 0.8rem; white-space: nowrap;
+    }
+    .dl-link:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 0.8rem;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* Loading */
+    .loading { text-align: center; padding: 3rem; color: var(--muted); }
+    .count-info { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+
+    @media (max-width: 768px) {
+      .stat { min-width: 90px; padding: 0.5rem 0.75rem; }
+      .stat-value { font-size: 1.2rem; }
+      table { font-size: 0.78rem; }
+      th, td { padding: 0.4rem 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>OS ISO Catalog</h1>
+      <p>OS ISO images with download URLs, checksums, and EOL status.</p>
+      <nav>
+        <a href="api.html">API Docs</a>
+        <a href="v1/all.json">Raw JSON</a>
+      </nav>
+    </header>
+
+    <div class="stats" id="stats">
+      <div class="stat"><div class="stat-value" id="stat-total">-</div><div class="stat-label">Total</div></div>
+      <div class="stat"><div class="stat-value stat-green" id="stat-supported">-</div><div class="stat-label">Supported</div></div>
+      <div class="stat"><div class="stat-value" id="stat-eol">-</div><div class="stat-label">EOL</div></div>
+      <div class="stat"><div class="stat-value" id="stat-eol-soon">-</div><div class="stat-label">EOL within 6mo</div></div>
+    </div>
+
+    <div class="controls">
+      <input type="text" class="search" id="search" placeholder="Search by name, distro, version...">
+      <div class="filter-group" id="category-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="linux">Linux</button>
+        <button class="filter-btn" data-filter="windows">Windows</button>
+        <button class="filter-btn" data-filter="bsd">BSD</button>
+      </div>
+      <div class="filter-group" id="status-filters">
+        <button class="filter-btn active" data-status="all">All Status</button>
+        <button class="filter-btn" data-status="supported">Supported</button>
+        <button class="filter-btn" data-status="eol">EOL</button>
+      </div>
+    </div>
+
+    <div class="count-info" id="count-info"></div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="name">Name <span class="sort-arrow"></span></th>
+            <th data-sort="category">Category <span class="sort-arrow"></span></th>
+            <th data-sort="version">Version <span class="sort-arrow"></span></th>
+            <th data-sort="arch">Arch <span class="sort-arrow"></span></th>
+            <th data-sort="status">Status <span class="sort-arrow"></span></th>
+            <th data-sort="eol">EOL <span class="sort-arrow"></span></th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr><td colspan="7" class="loading">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <span>Updated <span id="generated-at">-</span></span>
+      <span><a href="https://github.com/YOUR_USERNAME/os-iso-catalog">GitHub</a> &middot; MIT License</span>
+    </footer>
+  </div>
+
+  <script>
+    let allImages = [];
+    let currentSort = { key: 'name', asc: true };
+    let currentCategory = 'all';
+    let currentStatus = 'all';
+
+    async function init() {
+      try {
+        const res = await fetch('v1/all.json');
+        const data = await res.json();
+        allImages = data.images;
+        document.getElementById('generated-at').textContent = data.meta.generated_at;
+        updateStats();
+        render();
+      } catch (e) {
+        document.getElementById('table-body').innerHTML =
+          '<tr><td colspan="7" class="loading">Failed to load data.</td></tr>';
+      }
+    }
+
+    function updateStats() {
+      const now = new Date();
+      const sixMonths = new Date(now);
+      sixMonths.setMonth(sixMonths.getMonth() + 6);
+
+      const supported = allImages.filter(i => i.status === 'supported' || i.status === 'beta').length;
+      const eol = allImages.filter(i => i.status === 'eol' || i.status === 'eol-extended').length;
+      const eolSoon = allImages.filter(i => {
+        if (i.status !== 'supported') return false;
+        const d = i.eol?.standard;
+        if (!d) return false;
+        const eolDate = new Date(d);
+        return eolDate > now && eolDate <= sixMonths;
+      }).length;
+
+      document.getElementById('stat-total').textContent = allImages.length;
+      document.getElementById('stat-supported').textContent = supported;
+      document.getElementById('stat-eol').textContent = eol;
+      document.getElementById('stat-eol-soon').textContent = eolSoon;
+    }
+
+    function getEolDisplay(img) {
+      if (img.eol?.is_rolling) return { text: 'Rolling', cls: 'eol-rolling' };
+      const d = img.eol?.standard;
+      if (!d) return { text: '-', cls: '' };
+      const eolDate = new Date(d);
+      const now = new Date();
+      const sixMonths = new Date(now);
+      sixMonths.setMonth(sixMonths.getMonth() + 6);
+      if (eolDate < now) return { text: d, cls: 'eol-past' };
+      if (eolDate <= sixMonths) return { text: d, cls: 'eol-soon' };
+      return { text: d, cls: 'eol-ok' };
+    }
+
+    function getFiltered() {
+      const query = document.getElementById('search').value.toLowerCase();
+      return allImages.filter(img => {
+        if (currentCategory !== 'all' && img.category !== currentCategory) return false;
+        if (currentStatus === 'supported' && img.status !== 'supported' && img.status !== 'beta') return false;
+        if (currentStatus === 'eol' && img.status !== 'eol' && img.status !== 'eol-extended') return false;
+        if (query) {
+          const haystack = `${img.name} ${img.distro} ${img.version} ${img.arch}`.toLowerCase();
+          if (!haystack.includes(query)) return false;
+        }
+        return true;
+      });
+    }
+
+    function getSorted(images) {
+      const k = currentSort.key;
+      const dir = currentSort.asc ? 1 : -1;
+      return [...images].sort((a, b) => {
+        let va, vb;
+        if (k === 'eol') {
+          va = a.eol?.standard || (a.eol?.is_rolling ? '9999' : '');
+          vb = b.eol?.standard || (b.eol?.is_rolling ? '9999' : '');
+        } else {
+          va = a[k] || '';
+          vb = b[k] || '';
+        }
+        if (typeof va === 'string') va = va.toLowerCase();
+        if (typeof vb === 'string') vb = vb.toLowerCase();
+        if (va < vb) return -1 * dir;
+        if (va > vb) return 1 * dir;
+        return 0;
+      });
+    }
+
+    function render() {
+      const filtered = getSorted(getFiltered());
+      const tbody = document.getElementById('table-body');
+      document.getElementById('count-info').textContent =
+        filtered.length === allImages.length
+          ? `${filtered.length} images`
+          : `${filtered.length} / ${allImages.length} images`;
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" class="loading">No matching images.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = filtered.map(img => {
+        const eol = getEolDisplay(img);
+        const statusCls = `badge-${img.status}`;
+        const catCls = `badge-${img.category}`;
+        const downloadUrl = img.url || img.download_page || '';
+        const downloadLabel = img.url ? 'ISO' : 'Page';
+        const rollingBadge = img.eol?.is_rolling ? ' <span class="badge badge-rolling">rolling</span>' : '';
+
+        return `<tr>
+          <td><strong>${esc(img.name)}</strong>${rollingBadge}</td>
+          <td><span class="badge ${catCls}">${esc(img.category)}</span></td>
+          <td>${esc(String(img.version))}</td>
+          <td>${esc(img.arch)}</td>
+          <td><span class="badge ${statusCls}">${esc(img.status)}</span></td>
+          <td class="eol-date ${eol.cls}">${esc(eol.text)}</td>
+          <td>${downloadUrl ? `<a class="dl-link" href="${esc(downloadUrl)}" target="_blank" rel="noopener">${downloadLabel}</a>` : '-'}</td>
+        </tr>`;
+      }).join('');
+
+      // Update sort arrows
+      document.querySelectorAll('th[data-sort]').forEach(th => {
+        const arrow = th.querySelector('.sort-arrow');
+        if (th.dataset.sort === currentSort.key) {
+          arrow.textContent = currentSort.asc ? '\u25B2' : '\u25BC';
+        } else {
+          arrow.textContent = '';
+        }
+      });
+    }
+
+    function esc(str) {
+      const d = document.createElement('div');
+      d.textContent = str;
+      return d.innerHTML;
+    }
+
+    // Event listeners
+    document.getElementById('search').addEventListener('input', render);
+
+    document.getElementById('category-filters').addEventListener('click', e => {
+      if (!e.target.matches('.filter-btn')) return;
+      document.querySelectorAll('#category-filters .filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      currentCategory = e.target.dataset.filter;
+      render();
+    });
+
+    document.getElementById('status-filters').addEventListener('click', e => {
+      if (!e.target.matches('.filter-btn')) return;
+      document.querySelectorAll('#status-filters .filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      currentStatus = e.target.dataset.status;
+      render();
+    });
+
+    document.querySelectorAll('th[data-sort]').forEach(th => {
+      th.addEventListener('click', () => {
+        const key = th.dataset.sort;
+        if (currentSort.key === key) {
+          currentSort.asc = !currentSort.asc;
+        } else {
+          currentSort = { key, asc: true };
+        }
+        render();
+      });
+    });
+
+    init();
+  </script>
+</body>
+</html>

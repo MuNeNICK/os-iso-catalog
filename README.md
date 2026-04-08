@@ -1,0 +1,79 @@
+# OS ISO Catalog
+
+Machine-readable catalog of OS ISO images with download URLs, checksums, and EOL dates.
+
+Served as static JSON via GitHub Pages. Updated daily via GitHub Actions.
+
+[![Daily Checks](https://github.com/YOUR_USERNAME/os-iso-catalog/actions/workflows/daily-check.yml/badge.svg)](https://github.com/YOUR_USERNAME/os-iso-catalog/actions/workflows/daily-check.yml)
+
+## API Endpoints
+
+Base URL: `https://YOUR_USERNAME.github.io/os-iso-catalog`
+
+| Endpoint | Description |
+|----------|-------------|
+| `/v1/all.json` | All OS images |
+| `/v1/supported.json` | Currently supported only |
+| `/v1/eol.json` | End-of-life archive |
+| `/v1/linux.json` | Linux distributions |
+| `/v1/windows.json` | Windows images |
+| `/v1/bsd.json` | BSD family |
+| `/v1/amd64.json` | amd64/x86_64 images |
+| `/v1/arm64.json` | arm64/aarch64 images |
+
+## Quick Start
+
+```bash
+# Get all supported Linux images
+curl -s https://YOUR_USERNAME.github.io/os-iso-catalog/v1/supported.json \
+  | jq '.images[] | select(.category == "linux") | {name, url}'
+```
+
+## Coverage
+
+- **Linux**: Ubuntu, Debian, Fedora, Rocky Linux, AlmaLinux, CentOS Stream, openSUSE (Leap/Tumbleweed), Linux Mint, Arch, Manjaro, Kali, Alpine, Oracle Linux, Raspberry Pi OS, MX Linux, Pop!_OS, CachyOS, EndeavourOS, NixOS, Tails, Qubes OS, Omarchy
+- **Windows**: Windows 11, 10, Server 2025/2022/2019
+- **BSD**: FreeBSD, OpenBSD, NetBSD
+
+All currently supported versions are tracked.
+
+## How It Works
+
+1. `data/images.yaml` is the single source of truth
+2. `scripts/generate.py` transforms YAML into filtered JSON endpoints under `docs/v1/`
+3. GitHub Pages serves the `docs/` directory
+4. **Daily at 06:00 UTC**, GitHub Actions:
+   - Checks EOL dates and auto-updates `status` field
+   - Validates all download URLs are reachable
+   - Creates GitHub Issues for broken links
+
+## Contributing
+
+1. Edit `data/images.yaml`
+2. Run `python scripts/generate.py` to verify
+3. Submit a PR
+
+### Adding a new image
+
+```yaml
+- id: distro-version-edition
+  name: "Distro Name Version"
+  category: linux          # linux | windows | bsd
+  distro: distro-slug
+  version: "1.0"
+  arch: amd64
+  release_type: stable     # stable | beta | rolling
+  url: https://example.com/distro.iso
+  checksum:
+    algorithm: sha256
+    value: "abc123..."
+  eol:
+    standard: "2030-01-01"
+    extended: null
+    is_rolling: false
+  status: supported        # supported | eol | eol-extended | beta
+```
+
+## License
+
+MIT

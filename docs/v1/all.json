@@ -1,0 +1,1225 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-04-08T04:05:54Z",
+    "count": 57
+  },
+  "images": [
+    {
+      "id": "ubuntu-20.04-desktop",
+      "name": "Ubuntu 20.04.6 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Focal Fossa",
+      "version": "20.04.6",
+      "edition": "Desktop",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/20.04/ubuntu-20.04.6-desktop-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "510ce77afcb9537f198bc7daa0e5b503b6e67aaed68146943c231baeaab94df1"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-01",
+        "is_rolling": false,
+        "note": "ESM via Ubuntu Pro (free for personal use)"
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "ubuntu-20.04-server",
+      "name": "Ubuntu 20.04.6 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Focal Fossa",
+      "version": "20.04.6",
+      "edition": "Server",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/20.04/ubuntu-20.04.6-live-server-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b8f31413336b9393ad5d8ef0282717b2ab19f007df2e9ed5196c13d8f9153c8b"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-01",
+        "is_rolling": false,
+        "note": "ESM via Ubuntu Pro (free for personal use)"
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "ubuntu-22.04-desktop",
+      "name": "Ubuntu 22.04.5 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Jammy Jellyfish",
+      "version": "22.04.5",
+      "edition": "Desktop",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/22.04/ubuntu-22.04.5-desktop-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "bfd1cee02bc4f35db939e69b934ba49a39a378797ce9aee20f6e3e3e728fefbf"
+      },
+      "eol": {
+        "standard": "2027-04-01",
+        "extended": "2032-04-01",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "ubuntu-22.04-server",
+      "name": "Ubuntu 22.04.5 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Jammy Jellyfish",
+      "version": "22.04.5",
+      "edition": "Server",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/22.04/ubuntu-22.04.5-live-server-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9bc6028870aef3f74f4e16b900008179e78b130e6b0b9a140635434a46aa98b0"
+      },
+      "eol": {
+        "standard": "2027-04-01",
+        "extended": "2032-04-01",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "ubuntu-24.04-desktop",
+      "name": "Ubuntu 24.04.4 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Noble Numbat",
+      "version": "24.04.4",
+      "edition": "Desktop",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/24.04/ubuntu-24.04.4-desktop-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3a4c9877b483ab46d7c3fbe165a0db275e1ae3cfe56a5657e5a47c2f99a99d1e"
+      },
+      "eol": {
+        "standard": "2029-04-01",
+        "extended": "2034-04-01",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "ubuntu-24.04-server",
+      "name": "Ubuntu 24.04.4 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Noble Numbat",
+      "version": "24.04.4",
+      "edition": "Server",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/24.04/ubuntu-24.04.4-live-server-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e907d92eeec9df64163a7e454cbc8d7755e8ddc7ed42f99dbc80c40f1a138433"
+      },
+      "eol": {
+        "standard": "2029-04-01",
+        "extended": "2034-04-01",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "ubuntu-26.04-desktop",
+      "name": "Ubuntu 26.04 LTS Beta",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Resolute Raccoon",
+      "version": "26.04",
+      "edition": "Desktop",
+      "arch": "amd64",
+      "release_type": "beta",
+      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-beta-desktop-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "85ebc356ca56c272285aa5a88c79c1f9c384efbef4da2fbabdf6cc4e669b38ab"
+      },
+      "eol": {
+        "standard": "2031-04-01",
+        "extended": "2036-04-01",
+        "is_rolling": false,
+        "note": "Stable release: 2026-04-23"
+      },
+      "status": "beta"
+    },
+    {
+      "id": "ubuntu-26.04-server",
+      "name": "Ubuntu 26.04 LTS Beta",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Resolute Raccoon",
+      "version": "26.04",
+      "edition": "Server",
+      "arch": "amd64",
+      "release_type": "beta",
+      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-beta-live-server-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "ec11c403e5ee44952f23f21ae3db51c8df15269af68c54ec0e1d4a5991633640"
+      },
+      "eol": {
+        "standard": "2031-04-01",
+        "extended": "2036-04-01",
+        "is_rolling": false,
+        "note": "Stable release: 2026-04-23"
+      },
+      "status": "beta"
+    },
+    {
+      "id": "debian-11-netinst",
+      "name": "Debian 11.11 Bullseye",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bullseye",
+      "version": "11.11",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/debian-11.11.0-amd64-netinst.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "cd5b2a6fc22050affa1d141adb3857af07e94ff886dca1ce17214e2761a3b316"
+      },
+      "eol": {
+        "standard": "2026-08-31",
+        "extended": null,
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "debian-12-netinst",
+      "name": "Debian 12.13 Bookworm",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bookworm",
+      "version": "12.13",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.13.0/amd64/iso-cd/debian-12.13.0-amd64-netinst.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2b880ffabe36dbe04a662a3125e5ecae4db69d0acce257dd74615bbf165ad76e"
+      },
+      "eol": {
+        "standard": "2028-06-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "debian-13-netinst",
+      "name": "Debian 13.4 Trixie",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Trixie",
+      "version": "13.4",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0b813535dd76f2ea96eff908c65e8521512c92a0631fd41c95756ffd7d4896dc"
+      },
+      "eol": {
+        "standard": "2028-08-01",
+        "extended": "2030-06-30",
+        "is_rolling": false,
+        "note": "Full support until 2028/08, LTS until 2030/06"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "fedora-42-workstation",
+      "name": "Fedora 42 Workstation",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "42",
+      "edition": "Workstation Live",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-Live-42-1.1.x86_64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "98958d80e8a80eabe61275337f969c8e2212adc3a223d9bbdab9411bb1c95cba"
+      },
+      "eol": {
+        "standard": "2026-05-13",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "fedora-43-workstation",
+      "name": "Fedora 43 Workstation",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "43",
+      "edition": "Workstation Live",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/43/Workstation/x86_64/iso/Fedora-Workstation-Live-43-1.6.x86_64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2a4a16c009244eb5ab2198700eb04103793b62407e8596f30a3e0cc8ac294d77"
+      },
+      "eol": {
+        "standard": "2026-11-15",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Approximate EOL"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "rocky-9.7-dvd",
+      "name": "Rocky Linux 9.7",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.7",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.7-x86_64-dvd.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d48e902325dce6793935b4e13672a0d9a4f958e02d4e23fcf0a8a34c49ef03da"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "rocky-10.1-dvd",
+      "name": "Rocky Linux 10.1",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.1",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.1-x86_64-dvd1.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "55f96d45a052c0ed4f06309480155cb66281a008691eb7f3f359957205b1849a"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-9.7-dvd",
+      "name": "AlmaLinux 9.7",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.7",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9.7/isos/x86_64/AlmaLinux-9.7-x86_64-dvd.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "56f8bf5e44d293a040203b73b70f08bb7dc52f27654b047c20be8598f63ec1f8"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-10.1-dvd",
+      "name": "AlmaLinux 10.1",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.1",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10.1/isos/x86_64/AlmaLinux-10.1-x86_64-dvd.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "4597a7483fd7b49bbb7a46958fe2574b7c575531e5ee64ad4d6c1d2779494400"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "centos-stream-9-dvd",
+      "name": "CentOS Stream 9",
+      "category": "linux",
+      "distro": "centos-stream",
+      "version": "9",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "rolling",
+      "url": "https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-dvd1.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "38b5e26ca26fd768c65031738f8437d908e6fdf7c4e08fde860b75fe8471a2f6"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": null,
+        "is_rolling": true,
+        "note": "Rolling build - checksum changes with each rebuild"
+      },
+      "status": "supported",
+      "notes": "Checksum as of 2026-04-06. Verify latest at mirror."
+    },
+    {
+      "id": "centos-stream-10-dvd",
+      "name": "CentOS Stream 10",
+      "category": "linux",
+      "distro": "centos-stream",
+      "version": "10",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "rolling",
+      "url": "https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/iso/CentOS-Stream-10-latest-x86_64-dvd1.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "57973b9dd781a23cdc7612eec3e65b830251024e6287cbea5c5594ae97c13675"
+      },
+      "eol": {
+        "standard": "2030-01-01",
+        "extended": null,
+        "is_rolling": true,
+        "note": "Rolling build - checksum changes with each rebuild"
+      },
+      "status": "supported",
+      "notes": "Checksum as of 2026-04-06. Verify latest at mirror."
+    },
+    {
+      "id": "opensuse-leap-15.6-dvd",
+      "name": "openSUSE Leap 15.6",
+      "category": "linux",
+      "distro": "opensuse",
+      "version": "15.6",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.opensuse.org/distribution/leap/15.6/iso/openSUSE-Leap-15.6-DVD-x86_64-Media.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a74d4072e639c75ca127df3d869c1e57bcc44a093a969550f348a3ead561fe4f"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "opensuse-leap-16.0",
+      "name": "openSUSE Leap 16.0",
+      "category": "linux",
+      "distro": "opensuse",
+      "version": "16.0",
+      "edition": "Offline Installer",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.opensuse.org/distribution/leap/16.0/offline/Leap-16.0-offline-installer-x86_64.install.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d780a228058fb4688a31b5bde22d7b97c86e04a2ced33f3d7c8e88a710d96d24"
+      },
+      "eol": {
+        "standard": "2027-10-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "mint-21.3-cinnamon",
+      "name": "Linux Mint 21.3 Virginia",
+      "category": "linux",
+      "distro": "linuxmint",
+      "codename": "Virginia",
+      "version": "21.3",
+      "edition": "Cinnamon",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://mirrors.edge.kernel.org/linuxmint/stable/21.3/linuxmint-21.3-cinnamon-64bit.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "5aa24abbc616807ab754a6a3b586f24460b0c213b6cacb0bf8b9a80b65013ecc"
+      },
+      "eol": {
+        "standard": "2027-04-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Based on Ubuntu 22.04"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "mint-22.3-cinnamon",
+      "name": "Linux Mint 22.3 Zena",
+      "category": "linux",
+      "distro": "linuxmint",
+      "codename": "Zena",
+      "version": "22.3",
+      "edition": "Cinnamon",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a081ab202cfda17f6924128dbd2de8b63518ac0531bcfe3f1a1b88097c459bd4"
+      },
+      "eol": {
+        "standard": "2029-04-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Based on Ubuntu 24.04"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "archlinux-2026.04",
+      "name": "Arch Linux 2026.04.01",
+      "category": "linux",
+      "distro": "archlinux",
+      "version": "2026.04.01",
+      "arch": "x86_64",
+      "release_type": "rolling",
+      "url": "https://geo.mirror.pkgbuild.com/iso/2026.04.01/archlinux-2026.04.01-x86_64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f14bf46afbe782d28835aed99bfa2fe447903872cb9f4b21153196d6ed1d48ae"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported"
+    },
+    {
+      "id": "manjaro-26.0-xfce",
+      "name": "Manjaro 26.0.4 XFCE",
+      "category": "linux",
+      "distro": "manjaro",
+      "version": "26.0.4",
+      "edition": "XFCE",
+      "arch": "x86_64",
+      "release_type": "rolling",
+      "url": "https://download.manjaro.org/xfce/26.0.4/manjaro-xfce-26.0.4-260327-linux618.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "91024d93794a46c2605afdd0d102b7737b987d345770d106d9d0a1bb9af2563e"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported"
+    },
+    {
+      "id": "kali-2026.1",
+      "name": "Kali Linux 2026.1",
+      "category": "linux",
+      "distro": "kali",
+      "version": "2026.1",
+      "edition": "Installer",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://cdimage.kali.org/kali-2026.1/kali-linux-2026.1-installer-amd64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "271477ad6ea2676c7346576971b9acc2d32fabd9c2bbaf0e6302397626149306"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.21",
+      "name": "Alpine Linux 3.21.6",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.21.6",
+      "edition": "Standard",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/x86_64/alpine-standard-3.21.6-x86_64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2afeb3efc9819cb1436ffbf16b0d3d24f4d471653831f9497773e4c8c28a2534"
+      },
+      "eol": {
+        "standard": "2026-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.22",
+      "name": "Alpine Linux 3.22.3",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.22.3",
+      "edition": "Standard",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/x86_64/alpine-standard-3.22.3-x86_64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "4e05fdcf5d0cc8e7bd404d4512884bcce5f40f046f4adecbc84b06b83477cd1d"
+      },
+      "eol": {
+        "standard": "2027-05-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.23",
+      "name": "Alpine Linux 3.23.3",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.23.3",
+      "edition": "Standard",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/x86_64/alpine-standard-3.23.3-x86_64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "966d6bf4d4c79958d43abde84a3e5bbeb4f8c757c164a49d3ec8432be6d36f16"
+      },
+      "eol": {
+        "standard": "2028-01-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Current latest"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "oracle-9.7-dvd",
+      "name": "Oracle Linux 9.7",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "9.7",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL9/u7/x86_64/OracleLinux-R9-U7-x86_64-dvd.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "895751f157727bca8437607e8edb32b7c10d815aba954f5b3dc24c28ac8a10aa"
+      },
+      "eol": {
+        "standard": "2032-06-01",
+        "extended": "2034-06-01",
+        "is_rolling": false,
+        "note": "Premier Support 10 years + Extended Support"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "oracle-10.1-dvd",
+      "name": "Oracle Linux 10.1",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "10.1",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL10/u1/x86_64/OracleLinux-R10-U1-x86_64-dvd.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "82fa2b70a18fb268c5ef013e298f85bba0d0e6c7ae882c49a3f67c02ee6d68de"
+      },
+      "eol": {
+        "standard": "2035-07-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Premier Support 10 years"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "raspios-desktop-arm64",
+      "name": "Raspberry Pi OS Desktop",
+      "category": "linux",
+      "distro": "raspios",
+      "version": "2025-12-04",
+      "edition": "Desktop",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2025-12-04/2025-12-04-raspios-trixie-arm64.img.xz",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f7afb40e587746128538d84f217bf478a23af59484d4db77f2d06bf647f7c82e"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Based on Debian Trixie. Follows Debian EOL."
+      },
+      "status": "supported",
+      "notes": "Image format is .img.xz (not ISO). Flash with Raspberry Pi Imager."
+    },
+    {
+      "id": "raspios-lite-arm64",
+      "name": "Raspberry Pi OS Lite",
+      "category": "linux",
+      "distro": "raspios",
+      "version": "2025-12-04",
+      "edition": "Lite",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2025-12-04/2025-12-04-raspios-trixie-arm64-lite.img.xz",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "681a775e20b53a9e4c7341d748a5a8cdc822039d8c67c1fd6ca35927abbe6290"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Based on Debian Trixie. Follows Debian EOL."
+      },
+      "status": "supported",
+      "notes": "Image format is .img.xz (not ISO). Flash with Raspberry Pi Imager."
+    },
+    {
+      "id": "windows-11-25h2",
+      "name": "Windows 11 25H2",
+      "category": "windows",
+      "distro": "windows",
+      "version": "25H2",
+      "edition": "Consumer",
+      "arch": "x64",
+      "release_type": "stable",
+      "download_page": "https://www.microsoft.com/en-us/software-download/windows11",
+      "eol": {
+        "standard": "2027-10-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Home/Pro. Use Media Creation Tool to download."
+      },
+      "status": "supported",
+      "notes": "Direct ISO link is dynamically generated by Microsoft."
+    },
+    {
+      "id": "windows-10-22h2",
+      "name": "Windows 10 22H2",
+      "category": "windows",
+      "distro": "windows",
+      "version": "22H2",
+      "edition": "Consumer",
+      "arch": "x64",
+      "release_type": "stable",
+      "download_page": "https://www.microsoft.com/en-us/software-download/windows10",
+      "eol": {
+        "standard": "2025-10-14",
+        "extended": "2026-10-13",
+        "is_rolling": false,
+        "note": "Standard ended. ESU available until 2026/10."
+      },
+      "status": "eol-extended",
+      "notes": "Direct ISO link is dynamically generated by Microsoft."
+    },
+    {
+      "id": "windows-server-2025-eval",
+      "name": "Windows Server 2025 Evaluation",
+      "category": "windows",
+      "distro": "windows-server",
+      "version": "2025",
+      "edition": "Evaluation",
+      "arch": "x64",
+      "release_type": "stable",
+      "download_page": "https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025",
+      "eol": {
+        "standard": "2029-10-01",
+        "extended": "2034-10-01",
+        "is_rolling": false,
+        "note": "180-day evaluation. Register to download."
+      },
+      "status": "supported"
+    },
+    {
+      "id": "windows-server-2022-eval",
+      "name": "Windows Server 2022 Evaluation",
+      "category": "windows",
+      "distro": "windows-server",
+      "version": "2022",
+      "edition": "Evaluation",
+      "arch": "x64",
+      "release_type": "stable",
+      "download_page": "https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022",
+      "eol": {
+        "standard": "2026-10-01",
+        "extended": "2031-10-01",
+        "is_rolling": false,
+        "note": "180-day evaluation. Register to download."
+      },
+      "status": "supported"
+    },
+    {
+      "id": "windows-server-2019-eval",
+      "name": "Windows Server 2019 Evaluation",
+      "category": "windows",
+      "distro": "windows-server",
+      "version": "2019",
+      "edition": "Evaluation",
+      "arch": "x64",
+      "release_type": "stable",
+      "download_page": "https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019",
+      "eol": {
+        "standard": "2024-01-09",
+        "extended": "2029-01-09",
+        "is_rolling": false,
+        "note": "180-day evaluation. Register to download."
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "freebsd-13.5",
+      "name": "FreeBSD 13.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "13.5",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-amd64-disc1.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "12ada1eb745df5b4f42a1afde4f0d2f333d389c8a7f07244e562b922443c2de7"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-14.4",
+      "name": "FreeBSD 14.4-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "14.4",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.4/FreeBSD-14.4-RELEASE-amd64-disc1.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "ade3d84e77fc601d1207ced8d6dd8952c3fb7685afa3cf6b6b44d76ed94b2d8e"
+      },
+      "eol": {
+        "standard": "2028-11-30",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-15.0",
+      "name": "FreeBSD 15.0-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "15.0",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/15.0/FreeBSD-15.0-RELEASE-amd64-disc1.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "cc73a14d4b1cfab880b78deb0b94ae0f439167418c32a6708f68f79563cb50c"
+      },
+      "eol": {
+        "standard": "2029-12-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Approximate EOL"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "openbsd-7.7",
+      "name": "OpenBSD 7.7",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.7",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.7/amd64/install77.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "da0106e39463f015524dca806f407c37a9bdd17e6dfffe533b06a2dd2edd8a27"
+      },
+      "eol": {
+        "standard": "2026-05-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "openbsd-7.8",
+      "name": "OpenBSD 7.8",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.8",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.8/amd64/install78.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a228d0a1ef558b4d9ec84c698f0d3ffd13cd38c64149487cba0f1ad873be07b2"
+      },
+      "eol": {
+        "standard": "2027-05-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "netbsd-9.4",
+      "name": "NetBSD 9.4",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "9.4",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-9.4/images/NetBSD-9.4-amd64.iso",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "93f0005c4dc46718475729ed76064aecc436491507b75cf29fb686f393e6a79be044e429b4a633ac2b4e26e1be32050667a71b356b7b2b11390524c63aed1a16"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until NetBSD 11.0 release + 1 month"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "netbsd-10.1",
+      "name": "NetBSD 10.1",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "10.1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-10.1/images/NetBSD-10.1-amd64.iso",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "7a5e5071307e1795885ffc6e1b8aac465082c21c8b79f4c9b4103ef44e4f2da45477299d213ae0093f6534dc99dc2bbf78f41e9dd556c72a02516068bf43fe49"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Current stable"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "mx-linux-25.1-xfce",
+      "name": "MX Linux 25.1 Xfce",
+      "category": "linux",
+      "distro": "mx-linux",
+      "version": "25.1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-25.1_Xfce_x64.iso/download",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f02f91b85f0f08f01440b34df2e1da276e7d6b32f315301068417e6c0bd15963"
+      },
+      "eol": {
+        "standard": "2028-08-31",
+        "extended": "2030-06-30",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "pop-os-24.04-lts",
+      "name": "Pop!_OS 24.04 LTS",
+      "category": "linux",
+      "distro": "pop-os",
+      "version": "24.04",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://iso.pop-os.org/24.04/amd64/generic/23/pop-os_24.04_amd64_generic_23.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7eb7c1a21674d0bd7d51a95b159bea25df5f97da8f2f7cd32c58dfc17746f70d"
+      },
+      "eol": {
+        "standard": "2029-05-31",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "pop-os-24.04-lts-nvidia",
+      "name": "Pop!_OS 24.04 LTS (NVIDIA)",
+      "category": "linux",
+      "distro": "pop-os",
+      "version": "24.04",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://iso.pop-os.org/24.04/amd64/nvidia/23/pop-os_24.04_amd64_nvidia_23.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7b5a30393c2a082458a0afaaf48b066b6090c5ecc034d12af387a898654dc8cd"
+      },
+      "eol": {
+        "standard": "2029-05-31",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "cachyos-260308",
+      "name": "CachyOS 2026.03.08",
+      "category": "linux",
+      "distro": "cachyos",
+      "version": "260308",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://iso.cachyos.org/desktop/260308/cachyos-desktop-linux-260308.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "69f1ffbded158d4d95e6567e994b1813d0d040d323742aef9f489a0b71ad1d29"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported"
+    },
+    {
+      "id": "endeavouros-titan",
+      "name": "EndeavourOS Titan (2026.03.06)",
+      "category": "linux",
+      "distro": "endeavouros",
+      "version": "2026.03.06",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://mirrors.urbanwave.co.za/endeavouros/iso/EndeavourOS_Titan-2026.03.06.iso",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "31fb24bbca430aa6dc975f6b68f4e51432f7695e08a224fe2b9af984ac270c6f456482724188f7b437107ec351882cb63151124f9b35de294452921326dece6d"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported"
+    },
+    {
+      "id": "nixos-25.11-graphical",
+      "name": "NixOS 25.11 Graphical",
+      "category": "linux",
+      "distro": "nixos",
+      "version": "25.11",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://channels.nixos.org/nixos-25.11/latest-nixos-graphical-x86_64-linux.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "348d5e946abf1f69ff1f2b2a65d10079dc0e4e14b38f0210cf3f323411a960ba"
+      },
+      "eol": {
+        "standard": "2026-07-31",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until ~1 month after NixOS 26.05 release"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "nixos-25.11-minimal",
+      "name": "NixOS 25.11 Minimal",
+      "category": "linux",
+      "distro": "nixos",
+      "version": "25.11",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://channels.nixos.org/nixos-25.11/latest-nixos-minimal-x86_64-linux.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1185f39ddb6175d755b8e959fcdf35cb4d1f276ae8f508baeb468b77de673d94"
+      },
+      "eol": {
+        "standard": "2026-07-31",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until ~1 month after NixOS 26.05 release"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "tails-7.6",
+      "name": "Tails 7.6",
+      "category": "linux",
+      "distro": "tails",
+      "version": "7.6",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.tails.net/tails/stable/tails-amd64-7.6/tails-amd64-7.6.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9d082add1b5cfc6bdbc1123b307acc0b64fe0c10f670d458d7c193077c312d99"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Superseded by next release (~monthly cycle)"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "qubes-4.3.0",
+      "name": "Qubes OS 4.3.0",
+      "category": "linux",
+      "distro": "qubes",
+      "version": "4.3.0",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.3.0-x86_64.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "29b3e8f26f709c9b8a76ecc0f787feddf34383fece74f2d068908cba7a7e9998"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until 6 months after next major release"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "opensuse-tumbleweed-dvd",
+      "name": "openSUSE Tumbleweed DVD",
+      "category": "linux",
+      "distro": "opensuse-tumbleweed",
+      "version": "20260405",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1e8d1a920e3ae5e396ca7cdf29d3d1650fb7b76121fe89556a2d5152a92119f9"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true,
+        "note": "Checksum changes with each snapshot"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "opensuse-tumbleweed-net",
+      "name": "openSUSE Tumbleweed NET",
+      "category": "linux",
+      "distro": "opensuse-tumbleweed",
+      "version": "20260405",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "43c75be630f0878820363bf4e43574c2927ef1b0eaa23986166c0fbde6fb848e"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true,
+        "note": "Checksum changes with each snapshot"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "omarchy-3.5.0",
+      "name": "Omarchy 3.5.0",
+      "category": "linux",
+      "distro": "omarchy",
+      "version": "3.5.0",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://iso.omarchy.org/omarchy-3.5.0-2.iso",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0d3a7944240df631c5c9f7802d735a96bb0a6a3f8a65b7d45b609699aa888bd5"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true,
+        "note": "Arch-based rolling release by DHH/Basecamp"
+      },
+      "status": "supported"
+    }
+  ]
+}
