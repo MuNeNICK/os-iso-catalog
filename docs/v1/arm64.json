@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:51:23Z",
-    "count": 31
+    "generated_at": "2026-04-08T05:55:49Z",
+    "count": 41
   },
   "images": [
     {
@@ -708,6 +708,236 @@
         "extended": null,
         "is_rolling": false,
         "note": "Current stable"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "ubuntu-20.04-server-arm64",
+      "name": "Ubuntu 20.04.5 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Focal Fossa",
+      "version": "20.04.5",
+      "edition": "Server",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.5-live-server-arm64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e42d6373dd39173094af5c26cbf2497770426f42049f8b9ea3e60ce35bebdedf"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-01",
+        "is_rolling": false,
+        "note": "ESM via Ubuntu Pro (free for personal use)"
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "ubuntu-26.04-desktop-arm64",
+      "name": "Ubuntu 26.04 LTS Beta",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Resolute Raccoon",
+      "version": "26.04",
+      "edition": "Desktop",
+      "arch": "arm64",
+      "release_type": "beta",
+      "url": "https://cdimage.ubuntu.com/daily-live/current/resolute-desktop-arm64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "78ab8ea1d28fe022cd3b05de790048f5ef3184e3610400e0e45bcfed6ad9aaad"
+      },
+      "eol": {
+        "standard": "2031-04-01",
+        "extended": "2036-04-01",
+        "is_rolling": false,
+        "note": "Stable release: 2026-04-23. Daily build - checksum changes."
+      },
+      "status": "beta"
+    },
+    {
+      "id": "ubuntu-26.04-server-arm64",
+      "name": "Ubuntu 26.04 LTS Beta",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Resolute Raccoon",
+      "version": "26.04",
+      "edition": "Server",
+      "arch": "arm64",
+      "release_type": "beta",
+      "url": "https://cdimage.ubuntu.com/ubuntu-server/daily-live/current/resolute-live-server-arm64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "54015237357ea3bb416a1e260e50b11de259b388f845d9269db1ae2a37a05026"
+      },
+      "eol": {
+        "standard": "2031-04-01",
+        "extended": "2036-04-01",
+        "is_rolling": false,
+        "note": "Stable release: 2026-04-23. Daily build - checksum changes."
+      },
+      "status": "beta"
+    },
+    {
+      "id": "debian-11-netinst-arm64",
+      "name": "Debian 11.11 Bullseye",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bullseye",
+      "version": "11.11",
+      "edition": "netinst",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/11.11.0/arm64/iso-cd/debian-11.11.0-arm64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c81b6081d5dc5cfac49310b104eb9843252fd3c97cedbcd69ec0388798e7ef7e"
+      },
+      "eol": {
+        "standard": "2026-08-31",
+        "extended": null,
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "fedora-43-workstation-arm64",
+      "name": "Fedora 43 Workstation",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "43",
+      "edition": "Workstation Live",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/43/Workstation/aarch64/iso/Fedora-Workstation-Live-43-1.6.aarch64.iso",
+      "homepage": "https://fedoraproject.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "73e91eb64022b59ed0b19fb706dc2053034dc0abbaec03f59fc7754a29777cfb"
+      },
+      "eol": {
+        "standard": "2026-11-15",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Approximate EOL"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "rocky-9.7-dvd-arm64",
+      "name": "Rocky Linux 9.7",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.7",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/aarch64/Rocky-9.7-aarch64-dvd.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0e3a7dc3e8d36a25462cc9e8b0e33302123e13534652bb0037f384af9cbdf9ae"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "rocky-10.1-dvd-arm64",
+      "name": "Rocky Linux 10.1",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.1",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/aarch64/Rocky-10.1-aarch64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3a93ec0313603a59688f3de3ebd18589daceaafd2295c5df43b8d2fd64aca807"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-9.7-dvd-arm64",
+      "name": "AlmaLinux 9.7",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.7",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/aarch64/AlmaLinux-9.7-aarch64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c3c5ef5a047d41ea7bd35c41864de00d6ca344e881a827c57ad3c75a46d61bbf"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-10.1-dvd-arm64",
+      "name": "AlmaLinux 10.1",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.1",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/aarch64/AlmaLinux-10.1-aarch64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1e4a23eafebb92f01064c47d5d01db54419e8dbdc41b0d07e0f07810c968fb58"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-13.5-arm64",
+      "name": "FreeBSD 13.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "13.5",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f02e02ff9e73320a8a3736178baf9c830da63415ffe9e68161db3fd83f1dc49d"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
       },
       "status": "supported"
     }

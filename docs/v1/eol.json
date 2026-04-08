@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:51:23Z",
-    "count": 4
+    "generated_at": "2026-04-08T05:55:49Z",
+    "count": 5
   },
   "images": [
     {
@@ -89,6 +89,30 @@
         "extended": "2029-01-09",
         "is_rolling": false,
         "note": "180-day evaluation. Register to download."
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "ubuntu-20.04-server-arm64",
+      "name": "Ubuntu 20.04.5 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Focal Fossa",
+      "version": "20.04.5",
+      "edition": "Server",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.5-live-server-arm64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e42d6373dd39173094af5c26cbf2497770426f42049f8b9ea3e60ce35bebdedf"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-01",
+        "is_rolling": false,
+        "note": "ESM via Ubuntu Pro (free for personal use)"
       },
       "status": "eol-extended"
     }

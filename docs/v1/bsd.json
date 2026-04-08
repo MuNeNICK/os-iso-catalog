@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:51:23Z",
-    "count": 13
+    "generated_at": "2026-04-08T05:55:49Z",
+    "count": 14
   },
   "images": [
     {
@@ -297,6 +297,29 @@
         "extended": null,
         "is_rolling": false,
         "note": "Current stable"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-13.5-arm64",
+      "name": "FreeBSD 13.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "13.5",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f02e02ff9e73320a8a3736178baf9c830da63415ffe9e68161db3fd83f1dc49d"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
       },
       "status": "supported"
     }
