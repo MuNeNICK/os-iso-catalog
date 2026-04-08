@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T04:14:14Z",
+    "generated_at": "2026-04-08T04:20:10Z",
     "count": 53
   },
   "images": [
@@ -1138,5 +1138,115 @@
       },
       "status": "supported"
     }
-  ]
+  ],
+  "distros": {
+    "ubuntu": {
+      "name": "Ubuntu",
+      "homepage": "https://ubuntu.com/"
+    },
+    "debian": {
+      "name": "Debian",
+      "homepage": "https://www.debian.org/"
+    },
+    "fedora": {
+      "name": "Fedora",
+      "homepage": "https://fedoraproject.org/"
+    },
+    "rocky": {
+      "name": "Rocky Linux",
+      "homepage": "https://rockylinux.org/"
+    },
+    "almalinux": {
+      "name": "AlmaLinux",
+      "homepage": "https://almalinux.org/"
+    },
+    "centos-stream": {
+      "name": "CentOS Stream",
+      "homepage": "https://www.centos.org/"
+    },
+    "opensuse": {
+      "name": "openSUSE Leap",
+      "homepage": "https://www.opensuse.org/"
+    },
+    "opensuse-tumbleweed": {
+      "name": "openSUSE Tumbleweed",
+      "homepage": "https://www.opensuse.org/"
+    },
+    "linuxmint": {
+      "name": "Linux Mint",
+      "homepage": "https://linuxmint.com/"
+    },
+    "arch": {
+      "name": "Arch Linux",
+      "homepage": "https://archlinux.org/"
+    },
+    "manjaro": {
+      "name": "Manjaro",
+      "homepage": "https://manjaro.org/"
+    },
+    "kali": {
+      "name": "Kali Linux",
+      "homepage": "https://www.kali.org/"
+    },
+    "alpine": {
+      "name": "Alpine Linux",
+      "homepage": "https://alpinelinux.org/"
+    },
+    "oracle": {
+      "name": "Oracle Linux",
+      "homepage": "https://www.oracle.com/linux/"
+    },
+    "raspios": {
+      "name": "Raspberry Pi OS",
+      "homepage": "https://www.raspberrypi.com/software/"
+    },
+    "mx-linux": {
+      "name": "MX Linux",
+      "homepage": "https://mxlinux.org/"
+    },
+    "pop-os": {
+      "name": "Pop!_OS",
+      "homepage": "https://pop.system76.com/"
+    },
+    "cachyos": {
+      "name": "CachyOS",
+      "homepage": "https://cachyos.org/"
+    },
+    "endeavouros": {
+      "name": "EndeavourOS",
+      "homepage": "https://endeavouros.com/"
+    },
+    "nixos": {
+      "name": "NixOS",
+      "homepage": "https://nixos.org/"
+    },
+    "tails": {
+      "name": "Tails",
+      "homepage": "https://tails.net/"
+    },
+    "qubes": {
+      "name": "Qubes OS",
+      "homepage": "https://www.qubes-os.org/"
+    },
+    "omarchy": {
+      "name": "Omarchy",
+      "homepage": "https://omarchy.org/"
+    },
+    "windows": {
+      "name": "Microsoft Windows",
+      "homepage": "https://www.microsoft.com/windows"
+    },
+    "freebsd": {
+      "name": "FreeBSD",
+      "homepage": "https://www.freebsd.org/"
+    },
+    "openbsd": {
+      "name": "OpenBSD",
+      "homepage": "https://www.openbsd.org/"
+    },
+    "netbsd": {
+      "name": "NetBSD",
+      "homepage": "https://www.netbsd.org/"
+    }
+  }
 }

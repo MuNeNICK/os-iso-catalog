@@ -6,23 +6,25 @@
   <title>OS ISO Catalog</title>
   <style>
     :root {
-      --bg: #ffffff; --bg2: #f8f9fa; --fg: #1a1a1a; --muted: #6c757d;
+      --bg: #ffffff; --bg2: #f8f9fa; --bg3: #f0f2f5; --fg: #1a1a1a; --muted: #6c757d;
       --border: #dee2e6; --accent: #0d6efd; --accent-hover: #0b5ed7;
       --green: #198754; --green-bg: #d1e7dd;
       --yellow: #cc8a00; --yellow-bg: #fff3cd;
       --red: #dc3545; --red-bg: #f8d7da;
       --blue: #0d6efd; --blue-bg: #cfe2ff;
       --gray: #6c757d; --gray-bg: #e9ecef;
+      --shadow: rgba(0,0,0,0.06);
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0d1117; --bg2: #161b22; --fg: #e6edf3; --muted: #8b949e;
+        --bg: #0d1117; --bg2: #161b22; --bg3: #1c2128; --fg: #e6edf3; --muted: #8b949e;
         --border: #30363d; --accent: #58a6ff; --accent-hover: #79c0ff;
         --green: #3fb950; --green-bg: #122117;
         --yellow: #d29922; --yellow-bg: #272115;
         --red: #f85149; --red-bg: #2d1214;
         --blue: #58a6ff; --blue-bg: #121d2f;
         --gray: #8b949e; --gray-bg: #21262d;
+        --shadow: rgba(0,0,0,0.2);
       }
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -41,9 +43,7 @@
     header nav a:hover { text-decoration: underline; }
 
     /* Stats */
-    .stats {
-      display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.25rem;
-    }
+    .stats { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
     .stat {
       background: var(--bg2); border: 1px solid var(--border);
       border-radius: 8px; padding: 0.6rem 1rem; min-width: 120px;
@@ -52,10 +52,7 @@
     .stat-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
     /* Controls */
-    .controls {
-      display: flex; gap: 0.75rem; flex-wrap: wrap;
-      align-items: center; margin-bottom: 1rem;
-    }
+    .controls { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
     .search {
       flex: 1; min-width: 200px; padding: 0.5rem 0.75rem;
       border: 1px solid var(--border); border-radius: 6px;
@@ -85,7 +82,54 @@
     th .sort-arrow { margin-left: 0.25rem; font-size: 0.7rem; }
     td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--border); }
     tr:last-child td { border-bottom: none; }
-    tr:hover td { background: var(--bg2); }
+
+    /* Clickable rows */
+    .image-row { cursor: pointer; transition: background 0.1s; }
+    .image-row:hover td { background: var(--bg2); }
+    .image-row.expanded td { background: var(--bg2); border-bottom-color: transparent; }
+
+    /* Detail panel */
+    .detail-row td { padding: 0; background: var(--bg3); }
+    .detail-panel {
+      padding: 1rem 1.25rem; display: grid;
+      grid-template-columns: 1fr 1fr; gap: 0.75rem 2rem;
+    }
+    .detail-section { min-width: 0; }
+    .detail-section h4 {
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--muted); margin-bottom: 0.35rem;
+    }
+    .detail-value {
+      font-size: 0.85rem; word-break: break-all;
+    }
+    .detail-value a { color: var(--accent); text-decoration: none; }
+    .detail-value a:hover { text-decoration: underline; }
+    .detail-url {
+      display: block; padding: 0.4rem 0.6rem; background: var(--bg2);
+      border: 1px solid var(--border); border-radius: 4px;
+      font-family: "SF Mono", "Fira Code", Consolas, monospace; font-size: 0.78rem;
+      word-break: break-all; margin-bottom: 0.35rem;
+    }
+    .detail-url a { color: var(--accent); text-decoration: none; }
+    .detail-url a:hover { text-decoration: underline; }
+    .checksum-box {
+      padding: 0.4rem 0.6rem; background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 4px; font-family: "SF Mono", "Fira Code", Consolas, monospace;
+      font-size: 0.72rem; word-break: break-all; position: relative;
+    }
+    .checksum-label {
+      font-size: 0.65rem; text-transform: uppercase; color: var(--muted);
+      margin-bottom: 0.15rem;
+    }
+    .copy-btn {
+      position: absolute; top: 0.35rem; right: 0.35rem;
+      padding: 0.15rem 0.4rem; font-size: 0.7rem; border: 1px solid var(--border);
+      border-radius: 4px; background: var(--bg); color: var(--muted);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .copy-btn:hover { color: var(--fg); border-color: var(--accent); }
+
+    .detail-full { grid-column: 1 / -1; }
 
     /* Badges */
     .badge {
@@ -101,18 +145,12 @@
     .badge-bsd { background: var(--yellow-bg); color: var(--yellow); }
     .badge-rolling { background: var(--gray-bg); color: var(--gray); font-size: 0.65rem; }
 
-    /* EOL cell */
+    /* EOL */
     .eol-date { white-space: nowrap; }
     .eol-soon { color: var(--yellow); font-weight: 600; }
     .eol-past { color: var(--red); }
     .eol-ok { color: var(--green); }
     .eol-rolling { color: var(--muted); font-style: italic; }
-
-    /* Links */
-    .dl-link {
-      color: var(--accent); text-decoration: none; font-size: 0.8rem; white-space: nowrap;
-    }
-    .dl-link:hover { text-decoration: underline; }
 
     /* Footer */
     footer {
@@ -122,7 +160,6 @@
     }
     footer a { color: var(--accent); text-decoration: none; }
 
-    /* Loading */
     .loading { text-align: center; padding: 3rem; color: var(--muted); }
     .count-info { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
 
@@ -131,6 +168,7 @@
       .stat-value { font-size: 1.2rem; }
       table { font-size: 0.78rem; }
       th, td { padding: 0.4rem 0.5rem; }
+      .detail-panel { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -147,7 +185,7 @@
 
     <div class="stats" id="stats">
       <div class="stat"><div class="stat-value" id="stat-total">-</div><div class="stat-label">Total</div></div>
-      <div class="stat"><div class="stat-value stat-green" id="stat-supported">-</div><div class="stat-label">Supported</div></div>
+      <div class="stat"><div class="stat-value" id="stat-supported">-</div><div class="stat-label">Supported</div></div>
       <div class="stat"><div class="stat-value" id="stat-eol">-</div><div class="stat-label">EOL</div></div>
       <div class="stat"><div class="stat-value" id="stat-eol-soon">-</div><div class="stat-label">EOL within 6mo</div></div>
     </div>
@@ -179,11 +217,10 @@
             <th data-sort="arch">Arch <span class="sort-arrow"></span></th>
             <th data-sort="status">Status <span class="sort-arrow"></span></th>
             <th data-sort="eol">EOL <span class="sort-arrow"></span></th>
-            <th>Download</th>
           </tr>
         </thead>
         <tbody id="table-body">
-          <tr><td colspan="7" class="loading">Loading...</td></tr>
+          <tr><td colspan="6" class="loading">Loading...</td></tr>
         </tbody>
       </table>
     </div>
@@ -196,21 +233,24 @@
 
   <script>
     let allImages = [];
+    let distros = {};
     let currentSort = { key: 'name', asc: true };
     let currentCategory = 'all';
     let currentStatus = 'all';
+    let expandedId = null;
 
     async function init() {
       try {
         const res = await fetch('v1/all.json');
         const data = await res.json();
         allImages = data.images;
+        distros = data.distros || {};
         document.getElementById('generated-at').textContent = data.meta.generated_at;
         updateStats();
         render();
       } catch (e) {
         document.getElementById('table-body').innerHTML =
-          '<tr><td colspan="7" class="loading">Failed to load data.</td></tr>';
+          '<tr><td colspan="6" class="loading">Failed to load data.</td></tr>';
       }
     }
 
@@ -218,7 +258,6 @@
       const now = new Date();
       const sixMonths = new Date(now);
       sixMonths.setMonth(sixMonths.getMonth() + 6);
-
       const supported = allImages.filter(i => i.status === 'supported' || i.status === 'beta').length;
       const eol = allImages.filter(i => i.status === 'eol' || i.status === 'eol-extended').length;
       const eolSoon = allImages.filter(i => {
@@ -228,7 +267,6 @@
         const eolDate = new Date(d);
         return eolDate > now && eolDate <= sixMonths;
       }).length;
-
       document.getElementById('stat-total').textContent = allImages.length;
       document.getElementById('stat-supported').textContent = supported;
       document.getElementById('stat-eol').textContent = eol;
@@ -255,7 +293,7 @@
         if (currentStatus === 'supported' && img.status !== 'supported' && img.status !== 'beta') return false;
         if (currentStatus === 'eol' && img.status !== 'eol' && img.status !== 'eol-extended') return false;
         if (query) {
-          const haystack = `${img.name} ${img.distro} ${img.version} ${img.arch}`.toLowerCase();
+          const haystack = `${img.name} ${img.distro} ${img.version} ${img.arch} ${img.id}`.toLowerCase();
           if (!haystack.includes(query)) return false;
         }
         return true;
@@ -282,6 +320,63 @@
       });
     }
 
+    function buildDetailHtml(img) {
+      const distroInfo = distros[img.distro] || {};
+      const homepage = distroInfo.homepage || '';
+
+      let html = '<div class="detail-panel">';
+
+      // Download URL
+      html += '<div class="detail-section">';
+      html += '<h4>Download URL</h4>';
+      if (img.url) {
+        html += `<div class="detail-url"><a href="${esc(img.url)}" target="_blank" rel="noopener">${esc(img.url)}</a></div>`;
+      }
+      if (img.download_page) {
+        html += `<div class="detail-url"><a href="${esc(img.download_page)}" target="_blank" rel="noopener">${esc(img.download_page)}</a></div>`;
+      }
+      if (!img.url && !img.download_page) {
+        html += '<div class="detail-value" style="color:var(--muted)">No URL available</div>';
+      }
+      html += '</div>';
+
+      // Official Site
+      html += '<div class="detail-section">';
+      html += '<h4>Official Site</h4>';
+      if (homepage) {
+        html += `<div class="detail-url"><a href="${esc(homepage)}" target="_blank" rel="noopener">${esc(homepage)}</a></div>`;
+      } else {
+        html += '<div class="detail-value" style="color:var(--muted)">-</div>';
+      }
+      // Extra info
+      html += '<h4 style="margin-top:0.5rem">Details</h4>';
+      html += '<div class="detail-value">';
+      const infoParts = [];
+      if (img.edition) infoParts.push(`Edition: ${esc(img.edition)}`);
+      if (img.codename) infoParts.push(`Codename: ${esc(img.codename)}`);
+      infoParts.push(`Release type: ${esc(img.release_type || '-')}`);
+      if (img.eol?.extended) infoParts.push(`Extended EOL: ${esc(img.eol.extended)}`);
+      if (img.eol?.note) infoParts.push(`Note: ${esc(img.eol.note)}`);
+      html += infoParts.join('<br>');
+      html += '</div>';
+      html += '</div>';
+
+      // Checksum (full width)
+      if (img.checksum) {
+        html += '<div class="detail-section detail-full">';
+        html += '<h4>Checksum</h4>';
+        html += '<div class="checksum-box">';
+        html += `<div class="checksum-label">${esc(img.checksum.algorithm)}</div>`;
+        html += `<code>${esc(img.checksum.value)}</code>`;
+        html += `<button class="copy-btn" onclick="copyChecksum(this, '${esc(img.checksum.value)}')">Copy</button>`;
+        html += '</div>';
+        html += '</div>';
+      }
+
+      html += '</div>';
+      return html;
+    }
+
     function render() {
       const filtered = getSorted(getFiltered());
       const tbody = document.getElementById('table-body');
@@ -291,28 +386,41 @@
           : `${filtered.length} / ${allImages.length} images`;
 
       if (filtered.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="7" class="loading">No matching images.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="6" class="loading">No matching images.</td></tr>';
         return;
       }
 
-      tbody.innerHTML = filtered.map(img => {
+      let html = '';
+      for (const img of filtered) {
         const eol = getEolDisplay(img);
         const statusCls = `badge-${img.status}`;
         const catCls = `badge-${img.category}`;
-        const downloadUrl = img.url || img.download_page || '';
-        const downloadLabel = img.url ? 'ISO' : 'Page';
         const rollingBadge = img.eol?.is_rolling ? ' <span class="badge badge-rolling">rolling</span>' : '';
+        const isExpanded = expandedId === img.id;
 
-        return `<tr>
+        html += `<tr class="image-row${isExpanded ? ' expanded' : ''}" data-id="${esc(img.id)}">
           <td><strong>${esc(img.name)}</strong>${rollingBadge}</td>
           <td><span class="badge ${catCls}">${esc(img.category)}</span></td>
           <td>${esc(String(img.version))}</td>
           <td>${esc(img.arch)}</td>
           <td><span class="badge ${statusCls}">${esc(img.status)}</span></td>
           <td class="eol-date ${eol.cls}">${esc(eol.text)}</td>
-          <td>${downloadUrl ? `<a class="dl-link" href="${esc(downloadUrl)}" target="_blank" rel="noopener">${downloadLabel}</a>` : '-'}</td>
         </tr>`;
-      }).join('');
+
+        if (isExpanded) {
+          html += `<tr class="detail-row"><td colspan="6">${buildDetailHtml(img)}</td></tr>`;
+        }
+      }
+      tbody.innerHTML = html;
+
+      // Attach click events
+      tbody.querySelectorAll('.image-row').forEach(row => {
+        row.addEventListener('click', () => {
+          const id = row.dataset.id;
+          expandedId = expandedId === id ? null : id;
+          render();
+        });
+      });
 
       // Update sort arrows
       document.querySelectorAll('th[data-sort]').forEach(th => {
@@ -322,6 +430,13 @@
         } else {
           arrow.textContent = '';
         }
+      });
+    }
+
+    function copyChecksum(btn, value) {
+      navigator.clipboard.writeText(value).then(() => {
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
       });
     }
 
