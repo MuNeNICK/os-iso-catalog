@@ -206,6 +206,11 @@
         <button class="filter-btn" data-filter="windows">Windows</button>
         <button class="filter-btn" data-filter="bsd">BSD</button>
       </div>
+      <div class="filter-group" id="arch-filters">
+        <button class="filter-btn" data-arch="all">All Arch</button>
+        <button class="filter-btn active" data-arch="amd64">x86_64</button>
+        <button class="filter-btn" data-arch="arm64">arm64</button>
+      </div>
       <div class="filter-group" id="status-filters">
         <button class="filter-btn active" data-status="all">All Status</button>
         <button class="filter-btn" data-status="supported">Supported</button>
@@ -244,7 +249,10 @@
     let allImages = [];
     let currentSort = { key: 'name', asc: true };
     let currentCategory = 'all';
+    let currentArch = 'amd64';
     let currentStatus = 'all';
+    const AMD64_VARIANTS = new Set(['amd64', 'x86_64', 'x64']);
+    const ARM64_VARIANTS = new Set(['arm64', 'aarch64']);
     let expandedId = null;
 
     async function init() {
@@ -297,6 +305,8 @@
       const query = document.getElementById('search').value.toLowerCase();
       return allImages.filter(img => {
         if (currentCategory !== 'all' && img.category !== currentCategory) return false;
+        if (currentArch === 'amd64' && !AMD64_VARIANTS.has(img.arch)) return false;
+        if (currentArch === 'arm64' && !ARM64_VARIANTS.has(img.arch)) return false;
         if (currentStatus === 'supported' && img.status !== 'supported' && img.status !== 'beta') return false;
         if (currentStatus === 'eol' && img.status !== 'eol' && img.status !== 'eol-extended') return false;
         if (query) {
@@ -464,6 +474,14 @@
       document.querySelectorAll('#category-filters .filter-btn').forEach(b => b.classList.remove('active'));
       e.target.classList.add('active');
       currentCategory = e.target.dataset.filter;
+      render();
+    });
+
+    document.getElementById('arch-filters').addEventListener('click', e => {
+      if (!e.target.matches('.filter-btn')) return;
+      document.querySelectorAll('#arch-filters .filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      currentArch = e.target.dataset.arch;
       render();
     });
 

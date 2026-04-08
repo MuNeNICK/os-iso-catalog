@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:19:11Z",
-    "count": 7
+    "generated_at": "2026-04-08T05:30:48Z",
+    "count": 9
   },
   "images": [
     {
@@ -155,6 +155,51 @@
       "checksum": {
         "algorithm": "sha512",
         "value": "7a5e5071307e1795885ffc6e1b8aac465082c21c8b79f4c9b4103ef44e4f2da45477299d213ae0093f6534dc99dc2bbf78f41e9dd556c72a02516068bf43fe49"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Current stable"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-14.4-arm64",
+      "name": "FreeBSD 14.4",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "14.4",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.4/FreeBSD-14.4-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "32a63ed91ace4967441baab0bbfb3ac33c13c02018a2f4eeb3a741d373681d7c"
+      },
+      "eol": {
+        "standard": "2029-11-30",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-15.0-arm64",
+      "name": "FreeBSD 15.0",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "15.0",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/15.0/FreeBSD-15.0-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3662b0e4502a24c8186ac0754e962650ed1f7c98f44cb1f74c78ea7533581bc1"
       },
       "eol": {
         "standard": null,

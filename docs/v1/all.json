@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T05:19:11Z",
-    "count": 68
+    "generated_at": "2026-04-08T05:30:48Z",
+    "count": 83
   },
   "images": [
     {
@@ -1539,6 +1539,343 @@
         "extended": null,
         "is_rolling": true,
         "note": "Arch-based rolling release by DHH/Basecamp"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "ubuntu-24.04-desktop-arm64",
+      "name": "Ubuntu 24.04.4 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Noble Numbat",
+      "version": "24.04.4",
+      "edition": "Desktop",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.ubuntu.com/ubuntu/releases/24.04/release/ubuntu-24.04.4-desktop-arm64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c2610520bf582976839a1724c669e1cfed0547427be5a0ad12d457b92b46ffbe"
+      },
+      "eol": {
+        "standard": "2029-04-01",
+        "extended": "2034-04-01",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "ubuntu-24.04-server-arm64",
+      "name": "Ubuntu 24.04.4 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Noble Numbat",
+      "version": "24.04.4",
+      "edition": "Server",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04.4-live-server-arm64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9a6ce6d7e66c8abed24d24944570a495caca80b3b0007df02818e13829f27f32"
+      },
+      "eol": {
+        "standard": "2029-04-01",
+        "extended": "2034-04-01",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "debian-13-netinst-arm64",
+      "name": "Debian 13.4 Trixie",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Trixie",
+      "version": "13.4",
+      "edition": "netinst",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/release/current/arm64/iso-cd/debian-13.4.0-arm64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c31f8534597df52bd310f716d271bda30a1f58e6ff8fd9e8254eba66776c42d9"
+      },
+      "eol": {
+        "standard": "2028-08-01",
+        "extended": "2030-06-30",
+        "is_rolling": false,
+        "note": "Full support until 2028/08, LTS until 2030/06"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "fedora-42-workstation-arm64",
+      "name": "Fedora 42 Workstation",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "42",
+      "edition": "Workstation Live",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/aarch64/iso/Fedora-Workstation-Live-42-1.1.aarch64.iso",
+      "homepage": "https://fedoraproject.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "954a0d7d6553fdf2b6bcf7f393a2e41f9265a0a81de8c8e4f712f5924e40577f"
+      },
+      "eol": {
+        "standard": "2026-05-13",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "fedora-42-server-arm64",
+      "name": "Fedora 42 Server",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "42",
+      "edition": "Server netinst",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/aarch64/iso/Fedora-Server-netinst-aarch64-42-1.1.iso",
+      "homepage": "https://fedoraproject.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "cbeeb6d0147ce198e28895a9bbc91cd49a964f38177a57d512f73492308533ed"
+      },
+      "eol": {
+        "standard": "2026-05-13",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "rocky-9.7-minimal-arm64",
+      "name": "Rocky Linux 9.7",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.7",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/aarch64/Rocky-9.7-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7a73b4dc3426053082d1a3fb28cc594f92133354b5ec16ccd5fd06875c35645f"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "rocky-10.1-minimal-arm64",
+      "name": "Rocky Linux 10.1",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.1",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/aarch64/Rocky-10.1-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "8256689e8043a084da4ed0f1465d24d71ccbaa32b78db77c2efa82291b4e49b1"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-9.7-minimal-arm64",
+      "name": "AlmaLinux 9.7",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.7",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/aarch64/AlmaLinux-9.7-aarch64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "92f13da08b593b3588c21474a1ee80f7a8df598c89c2684194827bed2952b511"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-10.1-minimal-arm64",
+      "name": "AlmaLinux 10.1",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.1",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/aarch64/AlmaLinux-10.1-aarch64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "20cb3bbb084827b30f3d2a17bc4305cf48462bf07991a2ef2967fc17b77d430e"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.23-arm64",
+      "name": "Alpine Linux 3.23.3",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.23.3",
+      "edition": "Standard",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/aarch64/alpine-standard-3.23.3-aarch64.iso",
+      "homepage": "https://alpinelinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e0d4f53d2a4aae11bc5500d4ae20683f6d1ad1360769e031c2353a5bf0653bc8"
+      },
+      "eol": {
+        "standard": "2027-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "opensuse-leap-16.0-arm64",
+      "name": "openSUSE Leap 16.0",
+      "category": "linux",
+      "distro": "opensuse",
+      "version": "16.0",
+      "edition": "Offline Installer",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.opensuse.org/distribution/leap/16.0/offline/Leap-16.0-offline-installer-aarch64.install.iso",
+      "homepage": "https://www.opensuse.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c90b77418c63d3b652e14cab177d51d32b8b5bb2e2f58f22e28cb0a83254a570"
+      },
+      "eol": {
+        "standard": "2028-12-31",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "opensuse-tumbleweed-dvd-arm64",
+      "name": "openSUSE Tumbleweed DVD",
+      "category": "linux",
+      "distro": "opensuse-tumbleweed",
+      "version": "20260331",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "rolling",
+      "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
+      "homepage": "https://www.opensuse.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0809b28aa1b5b0687caef8a3a15e97034b3c7e4f8232f22fdb612fb8037216ce"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true,
+        "note": "Checksum changes with each snapshot"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-14.4-arm64",
+      "name": "FreeBSD 14.4",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "14.4",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.4/FreeBSD-14.4-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "32a63ed91ace4967441baab0bbfb3ac33c13c02018a2f4eeb3a741d373681d7c"
+      },
+      "eol": {
+        "standard": "2029-11-30",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-15.0-arm64",
+      "name": "FreeBSD 15.0",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "15.0",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/15.0/FreeBSD-15.0-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3662b0e4502a24c8186ac0754e962650ed1f7c98f44cb1f74c78ea7533581bc1"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Current stable"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "nixos-25.11-minimal-arm64",
+      "name": "NixOS 25.11 Minimal",
+      "category": "linux",
+      "distro": "nixos",
+      "version": "25.11",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://channels.nixos.org/nixos/25.11/nixos-25.11.8801.36a601196c4e/nixos-minimal-25.11.8801.36a601196c4e-aarch64-linux.iso",
+      "homepage": "https://nixos.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1de0c211f9ef50aa89ed64575a94105af34e6dd4663e35b53b4087bb5cee8de6"
+      },
+      "eol": {
+        "standard": "2026-07-31",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until ~1 month after NixOS 26.05 release"
       },
       "status": "supported"
     }
