@@ -242,7 +242,6 @@
 
   <script>
     let allImages = [];
-    let distros = {};
     let currentSort = { key: 'name', asc: true };
     let currentCategory = 'all';
     let currentStatus = 'all';
@@ -253,7 +252,6 @@
         const res = await fetch('v1/all.json');
         const data = await res.json();
         allImages = data.images;
-        distros = data.distros || {};
         document.getElementById('generated-at').textContent = data.meta.generated_at;
         updateStats();
         render();
@@ -330,8 +328,7 @@
     }
 
     function buildDetailHtml(img) {
-      const distroInfo = distros[img.distro] || {};
-      const homepage = distroInfo.homepage || '';
+      const homepage = img.homepage || '';
 
       let html = '<div class="detail-panel">';
 

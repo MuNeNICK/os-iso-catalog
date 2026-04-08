@@ -37,8 +37,8 @@ def validate(images):
     return errors
 
 
-def make_envelope(images, generated_at, distros=None):
-    envelope = {
+def make_envelope(images, generated_at):
+    return {
         "meta": {
             "api_version": "v1",
             "generated_at": generated_at,
@@ -46,9 +46,6 @@ def make_envelope(images, generated_at, distros=None):
         },
         "images": images,
     }
-    if distros:
-        envelope["distros"] = distros
-    return envelope
 
 
 def write_json(path, data):
@@ -65,7 +62,6 @@ def main():
 
     data = load_data()
     images = data.get("images", [])
-    distros = data.get("meta", {}).get("distros", {})
 
     errors = validate(images)
     if errors:
@@ -103,7 +99,7 @@ def main():
 
     for filename, predicate in filters.items():
         filtered = [img for img in images if predicate(img)]
-        output = make_envelope(filtered, now, distros)
+        output = make_envelope(filtered, now)
         write_json(DOCS_DIR / filename, output)
         print(f"  {filename}: {len(filtered)} images")
 

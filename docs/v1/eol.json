@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T04:42:36Z",
+    "generated_at": "2026-04-08T05:18:23Z",
     "count": 4
   },
   "images": [
@@ -16,6 +16,7 @@
       "arch": "amd64",
       "release_type": "stable",
       "url": "https://releases.ubuntu.com/20.04/ubuntu-20.04.6-desktop-amd64.iso",
+      "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
         "value": "510ce77afcb9537f198bc7daa0e5b503b6e67aaed68146943c231baeaab94df1"
@@ -39,6 +40,7 @@
       "arch": "amd64",
       "release_type": "stable",
       "url": "https://releases.ubuntu.com/20.04/ubuntu-20.04.6-live-server-amd64.iso",
+      "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
         "value": "b8f31413336b9393ad5d8ef0282717b2ab19f007df2e9ed5196c13d8f9153c8b"
@@ -61,6 +63,7 @@
       "arch": "x64",
       "release_type": "stable",
       "download_page": "https://www.microsoft.com/en-us/software-download/windows10",
+      "homepage": "https://www.microsoft.com/windows",
       "eol": {
         "standard": "2025-10-14",
         "extended": "2026-10-13",
@@ -80,6 +83,7 @@
       "arch": "x64",
       "release_type": "stable",
       "download_page": "https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019",
+      "homepage": "https://www.microsoft.com/en-us/windows-server",
       "eol": {
         "standard": "2024-01-09",
         "extended": "2029-01-09",
@@ -88,123 +92,5 @@
       },
       "status": "eol-extended"
     }
-  ],
-  "distros": {
-    "ubuntu": {
-      "name": "Ubuntu",
-      "homepage": "https://ubuntu.com/"
-    },
-    "debian": {
-      "name": "Debian",
-      "homepage": "https://www.debian.org/"
-    },
-    "fedora": {
-      "name": "Fedora",
-      "homepage": "https://fedoraproject.org/"
-    },
-    "rocky": {
-      "name": "Rocky Linux",
-      "homepage": "https://rockylinux.org/"
-    },
-    "almalinux": {
-      "name": "AlmaLinux",
-      "homepage": "https://almalinux.org/"
-    },
-    "centos-stream": {
-      "name": "CentOS Stream",
-      "homepage": "https://www.centos.org/"
-    },
-    "opensuse": {
-      "name": "openSUSE Leap",
-      "homepage": "https://www.opensuse.org/"
-    },
-    "opensuse-tumbleweed": {
-      "name": "openSUSE Tumbleweed",
-      "homepage": "https://www.opensuse.org/"
-    },
-    "linuxmint": {
-      "name": "Linux Mint",
-      "homepage": "https://linuxmint.com/"
-    },
-    "arch": {
-      "name": "Arch Linux",
-      "homepage": "https://archlinux.org/"
-    },
-    "archlinux": {
-      "name": "Arch Linux",
-      "homepage": "https://archlinux.org/"
-    },
-    "manjaro": {
-      "name": "Manjaro",
-      "homepage": "https://manjaro.org/"
-    },
-    "kali": {
-      "name": "Kali Linux",
-      "homepage": "https://www.kali.org/"
-    },
-    "alpine": {
-      "name": "Alpine Linux",
-      "homepage": "https://alpinelinux.org/"
-    },
-    "oracle": {
-      "name": "Oracle Linux",
-      "homepage": "https://www.oracle.com/linux/"
-    },
-    "raspios": {
-      "name": "Raspberry Pi OS",
-      "homepage": "https://www.raspberrypi.com/software/"
-    },
-    "mx-linux": {
-      "name": "MX Linux",
-      "homepage": "https://mxlinux.org/"
-    },
-    "pop-os": {
-      "name": "Pop!_OS",
-      "homepage": "https://pop.system76.com/"
-    },
-    "cachyos": {
-      "name": "CachyOS",
-      "homepage": "https://cachyos.org/"
-    },
-    "endeavouros": {
-      "name": "EndeavourOS",
-      "homepage": "https://endeavouros.com/"
-    },
-    "nixos": {
-      "name": "NixOS",
-      "homepage": "https://nixos.org/"
-    },
-    "tails": {
-      "name": "Tails",
-      "homepage": "https://tails.net/"
-    },
-    "qubes": {
-      "name": "Qubes OS",
-      "homepage": "https://www.qubes-os.org/"
-    },
-    "omarchy": {
-      "name": "Omarchy",
-      "homepage": "https://omarchy.org/"
-    },
-    "windows": {
-      "name": "Microsoft Windows",
-      "homepage": "https://www.microsoft.com/windows"
-    },
-    "windows-server": {
-      "name": "Windows Server",
-      "homepage": "https://www.microsoft.com/en-us/windows-server"
-    },
-    "freebsd": {
-      "name": "FreeBSD",
-      "homepage": "https://www.freebsd.org/"
-    },
-    "openbsd": {
-      "name": "OpenBSD",
-      "homepage": "https://www.openbsd.org/"
-    },
-    "netbsd": {
-      "name": "NetBSD",
-      "homepage": "https://www.netbsd.org/"
-    }
-  }
+  ]
 }

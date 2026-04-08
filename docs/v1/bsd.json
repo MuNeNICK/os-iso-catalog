@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T04:42:36Z",
+    "generated_at": "2026-04-08T05:18:23Z",
     "count": 7
   },
   "images": [
@@ -15,6 +15,7 @@
       "arch": "amd64",
       "release_type": "stable",
       "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
       "checksum": {
         "algorithm": "sha256",
         "value": "12ada1eb745df5b4f42a1afde4f0d2f333d389c8a7f07244e562b922443c2de7"
@@ -37,6 +38,7 @@
       "arch": "amd64",
       "release_type": "stable",
       "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.4/FreeBSD-14.4-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
       "checksum": {
         "algorithm": "sha256",
         "value": "ade3d84e77fc601d1207ced8d6dd8952c3fb7685afa3cf6b6b44d76ed94b2d8e"
@@ -58,6 +60,7 @@
       "arch": "amd64",
       "release_type": "stable",
       "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/15.0/FreeBSD-15.0-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
       "checksum": {
         "algorithm": "sha256",
         "value": "cc73a14d4b1cfab880b78deb0b94ae0f439167418c32a6708f68f79563cb50c"
@@ -80,6 +83,7 @@
       "arch": "amd64",
       "release_type": "stable",
       "url": "https://cdn.openbsd.org/pub/OpenBSD/7.7/amd64/install77.iso",
+      "homepage": "https://www.openbsd.org/",
       "checksum": {
         "algorithm": "sha256",
         "value": "da0106e39463f015524dca806f407c37a9bdd17e6dfffe533b06a2dd2edd8a27"
@@ -102,6 +106,7 @@
       "arch": "amd64",
       "release_type": "stable",
       "url": "https://cdn.openbsd.org/pub/OpenBSD/7.8/amd64/install78.iso",
+      "homepage": "https://www.openbsd.org/",
       "checksum": {
         "algorithm": "sha256",
         "value": "a228d0a1ef558b4d9ec84c698f0d3ffd13cd38c64149487cba0f1ad873be07b2"
@@ -123,6 +128,7 @@
       "edition": "install",
       "release_type": "stable",
       "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-9.4/images/NetBSD-9.4-amd64.iso",
+      "homepage": "https://www.netbsd.org/",
       "checksum": {
         "algorithm": "sha512",
         "value": "93f0005c4dc46718475729ed76064aecc436491507b75cf29fb686f393e6a79be044e429b4a633ac2b4e26e1be32050667a71b356b7b2b11390524c63aed1a16"
@@ -145,6 +151,7 @@
       "edition": "install",
       "release_type": "stable",
       "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-10.1/images/NetBSD-10.1-amd64.iso",
+      "homepage": "https://www.netbsd.org/",
       "checksum": {
         "algorithm": "sha512",
         "value": "7a5e5071307e1795885ffc6e1b8aac465082c21c8b79f4c9b4103ef44e4f2da45477299d213ae0093f6534dc99dc2bbf78f41e9dd556c72a02516068bf43fe49"
@@ -157,123 +164,5 @@
       },
       "status": "supported"
     }
-  ],
-  "distros": {
-    "ubuntu": {
-      "name": "Ubuntu",
-      "homepage": "https://ubuntu.com/"
-    },
-    "debian": {
-      "name": "Debian",
-      "homepage": "https://www.debian.org/"
-    },
-    "fedora": {
-      "name": "Fedora",
-      "homepage": "https://fedoraproject.org/"
-    },
-    "rocky": {
-      "name": "Rocky Linux",
-      "homepage": "https://rockylinux.org/"
-    },
-    "almalinux": {
-      "name": "AlmaLinux",
-      "homepage": "https://almalinux.org/"
-    },
-    "centos-stream": {
-      "name": "CentOS Stream",
-      "homepage": "https://www.centos.org/"
-    },
-    "opensuse": {
-      "name": "openSUSE Leap",
-      "homepage": "https://www.opensuse.org/"
-    },
-    "opensuse-tumbleweed": {
-      "name": "openSUSE Tumbleweed",
-      "homepage": "https://www.opensuse.org/"
-    },
-    "linuxmint": {
-      "name": "Linux Mint",
-      "homepage": "https://linuxmint.com/"
-    },
-    "arch": {
-      "name": "Arch Linux",
-      "homepage": "https://archlinux.org/"
-    },
-    "archlinux": {
-      "name": "Arch Linux",
-      "homepage": "https://archlinux.org/"
-    },
-    "manjaro": {
-      "name": "Manjaro",
-      "homepage": "https://manjaro.org/"
-    },
-    "kali": {
-      "name": "Kali Linux",
-      "homepage": "https://www.kali.org/"
-    },
-    "alpine": {
-      "name": "Alpine Linux",
-      "homepage": "https://alpinelinux.org/"
-    },
-    "oracle": {
-      "name": "Oracle Linux",
-      "homepage": "https://www.oracle.com/linux/"
-    },
-    "raspios": {
-      "name": "Raspberry Pi OS",
-      "homepage": "https://www.raspberrypi.com/software/"
-    },
-    "mx-linux": {
-      "name": "MX Linux",
-      "homepage": "https://mxlinux.org/"
-    },
-    "pop-os": {
-      "name": "Pop!_OS",
-      "homepage": "https://pop.system76.com/"
-    },
-    "cachyos": {
-      "name": "CachyOS",
-      "homepage": "https://cachyos.org/"
-    },
-    "endeavouros": {
-      "name": "EndeavourOS",
-      "homepage": "https://endeavouros.com/"
-    },
-    "nixos": {
-      "name": "NixOS",
-      "homepage": "https://nixos.org/"
-    },
-    "tails": {
-      "name": "Tails",
-      "homepage": "https://tails.net/"
-    },
-    "qubes": {
-      "name": "Qubes OS",
-      "homepage": "https://www.qubes-os.org/"
-    },
-    "omarchy": {
-      "name": "Omarchy",
-      "homepage": "https://omarchy.org/"
-    },
-    "windows": {
-      "name": "Microsoft Windows",
-      "homepage": "https://www.microsoft.com/windows"
-    },
-    "windows-server": {
-      "name": "Windows Server",
-      "homepage": "https://www.microsoft.com/en-us/windows-server"
-    },
-    "freebsd": {
-      "name": "FreeBSD",
-      "homepage": "https://www.freebsd.org/"
-    },
-    "openbsd": {
-      "name": "OpenBSD",
-      "homepage": "https://www.openbsd.org/"
-    },
-    "netbsd": {
-      "name": "NetBSD",
-      "homepage": "https://www.netbsd.org/"
-    }
-  }
+  ]
 }

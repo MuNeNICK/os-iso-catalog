@@ -202,6 +202,11 @@ components:
           type: string
           format: uri
           description: Download page URL (when no direct link is available)
+        homepage:
+          type: string
+          format: uri
+          description: Official project/distro homepage
+          example: "https://ubuntu.com/"
         checksum:
           $ref: "#/components/schemas/Checksum"
         eol:
