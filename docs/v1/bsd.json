@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T06:17:17Z",
+    "generated_at": "2026-04-08T06:28:38Z",
     "count": 14
   },
   "images": [
@@ -112,7 +112,7 @@
         "value": "a228d0a1ef558b4d9ec84c698f0d3ffd13cd38c64149487cba0f1ad873be07b2"
       },
       "eol": {
-        "standard": "2027-05-01",
+        "standard": "2026-11-01",
         "extended": null,
         "is_rolling": false
       },
@@ -180,7 +180,7 @@
         "value": "32a63ed91ace4967441baab0bbfb3ac33c13c02018a2f4eeb3a741d373681d7c"
       },
       "eol": {
-        "standard": "2029-11-30",
+        "standard": "2028-11-30",
         "extended": null,
         "is_rolling": false
       },
@@ -202,7 +202,7 @@
         "value": "3662b0e4502a24c8186ac0754e962650ed1f7c98f44cb1f74c78ea7533581bc1"
       },
       "eol": {
-        "standard": null,
+        "standard": "2029-12-01",
         "extended": null,
         "is_rolling": false,
         "note": "Current stable"
@@ -248,7 +248,7 @@
         "value": "29ce7eda86ee14a5a30776f18523b416a5572db03ee32d9a1109c446cb3949b3"
       },
       "eol": {
-        "standard": "2027-05-01",
+        "standard": "2026-11-01",
         "extended": null,
         "is_rolling": false
       },

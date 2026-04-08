@@ -41,7 +41,7 @@ curl -s https://MuNeNICK.github.io/os-iso-catalog/v1/supported.json \
 
 ## Coverage
 
-- **Linux**: Ubuntu, Debian, Fedora, Rocky Linux, AlmaLinux, CentOS Stream, openSUSE (Leap/Tumbleweed), Linux Mint, Arch, Manjaro, Kali, Alpine, Oracle Linux, Raspberry Pi OS, MX Linux, Pop!_OS, CachyOS, EndeavourOS, NixOS, Tails, Qubes OS, Omarchy
+- **Linux**: Ubuntu, Kubuntu, Xubuntu, Debian, Fedora, Rocky Linux, AlmaLinux, CentOS Stream, openSUSE (Leap/Tumbleweed), Linux Mint, Arch, Manjaro, Kali, Alpine, Gentoo, Oracle Linux, Raspberry Pi OS, MX Linux, Pop!_OS, CachyOS, EndeavourOS, NixOS, Slackware, Tails, Qubes OS, Zorin OS, Omarchy
 - **Windows**: Windows 11, 10, Server 2025/2022/2019
 - **BSD**: FreeBSD, OpenBSD, NetBSD
 
@@ -53,8 +53,9 @@ All currently supported versions are tracked.
 2. `scripts/generate.py` transforms YAML into filtered JSON endpoints under `docs/v1/`
 3. GitHub Pages serves the `docs/` directory
 4. **Daily at 06:00 UTC**, GitHub Actions:
-   - Checks EOL dates and auto-updates `status` field
+   - Fetches EOL dates from [endoflife.date](https://endoflife.date/) API and auto-updates `status` field
    - Validates all download URLs are reachable
+   - Detects new OS releases and creates GitHub Issues
    - Creates GitHub Issues for broken links
 
 ## Contributing
@@ -83,6 +84,10 @@ All currently supported versions are tracked.
     is_rolling: false
   status: supported        # supported | eol | eol-extended | beta
 ```
+
+## Acknowledgments
+
+- [endoflife.date](https://endoflife.date/) — EOL date data and new release detection
 
 ## License
 

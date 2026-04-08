@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T06:17:17Z",
+    "generated_at": "2026-04-08T06:28:38Z",
     "count": 96
   },
   "images": [
@@ -23,7 +23,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-01",
+        "extended": "2030-04-02",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
       },
@@ -47,7 +47,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-01",
+        "extended": "2030-04-02",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
       },
@@ -71,7 +71,7 @@
       },
       "eol": {
         "standard": "2027-04-01",
-        "extended": "2032-04-01",
+        "extended": "2032-04-09",
         "is_rolling": false
       },
       "status": "supported"
@@ -94,7 +94,7 @@
       },
       "eol": {
         "standard": "2027-04-01",
-        "extended": "2032-04-01",
+        "extended": "2032-04-09",
         "is_rolling": false
       },
       "status": "supported"
@@ -116,8 +116,8 @@
         "value": "3a4c9877b483ab46d7c3fbe165a0db275e1ae3cfe56a5657e5a47c2f99a99d1e"
       },
       "eol": {
-        "standard": "2029-04-01",
-        "extended": "2034-04-01",
+        "standard": "2029-05-31",
+        "extended": "2036-05-31",
         "is_rolling": false
       },
       "status": "supported"
@@ -139,8 +139,8 @@
         "value": "e907d92eeec9df64163a7e454cbc8d7755e8ddc7ed42f99dbc80c40f1a138433"
       },
       "eol": {
-        "standard": "2029-04-01",
-        "extended": "2034-04-01",
+        "standard": "2029-05-31",
+        "extended": "2036-05-31",
         "is_rolling": false
       },
       "status": "supported"
@@ -210,12 +210,12 @@
         "value": "cd5b2a6fc22050affa1d141adb3857af07e94ff886dca1ce17214e2761a3b316"
       },
       "eol": {
-        "standard": "2026-08-31",
-        "extended": null,
+        "standard": "2024-08-14",
+        "extended": "2026-08-31",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported"
+      "status": "eol-extended"
     },
     {
       "id": "debian-12-netinst",
@@ -234,8 +234,8 @@
         "value": "2b880ffabe36dbe04a662a3125e5ecae4db69d0acce257dd74615bbf165ad76e"
       },
       "eol": {
-        "standard": "2028-06-30",
-        "extended": null,
+        "standard": "2026-06-10",
+        "extended": "2028-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
@@ -258,7 +258,7 @@
         "value": "2c87761c60115c9323f306f386c2253eb4fc21e050187ab2bceede9da64713e3"
       },
       "eol": {
-        "standard": "2028-08-01",
+        "standard": "2028-08-09",
         "extended": "2030-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
@@ -282,7 +282,7 @@
         "value": "0b813535dd76f2ea96eff908c65e8521512c92a0631fd41c95756ffd7d4896dc"
       },
       "eol": {
-        "standard": "2028-08-01",
+        "standard": "2028-08-09",
         "extended": "2030-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
@@ -349,7 +349,7 @@
         "value": "2a4a16c009244eb5ab2198700eb04103793b62407e8596f30a3e0cc8ac294d77"
       },
       "eol": {
-        "standard": "2026-11-15",
+        "standard": "2026-12-09",
         "extended": null,
         "is_rolling": false,
         "note": "Approximate EOL"
@@ -619,7 +619,7 @@
         "value": "d780a228058fb4688a31b5bde22d7b97c86e04a2ced33f3d7c8e88a710d96d24"
       },
       "eol": {
-        "standard": "2027-10-01",
+        "standard": "2027-10-31",
         "extended": null,
         "is_rolling": false
       },
@@ -642,7 +642,7 @@
         "value": "5aa24abbc616807ab754a6a3b586f24460b0c213b6cacb0bf8b9a80b65013ecc"
       },
       "eol": {
-        "standard": "2027-04-01",
+        "standard": "2027-04-30",
         "extended": null,
         "is_rolling": false,
         "note": "Based on Ubuntu 22.04"
@@ -666,7 +666,7 @@
         "value": "a081ab202cfda17f6924128dbd2de8b63518ac0531bcfe3f1a1b88097c459bd4"
       },
       "eol": {
-        "standard": "2029-04-01",
+        "standard": "2029-04-30",
         "extended": null,
         "is_rolling": false,
         "note": "Based on Ubuntu 24.04"
@@ -690,7 +690,7 @@
         "value": "7609294da613b75eea89bb918292125e9f06418a368136fb190466e15bf8c373"
       },
       "eol": {
-        "standard": "2029-04-01",
+        "standard": "2029-04-30",
         "extended": null,
         "is_rolling": false,
         "note": "Based on Ubuntu 24.04"
@@ -714,7 +714,7 @@
         "value": "45a835b5dddaf40e84d776549e0b19b3fbd49673b6cc6434ebddbfcd217df776"
       },
       "eol": {
-        "standard": "2029-04-01",
+        "standard": "2029-04-30",
         "extended": null,
         "is_rolling": false,
         "note": "Based on Ubuntu 24.04"
@@ -914,7 +914,7 @@
         "value": "966d6bf4d4c79958d43abde84a3e5bbeb4f8c757c164a49d3ec8432be6d36f16"
       },
       "eol": {
-        "standard": "2028-01-01",
+        "standard": "2027-11-01",
         "extended": null,
         "is_rolling": false,
         "note": "Current latest"
@@ -937,8 +937,8 @@
         "value": "895751f157727bca8437607e8edb32b7c10d815aba954f5b3dc24c28ac8a10aa"
       },
       "eol": {
-        "standard": "2032-06-01",
-        "extended": "2034-06-01",
+        "standard": "2032-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Premier Support 10 years + Extended Support"
       },
@@ -1485,8 +1485,8 @@
         "value": "c2610520bf582976839a1724c669e1cfed0547427be5a0ad12d457b92b46ffbe"
       },
       "eol": {
-        "standard": "2029-04-01",
-        "extended": "2034-04-01",
+        "standard": "2029-05-31",
+        "extended": "2036-05-31",
         "is_rolling": false
       },
       "status": "supported"
@@ -1508,8 +1508,8 @@
         "value": "9a6ce6d7e66c8abed24d24944570a495caca80b3b0007df02818e13829f27f32"
       },
       "eol": {
-        "standard": "2029-04-01",
-        "extended": "2034-04-01",
+        "standard": "2029-05-31",
+        "extended": "2036-05-31",
         "is_rolling": false
       },
       "status": "supported"
@@ -1531,7 +1531,7 @@
         "value": "c31f8534597df52bd310f716d271bda30a1f58e6ff8fd9e8254eba66776c42d9"
       },
       "eol": {
-        "standard": "2028-08-01",
+        "standard": "2028-08-09",
         "extended": "2030-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
@@ -1708,7 +1708,7 @@
         "value": "c90b77418c63d3b652e14cab177d51d32b8b5bb2e2f58f22e28cb0a83254a570"
       },
       "eol": {
-        "standard": "2028-12-31",
+        "standard": "2027-10-31",
         "extended": null,
         "is_rolling": false
       },
@@ -1778,7 +1778,7 @@
       },
       "eol": {
         "standard": "2027-04-01",
-        "extended": "2032-04-01",
+        "extended": "2032-04-09",
         "is_rolling": false
       },
       "status": "supported"
@@ -1800,8 +1800,8 @@
         "value": "71d0436089d6dc16839b0b64e1d3198a1a0d983e100223e737a40c5bab480400"
       },
       "eol": {
-        "standard": "2028-06-30",
-        "extended": null,
+        "standard": "2026-06-10",
+        "extended": "2028-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
@@ -1871,8 +1871,8 @@
         "value": "3acd0a0f3be3e08b99fd6c2bc224b7a6916df59a5492b733e6b34899125f3202"
       },
       "eol": {
-        "standard": "2032-06-01",
-        "extended": "2034-06-01",
+        "standard": "2032-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Premier Support 10 years + Extended Support"
       },
@@ -2008,7 +2008,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-01",
+        "extended": "2030-04-02",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
       },
@@ -2079,12 +2079,12 @@
         "value": "c81b6081d5dc5cfac49310b104eb9843252fd3c97cedbcd69ec0388798e7ef7e"
       },
       "eol": {
-        "standard": "2026-08-31",
-        "extended": null,
+        "standard": "2024-08-14",
+        "extended": "2026-08-31",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported"
+      "status": "eol-extended"
     },
     {
       "id": "fedora-43-workstation-arm64",
@@ -2102,7 +2102,7 @@
         "value": "73e91eb64022b59ed0b19fb706dc2053034dc0abbaec03f59fc7754a29777cfb"
       },
       "eol": {
-        "standard": "2026-11-15",
+        "standard": "2026-12-09",
         "extended": null,
         "is_rolling": false,
         "note": "Approximate EOL"

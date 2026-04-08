@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T06:17:17Z",
+    "generated_at": "2026-04-08T06:28:38Z",
     "count": 42
   },
   "images": [
@@ -93,8 +93,8 @@
         "value": "c2610520bf582976839a1724c669e1cfed0547427be5a0ad12d457b92b46ffbe"
       },
       "eol": {
-        "standard": "2029-04-01",
-        "extended": "2034-04-01",
+        "standard": "2029-05-31",
+        "extended": "2036-05-31",
         "is_rolling": false
       },
       "status": "supported"
@@ -116,8 +116,8 @@
         "value": "9a6ce6d7e66c8abed24d24944570a495caca80b3b0007df02818e13829f27f32"
       },
       "eol": {
-        "standard": "2029-04-01",
-        "extended": "2034-04-01",
+        "standard": "2029-05-31",
+        "extended": "2036-05-31",
         "is_rolling": false
       },
       "status": "supported"
@@ -139,7 +139,7 @@
         "value": "c31f8534597df52bd310f716d271bda30a1f58e6ff8fd9e8254eba66776c42d9"
       },
       "eol": {
-        "standard": "2028-08-01",
+        "standard": "2028-08-09",
         "extended": "2030-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
@@ -316,7 +316,7 @@
         "value": "c90b77418c63d3b652e14cab177d51d32b8b5bb2e2f58f22e28cb0a83254a570"
       },
       "eol": {
-        "standard": "2028-12-31",
+        "standard": "2027-10-31",
         "extended": null,
         "is_rolling": false
       },
@@ -361,7 +361,7 @@
         "value": "32a63ed91ace4967441baab0bbfb3ac33c13c02018a2f4eeb3a741d373681d7c"
       },
       "eol": {
-        "standard": "2029-11-30",
+        "standard": "2028-11-30",
         "extended": null,
         "is_rolling": false
       },
@@ -383,7 +383,7 @@
         "value": "3662b0e4502a24c8186ac0754e962650ed1f7c98f44cb1f74c78ea7533581bc1"
       },
       "eol": {
-        "standard": null,
+        "standard": "2029-12-01",
         "extended": null,
         "is_rolling": false,
         "note": "Current stable"
@@ -431,7 +431,7 @@
       },
       "eol": {
         "standard": "2027-04-01",
-        "extended": "2032-04-01",
+        "extended": "2032-04-09",
         "is_rolling": false
       },
       "status": "supported"
@@ -453,8 +453,8 @@
         "value": "71d0436089d6dc16839b0b64e1d3198a1a0d983e100223e737a40c5bab480400"
       },
       "eol": {
-        "standard": "2028-06-30",
-        "extended": null,
+        "standard": "2026-06-10",
+        "extended": "2028-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
@@ -524,8 +524,8 @@
         "value": "3acd0a0f3be3e08b99fd6c2bc224b7a6916df59a5492b733e6b34899125f3202"
       },
       "eol": {
-        "standard": "2032-06-01",
-        "extended": "2034-06-01",
+        "standard": "2032-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Premier Support 10 years + Extended Support"
       },
@@ -682,7 +682,7 @@
         "value": "29ce7eda86ee14a5a30776f18523b416a5572db03ee32d9a1109c446cb3949b3"
       },
       "eol": {
-        "standard": "2027-05-01",
+        "standard": "2026-11-01",
         "extended": null,
         "is_rolling": false
       },
@@ -752,7 +752,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-01",
+        "extended": "2030-04-02",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
       },
@@ -823,12 +823,12 @@
         "value": "c81b6081d5dc5cfac49310b104eb9843252fd3c97cedbcd69ec0388798e7ef7e"
       },
       "eol": {
-        "standard": "2026-08-31",
-        "extended": null,
+        "standard": "2024-08-14",
+        "extended": "2026-08-31",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported"
+      "status": "eol-extended"
     },
     {
       "id": "fedora-43-workstation-arm64",
@@ -846,7 +846,7 @@
         "value": "73e91eb64022b59ed0b19fb706dc2053034dc0abbaec03f59fc7754a29777cfb"
       },
       "eol": {
-        "standard": "2026-11-15",
+        "standard": "2026-12-09",
         "extended": null,
         "is_rolling": false,
         "note": "Approximate EOL"

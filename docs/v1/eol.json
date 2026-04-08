@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-08T06:17:17Z",
-    "count": 5
+    "generated_at": "2026-04-08T06:28:38Z",
+    "count": 7
   },
   "images": [
     {
@@ -23,7 +23,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-01",
+        "extended": "2030-04-02",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
       },
@@ -47,9 +47,33 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-01",
+        "extended": "2030-04-02",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "debian-11-netinst",
+      "name": "Debian 11.11 Bullseye",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bullseye",
+      "version": "11.11",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/debian-11.11.0-amd64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "cd5b2a6fc22050affa1d141adb3857af07e94ff886dca1ce17214e2761a3b316"
+      },
+      "eol": {
+        "standard": "2024-08-14",
+        "extended": "2026-08-31",
+        "is_rolling": false,
+        "note": "LTS"
       },
       "status": "eol-extended"
     },
@@ -110,9 +134,33 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-01",
+        "extended": "2030-04-02",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "debian-11-netinst-arm64",
+      "name": "Debian 11.11 Bullseye",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bullseye",
+      "version": "11.11",
+      "edition": "netinst",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/11.11.0/arm64/iso-cd/debian-11.11.0-arm64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c81b6081d5dc5cfac49310b104eb9843252fd3c97cedbcd69ec0388798e7ef7e"
+      },
+      "eol": {
+        "standard": "2024-08-14",
+        "extended": "2026-08-31",
+        "is_rolling": false,
+        "note": "LTS"
       },
       "status": "eol-extended"
     }
