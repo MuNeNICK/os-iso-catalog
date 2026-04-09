@@ -268,7 +268,31 @@ def build_new_entry(variant, variables, url, checksum_value,
         "extended": ext_eol,
         "is_rolling": is_rolling,
     }
-    entry["status"] = "supported"
+
+    # Determine status based on EOL dates
+    today = date.today()
+    std_date = None
+    ext_date = None
+    if std_eol:
+        try:
+            std_date = date.fromisoformat(str(std_eol))
+        except (ValueError, TypeError):
+            pass
+    if ext_eol:
+        try:
+            ext_date = date.fromisoformat(str(ext_eol))
+        except (ValueError, TypeError):
+            pass
+
+    if std_date and today > std_date:
+        if ext_date and today <= ext_date:
+            entry["status"] = "eol-extended"
+        elif ext_date and today > ext_date:
+            entry["status"] = "eol"
+        else:
+            entry["status"] = "eol"
+    else:
+        entry["status"] = "supported"
 
     return entry
 
