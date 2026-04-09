@@ -544,7 +544,7 @@ images:
     note: LTS
   status: eol-extended
 - id: debian-12-netinst
-  name: Debian 12.13 Bookworm
+  name: "Debian 12.13"
   category: linux
   distro: debian
   codename: Bookworm
@@ -586,7 +586,7 @@ images:
     note: Full support until 2028/08, LTS until 2030/06
   status: supported
 - id: debian-13-netinst
-  name: Debian 13.4 Trixie
+  name: "Debian 13.4"
   category: linux
   distro: debian
   codename: Trixie
@@ -595,7 +595,7 @@ images:
   arch: amd64
   release_type: stable
   url: 
-    https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso
+    https://cdimage.debian.org/cdimage/archive/13.4.0/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso
   homepage: https://www.debian.org/
   checksum:
     algorithm: sha256
@@ -749,7 +749,7 @@ images:
   arch: x86_64
   release_type: stable
   url: 
-    https://repo.almalinux.org/almalinux/9.7/isos/x86_64/AlmaLinux-9.7-x86_64-dvd.iso
+    https://repo.almalinux.org/almalinux/9/isos/x86_64/AlmaLinux-9.7-x86_64-dvd.iso
   homepage: https://almalinux.org/
   checksum:
     algorithm: sha256
@@ -787,7 +787,7 @@ images:
   arch: x86_64
   release_type: stable
   url: 
-    https://repo.almalinux.org/almalinux/10.1/isos/x86_64/AlmaLinux-10.1-x86_64-dvd.iso
+    https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.1-x86_64-dvd.iso
   homepage: https://almalinux.org/
   checksum:
     algorithm: sha256
@@ -1373,7 +1373,7 @@ images:
   homepage: https://www.freebsd.org/
   checksum:
     algorithm: sha256
-    value: cc73a14d4b1cfab880b78deb0b94ae0f439167418c32a6708f68f79563cb50c
+    value: cc73a14d4b1cfada880b78deb0b94ae0f439167418c32a6708f68f79563cb50c
   eol:
     standard: '2029-12-01'
     extended:
@@ -1889,7 +1889,7 @@ images:
     is_rolling: false
   status: supported
 - id: debian-13-netinst-arm64
-  name: Debian 13.4 Trixie
+  name: "Debian 13.4"
   category: linux
   distro: debian
   codename: Trixie
@@ -1898,7 +1898,7 @@ images:
   arch: arm64
   release_type: stable
   url: 
-    https://cdimage.debian.org/cdimage/release/current/arm64/iso-cd/debian-13.4.0-arm64-netinst.iso
+    https://cdimage.debian.org/cdimage/archive/13.4.0/arm64/iso-cd/debian-13.4.0-arm64-netinst.iso
   homepage: https://www.debian.org/
   checksum:
     algorithm: sha256
@@ -2082,7 +2082,7 @@ images:
     note: Checksum changes with each snapshot
   status: supported
 - id: freebsd-14.4-arm64
-  name: FreeBSD 14.4
+  name: "FreeBSD 14.4-RELEASE"
   category: bsd
   distro: freebsd
   version: '14.4'
@@ -2101,7 +2101,7 @@ images:
     is_rolling: false
   status: supported
 - id: freebsd-15.0-arm64
-  name: FreeBSD 15.0
+  name: "FreeBSD 15.0-RELEASE"
   category: bsd
   distro: freebsd
   version: '15.0'
@@ -2161,7 +2161,7 @@ images:
     is_rolling: false
   status: supported
 - id: debian-12-netinst-arm64
-  name: Debian 12.13 Bookworm
+  name: "Debian 12.13"
   category: linux
   distro: debian
   codename: Bookworm
@@ -2262,6 +2262,38 @@ images:
     extended:
     is_rolling: false
     note: Premier Support 10 years
+  status: supported
+- id: oracle-8.10-dvd
+  name: "Oracle Linux 8.10"
+  category: linux
+  distro: oracle
+  version: '8.10'
+  edition: DVD
+  arch: x86_64
+  release_type: stable
+  url: 
+    https://yum.oracle.com/ISOS/OracleLinux/OL8/u10/x86_64/OracleLinux-R8-U10-x86_64-dvd.iso
+  homepage: https://www.oracle.com/linux/
+  eol:
+    standard: '2029-07-31'
+    extended: '2032-07-31'
+    is_rolling: false
+  status: supported
+- id: oracle-8.10-dvd-arm64
+  name: "Oracle Linux 8.10"
+  category: linux
+  distro: oracle
+  version: '8.10'
+  edition: DVD
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://yum.oracle.com/ISOS/OracleLinux/OL8/u10/aarch64/OracleLinux-R8-U10-aarch64-dvd.iso
+  homepage: https://www.oracle.com/linux/
+  eol:
+    standard: '2029-07-31'
+    extended: '2032-07-31'
+    is_rolling: false
   status: supported
 - id: kali-2026.1-arm64
   name: Kali Linux 2026.1
@@ -2522,6 +2554,44 @@ images:
     is_rolling: false
     note: Approximate EOL
   status: supported
+- id: fedora-43-server
+  name: "Fedora 43 Server"
+  category: linux
+  distro: fedora
+  version: '43'
+  edition: Server netinst
+  arch: x86_64
+  release_type: stable
+  url: 
+    https://download.fedoraproject.org/pub/fedora/linux/releases/43/Server/x86_64/iso/Fedora-Server-netinst-x86_64-43-1.6.iso
+  homepage: https://fedoraproject.org/
+  checksum:
+    algorithm: sha256
+    value: 16fd70ddae2c7de13e485637c3da1fb385dd8220389f988279ea3b3d561243cc
+  eol:
+    standard: '2026-12-09'
+    extended:
+    is_rolling: false
+  status: supported
+- id: fedora-43-server-arm64
+  name: "Fedora 43 Server"
+  category: linux
+  distro: fedora
+  version: '43'
+  edition: Server netinst
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://download.fedoraproject.org/pub/fedora/linux/releases/43/Server/aarch64/iso/Fedora-Server-netinst-aarch64-43-1.6.iso
+  homepage: https://fedoraproject.org/
+  checksum:
+    algorithm: sha256
+    value: c41d16e78058f1e7b8c8984eac8227e29051e3b762b279db680d76cfcd0f011f
+  eol:
+    standard: '2026-12-09'
+    extended:
+    is_rolling: false
+  status: supported
 - id: rocky-9.7-dvd-arm64
   name: Rocky Linux 9.7
   category: linux
@@ -2558,6 +2628,82 @@ images:
   eol:
     standard: '2030-05-31'
     extended: '2035-05-31'
+    is_rolling: false
+  status: supported
+- id: rocky-8.10-dvd
+  name: "Rocky Linux 8.10"
+  category: linux
+  distro: rocky
+  version: '8.10'
+  edition: DVD
+  arch: x86_64
+  release_type: stable
+  url: 
+    https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.10-x86_64-dvd1.iso
+  homepage: https://rockylinux.org/
+  checksum:
+    algorithm: sha256
+    value: 642ada8a49dbeca8cca6543b31196019ee3d649a0163b5db0e646c7409364eeb
+  eol:
+    standard: '2024-05-31'
+    extended: '2029-05-31'
+    is_rolling: false
+  status: supported
+- id: rocky-8.10-minimal
+  name: "Rocky Linux 8.10"
+  category: linux
+  distro: rocky
+  version: '8.10'
+  edition: Minimal
+  arch: x86_64
+  release_type: stable
+  url: 
+    https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.10-x86_64-minimal.iso
+  homepage: https://rockylinux.org/
+  checksum:
+    algorithm: sha256
+    value: 2c735d3b0de921bd671a0e2d08461e3593ac84f64cdaef32e3ed56ba01f74f4b
+  eol:
+    standard: '2024-05-31'
+    extended: '2029-05-31'
+    is_rolling: false
+  status: supported
+- id: rocky-8.10-dvd-arm64
+  name: "Rocky Linux 8.10"
+  category: linux
+  distro: rocky
+  version: '8.10'
+  edition: DVD
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://download.rockylinux.org/pub/rocky/8/isos/aarch64/Rocky-8.10-aarch64-dvd1.iso
+  homepage: https://rockylinux.org/
+  checksum:
+    algorithm: sha256
+    value: fbc3d12b6bd4fadeb7aa11c133afc927a6df5414f3ce47d6093706a4ef86e0a8
+  eol:
+    standard: '2024-05-31'
+    extended: '2029-05-31'
+    is_rolling: false
+  status: supported
+- id: rocky-8.10-minimal-arm64
+  name: "Rocky Linux 8.10"
+  category: linux
+  distro: rocky
+  version: '8.10'
+  edition: Minimal
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://download.rockylinux.org/pub/rocky/8/isos/aarch64/Rocky-8.10-aarch64-minimal.iso
+  homepage: https://rockylinux.org/
+  checksum:
+    algorithm: sha256
+    value: 94b7360334ecf90443bcadff94c69b0f6a8f9b1f051c0caf0e6dfe867bd865da
+  eol:
+    standard: '2024-05-31'
+    extended: '2029-05-31'
     is_rolling: false
   status: supported
 - id: alma-9.7-dvd-arm64
@@ -2598,6 +2744,82 @@ images:
     extended: '2035-05-31'
     is_rolling: false
   status: supported
+- id: alma-8.10-dvd
+  name: "AlmaLinux 8.10"
+  category: linux
+  distro: almalinux
+  version: '8.10'
+  edition: DVD
+  arch: x86_64
+  release_type: stable
+  url: 
+    https://repo.almalinux.org/almalinux/8/isos/x86_64/AlmaLinux-8.10-x86_64-dvd.iso
+  homepage: https://almalinux.org/
+  checksum:
+    algorithm: sha256
+    value: 463fa92155b886e31627f6713e1c2824343762245a914715ffd6f2efc300b7a1
+  eol:
+    standard: '2024-05-01'
+    extended: '2029-03-01'
+    is_rolling: false
+  status: supported
+- id: alma-8.10-minimal
+  name: "AlmaLinux 8.10"
+  category: linux
+  distro: almalinux
+  version: '8.10'
+  edition: Minimal
+  arch: x86_64
+  release_type: stable
+  url: 
+    https://repo.almalinux.org/almalinux/8/isos/x86_64/AlmaLinux-8.10-x86_64-minimal.iso
+  homepage: https://almalinux.org/
+  checksum:
+    algorithm: sha256
+    value: e524329700abe47ce1f509bed7e2d3c68b336a54c712daa1b492b2429a64d419
+  eol:
+    standard: '2024-05-01'
+    extended: '2029-03-01'
+    is_rolling: false
+  status: supported
+- id: alma-8.10-dvd-arm64
+  name: "AlmaLinux 8.10"
+  category: linux
+  distro: almalinux
+  version: '8.10'
+  edition: DVD
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://repo.almalinux.org/almalinux/8/isos/aarch64/AlmaLinux-8.10-aarch64-dvd.iso
+  homepage: https://almalinux.org/
+  checksum:
+    algorithm: sha256
+    value: 49feeaa7876ede4f544ae7ddcf5a8d63649bc087aa0f1c75eac38ee456b99736
+  eol:
+    standard: '2024-05-01'
+    extended: '2029-03-01'
+    is_rolling: false
+  status: supported
+- id: alma-8.10-minimal-arm64
+  name: "AlmaLinux 8.10"
+  category: linux
+  distro: almalinux
+  version: '8.10'
+  edition: Minimal
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://repo.almalinux.org/almalinux/8/isos/aarch64/AlmaLinux-8.10-aarch64-minimal.iso
+  homepage: https://almalinux.org/
+  checksum:
+    algorithm: sha256
+    value: e2fcef261a236fb19e69fceffce7a31b1afafbe8afe9f24553677684571cea81
+  eol:
+    standard: '2024-05-01'
+    extended: '2029-03-01'
+    is_rolling: false
+  status: supported
 - id: freebsd-13.5-arm64
   name: FreeBSD 13.5-RELEASE
   category: bsd
@@ -2617,4 +2839,42 @@ images:
     extended:
     is_rolling: false
     note: EOL imminent
+  status: supported
+- id: freebsd-14.3
+  name: "FreeBSD 14.3-RELEASE"
+  category: bsd
+  distro: freebsd
+  version: '14.3'
+  edition: disc1
+  arch: amd64
+  release_type: stable
+  url: 
+    https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.3/FreeBSD-14.3-RELEASE-amd64-disc1.iso
+  homepage: https://www.freebsd.org/
+  checksum:
+    algorithm: sha256
+    value: f564822bc72d420d1e1a6faacb72f6056d828fcf539dfafd52e08503ef5fab68
+  eol:
+    standard: '2026-06-30'
+    extended:
+    is_rolling: false
+  status: supported
+- id: freebsd-14.3-arm64
+  name: "FreeBSD 14.3-RELEASE"
+  category: bsd
+  distro: freebsd
+  version: '14.3'
+  edition: disc1
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.3/FreeBSD-14.3-RELEASE-arm64-aarch64-disc1.iso
+  homepage: https://www.freebsd.org/
+  checksum:
+    algorithm: sha256
+    value: 5dc944961a58d7951f53b8e2d4a4590b60185ba9db83b1e145218550aa2617d1
+  eol:
+    standard: '2026-06-30'
+    extended:
+    is_rolling: false
   status: supported
