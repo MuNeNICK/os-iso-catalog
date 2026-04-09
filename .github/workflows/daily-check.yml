@@ -194,9 +194,9 @@ jobs:
         id: report
         run: |
           {
-            echo 'content<<EOF'
+            echo 'content<<ENDOFREPORT'
             cat auto-update-report.txt
-            echo 'EOF'
+            echo 'ENDOFREPORT'
           } >> "$GITHUB_OUTPUT"
 
       - name: Create Pull Request

@@ -517,7 +517,7 @@ def main():
             print(f"  {c}")
 
         with open(REPORT_FILE, "w", encoding="utf-8") as f:
-            f.write("\n".join(all_changes))
+            f.write("\n".join(all_changes) + "\n")
 
         sys.exit(2)
     else:
