@@ -53,10 +53,45 @@ All currently supported versions are tracked.
 2. `scripts/generate.py` transforms YAML into filtered JSON endpoints under `docs/v1/`
 3. GitHub Pages serves the `docs/` directory
 4. **Daily at 06:00 UTC**, GitHub Actions:
-   - Fetches EOL dates from [endoflife.date](https://endoflife.date/) API and auto-updates `status` field
-   - Validates all download URLs are reachable
-   - Detects new OS releases and creates GitHub Issues
-   - Creates GitHub Issues for broken links
+   - **Auto-update**: Detects new releases and version updates via URL templates, creates a PR for review
+   - **EOL check**: Fetches EOL dates from [endoflife.date](https://endoflife.date/) API and auto-updates `status` field
+   - **Link check**: Validates all download URLs are reachable, creates Issues for broken links
+   - **New release check**: Detects new OS releases for manual-only distros, creates Issues
+
+## Auto-update
+
+`scripts/auto_update.py` uses URL templates defined in `data/images.yaml` to automatically detect new releases, update download URLs and checksums, and add new entries. Changes are submitted as a Pull Request for human review.
+
+### Template types
+
+| Type | Description | Used by |
+|------|-------------|---------|
+| `static` | URL is fully predictable from version | Ubuntu, Debian, AlmaLinux, Alpine, FreeBSD, OpenBSD, NetBSD, Oracle Linux |
+| `directory_parse` | Filename resolved from directory listing (e.g. build numbers) | Fedora, Rocky Linux |
+| `rolling_checksum` | Refreshes checksums for rolling "latest" URLs | CentOS Stream |
+
+### Coverage
+
+| Distro | Auto-update | Reason |
+|--------|:-----------:|--------|
+| Ubuntu | Yes | Static URL pattern |
+| Debian | Yes | Static URL pattern |
+| Fedora | Yes | Directory parse (build numbers in filename) |
+| Rocky Linux | Yes | Directory parse (dvd/dvd1 naming) |
+| AlmaLinux | Yes | Static URL pattern |
+| CentOS Stream | Yes | Rolling checksum refresh |
+| Alpine | Yes | Static URL pattern |
+| FreeBSD | Yes | Static URL pattern |
+| OpenBSD | Yes | Static URL pattern |
+| NetBSD | Yes | Static URL pattern |
+| Oracle Linux | Yes | Static URL pattern |
+| openSUSE | No | Complex naming (Leap 15 vs 16 differ significantly) |
+| Linux Mint | No | SourceForge-hosted, no predictable URL pattern |
+| Arch Linux | No | Rolling release, manual tracking |
+| Manjaro | No | Date-based filenames with kernel version |
+| Kali Linux | No | No endoflife.date API coverage |
+| Gentoo | No | Date-based autobuild filenames |
+| Others | No | Irregular release patterns or no API coverage |
 
 ## Contributing
 
