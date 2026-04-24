@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-21T01:36:17Z",
+    "generated_at": "2026-04-24T06:38:12Z",
     "count": 80
   },
   "images": [
@@ -162,8 +162,8 @@
         "value": "85ebc356ca56c272285aa5a88c79c1f9c384efbef4da2fbabdf6cc4e669b38ab"
       },
       "eol": {
-        "standard": "2031-04-01",
-        "extended": "2036-04-01",
+        "standard": "2031-05-31",
+        "extended": "2031-05-31",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23"
       },
@@ -186,8 +186,8 @@
         "value": "ec11c403e5ee44952f23f21ae3db51c8df15269af68c54ec0e1d4a5991633640"
       },
       "eol": {
-        "standard": "2031-04-01",
-        "extended": "2036-04-01",
+        "standard": "2031-05-31",
+        "extended": "2031-05-31",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23"
       },
