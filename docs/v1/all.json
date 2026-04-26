@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-04-24T06:38:12Z",
+    "generated_at": "2026-04-26T06:37:48Z",
     "count": 129
   },
   "images": [
@@ -147,7 +147,7 @@
     },
     {
       "id": "ubuntu-26.04-desktop",
-      "name": "Ubuntu 26.04 LTS Beta",
+      "name": "Ubuntu 26.04 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
@@ -155,11 +155,11 @@
       "edition": "Desktop",
       "arch": "amd64",
       "release_type": "beta",
-      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-beta-desktop-amd64.iso",
+      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "85ebc356ca56c272285aa5a88c79c1f9c384efbef4da2fbabdf6cc4e669b38ab"
+        "value": "487f87faaf547ea30e0aba4d5b53346292571256b25333a978db1692bcee9dd2"
       },
       "eol": {
         "standard": "2031-05-31",
@@ -171,7 +171,7 @@
     },
     {
       "id": "ubuntu-26.04-server",
-      "name": "Ubuntu 26.04 LTS Beta",
+      "name": "Ubuntu 26.04 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
@@ -179,11 +179,11 @@
       "edition": "Server",
       "arch": "amd64",
       "release_type": "beta",
-      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-beta-live-server-amd64.iso",
+      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "ec11c403e5ee44952f23f21ae3db51c8df15269af68c54ec0e1d4a5991633640"
+        "value": "dec49008a71f6098d0bcfc822021f4d042d5f2db279e4d75bdd981304f1ca5d9"
       },
       "eol": {
         "standard": "2031-05-31",
@@ -2444,7 +2444,7 @@
     },
     {
       "id": "ubuntu-26.04-desktop-arm64",
-      "name": "Ubuntu 26.04 LTS Beta",
+      "name": "Ubuntu 26.04 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
@@ -2452,11 +2452,11 @@
       "edition": "Desktop",
       "arch": "arm64",
       "release_type": "beta",
-      "url": "https://cdimage.ubuntu.com/daily-live/current/resolute-desktop-arm64.iso",
+      "url": "https://cdimage.ubuntu.com/ubuntu/releases/26.04/release/ubuntu-26.04-desktop-arm64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "78ab8ea1d28fe022cd3b05de790048f5ef3184e3610400e0e45bcfed6ad9aaad"
+        "value": "c2afd538d66fdd77377d03f1ed2ac76a34f1c116baecc9a8170d68f833121f57"
       },
       "eol": {
         "standard": "2031-05-31",
@@ -2468,7 +2468,7 @@
     },
     {
       "id": "ubuntu-26.04-server-arm64",
-      "name": "Ubuntu 26.04 LTS Beta",
+      "name": "Ubuntu 26.04 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
@@ -2476,11 +2476,11 @@
       "edition": "Server",
       "arch": "arm64",
       "release_type": "beta",
-      "url": "https://cdimage.ubuntu.com/ubuntu-server/daily-live/current/resolute-live-server-arm64.iso",
+      "url": "https://cdimage.ubuntu.com/releases/26.04/release/ubuntu-26.04-live-server-arm64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "54015237357ea3bb416a1e260e50b11de259b388f845d9269db1ae2a37a05026"
+        "value": "c9aa567e6560b2eddae3af03fc686002e35b6fee96f97fd5df3271e846439fdd"
       },
       "eol": {
         "standard": "2031-05-31",
