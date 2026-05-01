@@ -2593,6 +2593,82 @@ images:
     extended:
     is_rolling: false
   status: supported
+- id: fedora-44-workstation
+  name: "Fedora 44 Workstation"
+  category: linux
+  distro: fedora
+  version: '44'
+  edition: Workstation Live
+  arch: x86_64
+  release_type: stable
+  url: 
+    https://download.fedoraproject.org/pub/fedora/linux/releases/44/Workstation/x86_64/iso/Fedora-Workstation-Live-44-1.7.x86_64.iso
+  homepage: https://fedoraproject.org/
+  checksum:
+    algorithm: sha256
+    value: 1620295f6a00c27c3208f0c00b8ece4eab1ec69b9002152d97488bf26a426ddf
+  eol:
+    standard: '2027-06-02'
+    extended:
+    is_rolling: false
+  status: supported
+- id: fedora-44-server
+  name: "Fedora 44 Server"
+  category: linux
+  distro: fedora
+  version: '44'
+  edition: Server netinst
+  arch: x86_64
+  release_type: stable
+  url: 
+    https://download.fedoraproject.org/pub/fedora/linux/releases/44/Server/x86_64/iso/Fedora-Server-netinst-x86_64-44-1.7.iso
+  homepage: https://fedoraproject.org/
+  checksum:
+    algorithm: sha256
+    value: ae20c06bea746913cadea7d80463e13f4bf55bee4df2918111c921c674b70283
+  eol:
+    standard: '2027-06-02'
+    extended:
+    is_rolling: false
+  status: supported
+- id: fedora-44-workstation-arm64
+  name: "Fedora 44 Workstation"
+  category: linux
+  distro: fedora
+  version: '44'
+  edition: Workstation Live
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://download.fedoraproject.org/pub/fedora/linux/releases/44/Workstation/aarch64/iso/Fedora-Workstation-Live-44-1.7.aarch64.iso
+  homepage: https://fedoraproject.org/
+  checksum:
+    algorithm: sha256
+    value: 162ba3c552a2d241c7c63ec26777af0255ee1b5a135adc0be986ceed999933ef
+  eol:
+    standard: '2027-06-02'
+    extended:
+    is_rolling: false
+  status: supported
+- id: fedora-44-server-arm64
+  name: "Fedora 44 Server"
+  category: linux
+  distro: fedora
+  version: '44'
+  edition: Server netinst
+  arch: aarch64
+  release_type: stable
+  url: 
+    https://download.fedoraproject.org/pub/fedora/linux/releases/44/Server/aarch64/iso/Fedora-Server-netinst-aarch64-44-1.7.iso
+  homepage: https://fedoraproject.org/
+  checksum:
+    algorithm: sha256
+    value: a93ebd0322cda5a439039710b727ac1899a06e1c11876cfdf7f27c25b8262cc3
+  eol:
+    standard: '2027-06-02'
+    extended:
+    is_rolling: false
+  status: supported
 - id: rocky-9.7-dvd-arm64
   name: Rocky Linux 9.7
   category: linux
