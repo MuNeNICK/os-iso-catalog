@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-01T00:41:51Z",
+    "generated_at": "2026-05-01T06:53:28Z",
     "count": 112
   },
   "images": [
@@ -601,7 +601,7 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "supported"
+      "status": "eol"
     },
     {
       "id": "opensuse-leap-16.0",
@@ -2024,7 +2024,7 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "supported"
+      "status": "eol"
     },
     {
       "id": "ubuntu-20.04-server-arm64",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-01T00:41:51Z",
+    "generated_at": "2026-05-01T06:53:28Z",
     "count": 133
   },
   "images": [
@@ -601,7 +601,7 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "supported"
+      "status": "eol"
     },
     {
       "id": "opensuse-leap-16.0",
@@ -1133,7 +1133,7 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "supported"
+      "status": "eol"
     },
     {
       "id": "freebsd-14.4",
@@ -2325,7 +2325,7 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "supported"
+      "status": "eol"
     },
     {
       "id": "openbsd-7.7-arm64",
@@ -2954,7 +2954,7 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "supported"
+      "status": "eol"
     },
     {
       "id": "freebsd-14.3",

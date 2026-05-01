@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-01T00:41:51Z",
-    "count": 118
+    "generated_at": "2026-05-01T06:53:28Z",
+    "count": 114
   },
   "images": [
     {
@@ -509,29 +509,6 @@
       "notes": "Checksum as of 2026-04-06. Verify latest at mirror."
     },
     {
-      "id": "opensuse-leap-15.6-dvd",
-      "name": "openSUSE Leap 15.6",
-      "category": "linux",
-      "distro": "opensuse",
-      "version": "15.6",
-      "edition": "DVD",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "url": "https://download.opensuse.org/distribution/leap/15.6/iso/openSUSE-Leap-15.6-DVD-x86_64-Media.iso",
-      "homepage": "https://www.opensuse.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "a74d4072e639c75ca127df3d869c1e57bcc44a093a969550f348a3ead561fe4f"
-      },
-      "eol": {
-        "standard": "2026-04-30",
-        "extended": null,
-        "is_rolling": false,
-        "note": "EOL imminent"
-      },
-      "status": "supported"
-    },
-    {
       "id": "opensuse-leap-16.0",
       "name": "openSUSE Leap 16.0",
       "category": "linux",
@@ -998,29 +975,6 @@
         "extended": "2031-10-01",
         "is_rolling": false,
         "note": "180-day evaluation. Register to download."
-      },
-      "status": "supported"
-    },
-    {
-      "id": "freebsd-13.5",
-      "name": "FreeBSD 13.5-RELEASE",
-      "category": "bsd",
-      "distro": "freebsd",
-      "version": "13.5",
-      "edition": "disc1",
-      "arch": "amd64",
-      "release_type": "stable",
-      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-amd64-disc1.iso",
-      "homepage": "https://www.freebsd.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "12ada1eb745df5b4f42a1afde4f0d2f333d389c8a7f07244e562b922443c2de7"
-      },
-      "eol": {
-        "standard": "2026-04-30",
-        "extended": null,
-        "is_rolling": false,
-        "note": "EOL imminent"
       },
       "status": "supported"
     },
@@ -2194,29 +2148,6 @@
       "status": "supported"
     },
     {
-      "id": "opensuse-leap-15.6-dvd-arm64",
-      "name": "openSUSE Leap 15.6",
-      "category": "linux",
-      "distro": "opensuse",
-      "version": "15.6",
-      "edition": "DVD",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "url": "https://download.opensuse.org/distribution/leap/15.6/iso/openSUSE-Leap-15.6-DVD-aarch64-Media.iso",
-      "homepage": "https://www.opensuse.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "6ecade658ef3e4dd7175176781f80fcd070250fe7e922f6240224ff810755ac6"
-      },
-      "eol": {
-        "standard": "2026-04-30",
-        "extended": null,
-        "is_rolling": false,
-        "note": "EOL imminent"
-      },
-      "status": "supported"
-    },
-    {
       "id": "openbsd-7.7-arm64",
       "name": "OpenBSD 7.7",
       "category": "bsd",
@@ -2595,29 +2526,6 @@
         "standard": "2030-05-31",
         "extended": "2035-05-31",
         "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "freebsd-13.5-arm64",
-      "name": "FreeBSD 13.5-RELEASE",
-      "category": "bsd",
-      "distro": "freebsd",
-      "version": "13.5",
-      "edition": "disc1",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-arm64-aarch64-disc1.iso",
-      "homepage": "https://www.freebsd.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "f02e02ff9e73320a8a3736178baf9c830da63415ffe9e68161db3fd83f1dc49d"
-      },
-      "eol": {
-        "standard": "2026-04-30",
-        "extended": null,
-        "is_rolling": false,
-        "note": "EOL imminent"
       },
       "status": "supported"
     },
