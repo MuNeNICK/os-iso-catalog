@@ -1398,7 +1398,7 @@ images:
     extended:
     is_rolling: false
     note: EOL imminent
-  status: supported
+  status: eol
 - id: openbsd-7.8
   name: OpenBSD 7.8
   category: bsd
@@ -2390,7 +2390,7 @@ images:
     extended:
     is_rolling: false
     note: EOL imminent
-  status: supported
+  status: eol
 - id: openbsd-7.8-arm64
   name: OpenBSD 7.8
   category: bsd
