@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-02T06:38:01Z",
+    "generated_at": "2026-05-05T06:44:43Z",
     "count": 133
   },
   "images": [
@@ -162,8 +162,8 @@
         "value": "487f87faaf547ea30e0aba4d5b53346292571256b25333a978db1692bcee9dd2"
       },
       "eol": {
-        "standard": "2031-05-31",
-        "extended": "2031-05-31",
+        "standard": "2031-04-30",
+        "extended": "2036-04-30",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23"
       },
@@ -186,8 +186,8 @@
         "value": "dec49008a71f6098d0bcfc822021f4d042d5f2db279e4d75bdd981304f1ca5d9"
       },
       "eol": {
-        "standard": "2031-05-31",
-        "extended": "2031-05-31",
+        "standard": "2031-04-30",
+        "extended": "2036-04-30",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23"
       },
@@ -2459,8 +2459,8 @@
         "value": "c2afd538d66fdd77377d03f1ed2ac76a34f1c116baecc9a8170d68f833121f57"
       },
       "eol": {
-        "standard": "2031-05-31",
-        "extended": "2031-05-31",
+        "standard": "2031-04-30",
+        "extended": "2036-04-30",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23. Daily build - checksum changes."
       },
@@ -2483,8 +2483,8 @@
         "value": "c9aa567e6560b2eddae3af03fc686002e35b6fee96f97fd5df3271e846439fdd"
       },
       "eol": {
-        "standard": "2031-05-31",
-        "extended": "2031-05-31",
+        "standard": "2031-04-30",
+        "extended": "2036-04-30",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23. Daily build - checksum changes."
       },
