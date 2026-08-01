@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-22T08:12:34Z",
+    "generated_at": "2026-08-01T08:07:59Z",
     "count": 82
   },
   "images": [
@@ -829,7 +829,7 @@
         "is_rolling": false,
         "note": "Supported until ~1 month after NixOS 26.05 release"
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },

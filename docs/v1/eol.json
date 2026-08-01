@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-22T08:12:34Z",
-    "count": 41
+    "generated_at": "2026-08-01T08:07:59Z",
+    "count": 44
   },
   "images": [
     {
@@ -394,6 +394,56 @@
       "image_type": "iso"
     },
     {
+      "id": "nixos-25.11-graphical",
+      "name": "NixOS 25.11 Graphical",
+      "category": "linux",
+      "distro": "nixos",
+      "version": "25.11",
+      "arch": "amd64",
+      "edition": "Graphical",
+      "release_type": "stable",
+      "url": "https://channels.nixos.org/nixos-25.11/latest-nixos-graphical-x86_64-linux.iso",
+      "homepage": "https://nixos.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "348d5e946abf1f69ff1f2b2a65d10079dc0e4e14b38f0210cf3f323411a960ba"
+      },
+      "eol": {
+        "standard": "2026-07-31",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until ~1 month after NixOS 26.05 release"
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "nixos-25.11-minimal",
+      "name": "NixOS 25.11 Minimal",
+      "category": "linux",
+      "distro": "nixos",
+      "version": "25.11",
+      "arch": "amd64",
+      "edition": "Minimal",
+      "release_type": "stable",
+      "url": "https://channels.nixos.org/nixos-25.11/latest-nixos-minimal-x86_64-linux.iso",
+      "homepage": "https://nixos.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1185f39ddb6175d755b8e959fcdf35cb4d1f276ae8f508baeb468b77de673d94"
+      },
+      "eol": {
+        "standard": "2026-07-31",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until ~1 month after NixOS 26.05 release"
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "fedora-42-workstation-arm64",
       "name": "Fedora 42 Workstation",
       "category": "linux",
@@ -436,6 +486,31 @@
         "standard": "2026-05-27",
         "extended": null,
         "is_rolling": false
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "nixos-25.11-minimal-arm64",
+      "name": "NixOS 25.11 Minimal",
+      "category": "linux",
+      "distro": "nixos",
+      "version": "25.11",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://channels.nixos.org/nixos/25.11/nixos-25.11.8801.36a601196c4e/nixos-minimal-25.11.8801.36a601196c4e-aarch64-linux.iso",
+      "homepage": "https://nixos.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1de0c211f9ef50aa89ed64575a94105af34e6dd4663e35b53b4087bb5cee8de6"
+      },
+      "eol": {
+        "standard": "2026-07-31",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Supported until ~1 month after NixOS 26.05 release"
       },
       "status": "eol",
       "format": "iso",
