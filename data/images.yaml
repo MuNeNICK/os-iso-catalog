@@ -2517,7 +2517,7 @@ images:
     extended:
     is_rolling: false
     note: Supported until ~1 month after NixOS 26.05 release
-  status: supported
+  status: eol
 - id: nixos-25.11-minimal
   name: NixOS 25.11 Minimal
   category: linux
@@ -2537,7 +2537,7 @@ images:
     extended:
     is_rolling: false
     note: Supported until ~1 month after NixOS 26.05 release
-  status: supported
+  status: eol
 - id: tails-7.6
   name: Tails 7.6
   category: linux
@@ -3084,7 +3084,7 @@ images:
     extended:
     is_rolling: false
     note: Supported until ~1 month after NixOS 26.05 release
-  status: supported
+  status: eol
 - id: ubuntu-22.04-server-arm64
   name: Ubuntu 22.04.5 LTS
   category: linux
