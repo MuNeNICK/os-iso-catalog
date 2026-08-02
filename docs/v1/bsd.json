@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-08-01T08:07:59Z",
+    "generated_at": "2026-08-02T08:09:50Z",
     "count": 22
   },
   "images": [
@@ -188,12 +188,12 @@
         "value": "93f0005c4dc46718475729ed76064aecc436491507b75cf29fb686f393e6a79be044e429b4a633ac2b4e26e1be32050667a71b356b7b2b11390524c63aed1a16"
       },
       "eol": {
-        "standard": null,
-        "extended": null,
+        "standard": "2024-03-28",
+        "extended": "2026-08-30",
         "is_rolling": false,
         "note": "Supported until NetBSD 11.0 release + 1 month"
       },
-      "status": "supported",
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },
@@ -384,12 +384,12 @@
         "value": "6857aa55bac2bb3bb14ffc17214ecb7f1312258cf995b48e772a2ead313bfbac2b53d42c2f86f8d97b795e6a0a2d7c7d918c5b031621df214ffc64b2097b47ee"
       },
       "eol": {
-        "standard": null,
-        "extended": null,
+        "standard": "2024-03-28",
+        "extended": "2026-08-30",
         "is_rolling": false,
         "note": "Supported until NetBSD 11.0 release + 1 month"
       },
-      "status": "supported",
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },

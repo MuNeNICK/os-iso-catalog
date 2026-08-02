@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-08-01T08:07:59Z",
-    "count": 158
+    "generated_at": "2026-08-02T08:09:50Z",
+    "count": 156
   },
   "images": [
     {
@@ -1839,31 +1839,6 @@
       "image_type": "iso"
     },
     {
-      "id": "netbsd-9.4",
-      "name": "NetBSD 9.4",
-      "category": "bsd",
-      "distro": "netbsd",
-      "version": "9.4",
-      "arch": "amd64",
-      "edition": "install",
-      "release_type": "stable",
-      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-9.4/images/NetBSD-9.4-amd64.iso",
-      "homepage": "https://www.netbsd.org/",
-      "checksum": {
-        "algorithm": "sha512",
-        "value": "93f0005c4dc46718475729ed76064aecc436491507b75cf29fb686f393e6a79be044e429b4a633ac2b4e26e1be32050667a71b356b7b2b11390524c63aed1a16"
-      },
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": false,
-        "note": "Supported until NetBSD 11.0 release + 1 month"
-      },
-      "status": "supported",
-      "format": "iso",
-      "image_type": "iso"
-    },
-    {
       "id": "netbsd-10.1",
       "name": "NetBSD 10.1",
       "category": "bsd",
@@ -3075,31 +3050,6 @@
         "standard": "2027-06-01",
         "extended": null,
         "is_rolling": false
-      },
-      "status": "supported",
-      "format": "iso",
-      "image_type": "iso"
-    },
-    {
-      "id": "netbsd-9.4-arm64",
-      "name": "NetBSD 9.4",
-      "category": "bsd",
-      "distro": "netbsd",
-      "version": "9.4",
-      "edition": "install",
-      "arch": "arm64",
-      "release_type": "stable",
-      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-9.4/images/NetBSD-9.4-evbarm-aarch64.iso",
-      "homepage": "https://www.netbsd.org/",
-      "checksum": {
-        "algorithm": "sha512",
-        "value": "6857aa55bac2bb3bb14ffc17214ecb7f1312258cf995b48e772a2ead313bfbac2b53d42c2f86f8d97b795e6a0a2d7c7d918c5b031621df214ffc64b2097b47ee"
-      },
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": false,
-        "note": "Supported until NetBSD 11.0 release + 1 month"
       },
       "status": "supported",
       "format": "iso",
