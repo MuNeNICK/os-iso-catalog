@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-08-02T08:09:50Z",
+    "generated_at": "2026-08-29T12:03:24Z",
     "count": 53
   },
   "images": [
@@ -24,8 +24,8 @@
         "value": "ec332b438a87c3cc1e38318ced110568392484cc2f33e29c8f4eaf9ecc9de297"
       },
       "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
+        "standard": "2027-06-01",
+        "extended": "2032-04-21",
         "is_rolling": false
       },
       "status": "supported"
@@ -49,8 +49,8 @@
         "value": "4347ef11e5577add57337c701950d55005eff73eb134c365c2277ee998950695"
       },
       "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
+        "standard": "2027-06-01",
+        "extended": "2032-04-21",
         "is_rolling": false
       },
       "status": "supported"
@@ -75,7 +75,7 @@
       },
       "eol": {
         "standard": "2029-05-31",
-        "extended": "2036-05-31",
+        "extended": "2034-04-25",
         "is_rolling": false
       },
       "status": "supported"
@@ -100,7 +100,7 @@
       },
       "eol": {
         "standard": "2029-05-31",
-        "extended": "2036-05-31",
+        "extended": "2034-04-25",
         "is_rolling": false
       },
       "status": "supported"
@@ -1011,8 +1011,8 @@
         "value": "4146595c3f784c2eb11bee837fd6a097289ed20727dd0ec75ebe457dd059a7ba"
       },
       "eol": {
-        "standard": "2031-04-30",
-        "extended": "2036-04-30",
+        "standard": "2031-05-29",
+        "extended": "2036-04-23",
         "is_rolling": false
       },
       "status": "supported"
@@ -1036,8 +1036,8 @@
         "value": "ce56d07a01c386ba737668dd84b0d89a3f0581112ce06a3da8853b79a4b08e0b"
       },
       "eol": {
-        "standard": "2031-04-30",
-        "extended": "2036-04-30",
+        "standard": "2031-05-29",
+        "extended": "2036-04-23",
         "is_rolling": false
       },
       "status": "supported"
@@ -1062,7 +1062,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-02",
+        "extended": "2030-04-23",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -1087,7 +1087,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-02",
+        "extended": "2030-04-23",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -1112,7 +1112,7 @@
       },
       "eol": {
         "standard": "2023-05-31",
-        "extended": "2028-04-01",
+        "extended": "2028-04-26",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -1137,7 +1137,7 @@
       },
       "eol": {
         "standard": "2023-05-31",
-        "extended": "2028-04-01",
+        "extended": "2028-04-26",
         "is_rolling": false
       },
       "status": "eol-extended"

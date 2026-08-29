@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-08-02T08:09:50Z",
+    "generated_at": "2026-08-29T12:03:24Z",
     "count": 156
   },
   "images": [
@@ -22,8 +22,8 @@
         "value": "bfd1cee02bc4f35db939e69b934ba49a39a378797ce9aee20f6e3e3e728fefbf"
       },
       "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
+        "standard": "2027-06-01",
+        "extended": "2032-04-21",
         "is_rolling": false
       },
       "status": "supported",
@@ -47,8 +47,8 @@
         "value": "9bc6028870aef3f74f4e16b900008179e78b130e6b0b9a140635434a46aa98b0"
       },
       "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
+        "standard": "2027-06-01",
+        "extended": "2032-04-21",
         "is_rolling": false
       },
       "status": "supported",
@@ -74,8 +74,8 @@
         "value": "ec332b438a87c3cc1e38318ced110568392484cc2f33e29c8f4eaf9ecc9de297"
       },
       "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
+        "standard": "2027-06-01",
+        "extended": "2032-04-21",
         "is_rolling": false
       },
       "status": "supported"
@@ -99,8 +99,8 @@
         "value": "4347ef11e5577add57337c701950d55005eff73eb134c365c2277ee998950695"
       },
       "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
+        "standard": "2027-06-01",
+        "extended": "2032-04-21",
         "is_rolling": false
       },
       "status": "supported"
@@ -123,7 +123,7 @@
       },
       "eol": {
         "standard": "2029-05-31",
-        "extended": "2036-05-31",
+        "extended": "2034-04-25",
         "is_rolling": false
       },
       "status": "supported",
@@ -148,7 +148,7 @@
       },
       "eol": {
         "standard": "2029-05-31",
-        "extended": "2036-05-31",
+        "extended": "2034-04-25",
         "is_rolling": false
       },
       "status": "supported",
@@ -175,7 +175,7 @@
       },
       "eol": {
         "standard": "2029-05-31",
-        "extended": "2036-05-31",
+        "extended": "2034-04-25",
         "is_rolling": false
       },
       "status": "supported"
@@ -200,7 +200,7 @@
       },
       "eol": {
         "standard": "2029-05-31",
-        "extended": "2036-05-31",
+        "extended": "2034-04-25",
         "is_rolling": false
       },
       "status": "supported"
@@ -222,8 +222,8 @@
         "value": "487f87faaf547ea30e0aba4d5b53346292571256b25333a978db1692bcee9dd2"
       },
       "eol": {
-        "standard": "2031-04-30",
-        "extended": "2036-04-30",
+        "standard": "2031-05-29",
+        "extended": "2036-04-23",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23"
       },
@@ -248,8 +248,8 @@
         "value": "dec49008a71f6098d0bcfc822021f4d042d5f2db279e4d75bdd981304f1ca5d9"
       },
       "eol": {
-        "standard": "2031-04-30",
-        "extended": "2036-04-30",
+        "standard": "2031-05-29",
+        "extended": "2036-04-23",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23"
       },
@@ -2324,7 +2324,7 @@
       },
       "eol": {
         "standard": "2029-05-31",
-        "extended": "2036-05-31",
+        "extended": "2034-04-25",
         "is_rolling": false
       },
       "status": "supported",
@@ -2349,7 +2349,7 @@
       },
       "eol": {
         "standard": "2029-05-31",
-        "extended": "2036-05-31",
+        "extended": "2034-04-25",
         "is_rolling": false
       },
       "status": "supported",
@@ -2617,8 +2617,8 @@
         "value": "eafec62cfe760c30cac43f446463e628fada468c2de2f14e0e2bc27295187505"
       },
       "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
+        "standard": "2027-06-01",
+        "extended": "2032-04-21",
         "is_rolling": false
       },
       "status": "supported",
@@ -3097,8 +3097,8 @@
         "value": "c2afd538d66fdd77377d03f1ed2ac76a34f1c116baecc9a8170d68f833121f57"
       },
       "eol": {
-        "standard": "2031-04-30",
-        "extended": "2036-04-30",
+        "standard": "2031-05-29",
+        "extended": "2036-04-23",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23. Daily build - checksum changes."
       },
@@ -3123,8 +3123,8 @@
         "value": "c9aa567e6560b2eddae3af03fc686002e35b6fee96f97fd5df3271e846439fdd"
       },
       "eol": {
-        "standard": "2031-04-30",
-        "extended": "2036-04-30",
+        "standard": "2031-05-29",
+        "extended": "2036-04-23",
         "is_rolling": false,
         "note": "Stable release: 2026-04-23. Daily build - checksum changes."
       },
@@ -3151,8 +3151,8 @@
         "value": "4146595c3f784c2eb11bee837fd6a097289ed20727dd0ec75ebe457dd059a7ba"
       },
       "eol": {
-        "standard": "2031-04-30",
-        "extended": "2036-04-30",
+        "standard": "2031-05-29",
+        "extended": "2036-04-23",
         "is_rolling": false
       },
       "status": "supported"
@@ -3176,8 +3176,8 @@
         "value": "ce56d07a01c386ba737668dd84b0d89a3f0581112ce06a3da8853b79a4b08e0b"
       },
       "eol": {
-        "standard": "2031-04-30",
-        "extended": "2036-04-30",
+        "standard": "2031-05-29",
+        "extended": "2036-04-23",
         "is_rolling": false
       },
       "status": "supported"

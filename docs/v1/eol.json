@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-08-02T08:09:50Z",
+    "generated_at": "2026-08-29T12:03:24Z",
     "count": 46
   },
   "images": [
@@ -23,7 +23,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-02",
+        "extended": "2030-04-23",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
       },
@@ -49,7 +49,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-02",
+        "extended": "2030-04-23",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
       },
@@ -660,7 +660,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-02",
+        "extended": "2030-04-23",
         "is_rolling": false,
         "note": "ESM via Ubuntu Pro (free for personal use)"
       },
@@ -688,7 +688,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-02",
+        "extended": "2030-04-23",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -713,7 +713,7 @@
       },
       "eol": {
         "standard": "2025-05-31",
-        "extended": "2030-04-02",
+        "extended": "2030-04-23",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -736,7 +736,7 @@
       },
       "eol": {
         "standard": "2023-05-31",
-        "extended": "2028-04-01",
+        "extended": "2028-04-26",
         "is_rolling": false
       },
       "status": "eol-extended",
@@ -761,7 +761,7 @@
       },
       "eol": {
         "standard": "2023-05-31",
-        "extended": "2028-04-01",
+        "extended": "2028-04-26",
         "is_rolling": false
       },
       "status": "eol-extended",
@@ -788,7 +788,7 @@
       },
       "eol": {
         "standard": "2023-05-31",
-        "extended": "2028-04-01",
+        "extended": "2028-04-26",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -813,7 +813,7 @@
       },
       "eol": {
         "standard": "2023-05-31",
-        "extended": "2028-04-01",
+        "extended": "2028-04-26",
         "is_rolling": false
       },
       "status": "eol-extended"
