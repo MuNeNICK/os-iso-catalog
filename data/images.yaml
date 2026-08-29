@@ -518,7 +518,7 @@ images:
     value: 510ce77afcb9537f198bc7daa0e5b503b6e67aaed68146943c231baeaab94df1
   eol:
     standard: '2025-05-31'
-    extended: '2030-04-02'
+    extended: '2030-04-23'
     is_rolling: false
     note: ESM via Ubuntu Pro (free for personal use)
   status: eol-extended
@@ -538,7 +538,7 @@ images:
     value: b8f31413336b9393ad5d8ef0282717b2ab19f007df2e9ed5196c13d8f9153c8b
   eol:
     standard: '2025-05-31'
-    extended: '2030-04-02'
+    extended: '2030-04-23'
     is_rolling: false
     note: ESM via Ubuntu Pro (free for personal use)
   status: eol-extended
@@ -557,8 +557,8 @@ images:
     algorithm: sha256
     value: bfd1cee02bc4f35db939e69b934ba49a39a378797ce9aee20f6e3e3e728fefbf
   eol:
-    standard: '2027-04-01'
-    extended: '2032-04-09'
+    standard: '2027-06-01'
+    extended: '2032-04-21'
     is_rolling: false
   status: supported
 - id: ubuntu-22.04-server
@@ -576,8 +576,8 @@ images:
     algorithm: sha256
     value: 9bc6028870aef3f74f4e16b900008179e78b130e6b0b9a140635434a46aa98b0
   eol:
-    standard: '2027-04-01'
-    extended: '2032-04-09'
+    standard: '2027-06-01'
+    extended: '2032-04-21'
     is_rolling: false
   status: supported
 - id: ubuntu-22.04-cloud-amd64
@@ -598,8 +598,8 @@ images:
     algorithm: sha256
     value: ec332b438a87c3cc1e38318ced110568392484cc2f33e29c8f4eaf9ecc9de297
   eol:
-    standard: '2027-04-01'
-    extended: '2032-04-09'
+    standard: '2027-06-01'
+    extended: '2032-04-21'
     is_rolling: false
   status: supported
 - id: ubuntu-22.04-cloud-arm64
@@ -620,8 +620,8 @@ images:
     algorithm: sha256
     value: 4347ef11e5577add57337c701950d55005eff73eb134c365c2277ee998950695
   eol:
-    standard: '2027-04-01'
-    extended: '2032-04-09'
+    standard: '2027-06-01'
+    extended: '2032-04-21'
     is_rolling: false
   status: supported
 - id: ubuntu-24.04-desktop
@@ -640,7 +640,7 @@ images:
     value: 3a4c9877b483ab46d7c3fbe165a0db275e1ae3cfe56a5657e5a47c2f99a99d1e
   eol:
     standard: '2029-05-31'
-    extended: '2036-05-31'
+    extended: '2034-04-25'
     is_rolling: false
   status: supported
 - id: ubuntu-24.04-server
@@ -659,7 +659,7 @@ images:
     value: e907d92eeec9df64163a7e454cbc8d7755e8ddc7ed42f99dbc80c40f1a138433
   eol:
     standard: '2029-05-31'
-    extended: '2036-05-31'
+    extended: '2034-04-25'
     is_rolling: false
   status: supported
 - id: ubuntu-24.04-cloud-amd64
@@ -681,7 +681,7 @@ images:
     value: 5fa5b05e5ec239858c4531485d6023b0896448c2df7c63b34f8dae6ea6051a44
   eol:
     standard: '2029-05-31'
-    extended: '2036-05-31'
+    extended: '2034-04-25'
     is_rolling: false
   status: supported
 - id: ubuntu-24.04-cloud-arm64
@@ -703,7 +703,7 @@ images:
     value: cafa1a965b591b7c4184b484ffd8e625981a79d48f9b4ae8a4adf7b4c5ade927
   eol:
     standard: '2029-05-31'
-    extended: '2036-05-31'
+    extended: '2034-04-25'
     is_rolling: false
   status: supported
 - id: ubuntu-26.04-desktop
@@ -721,8 +721,8 @@ images:
     algorithm: sha256
     value: 487f87faaf547ea30e0aba4d5b53346292571256b25333a978db1692bcee9dd2
   eol:
-    standard: '2031-04-30'
-    extended: '2036-04-30'
+    standard: '2031-05-29'
+    extended: '2036-04-23'
     is_rolling: false
     note: 'Stable release: 2026-04-23'
   status: beta
@@ -741,8 +741,8 @@ images:
     algorithm: sha256
     value: dec49008a71f6098d0bcfc822021f4d042d5f2db279e4d75bdd981304f1ca5d9
   eol:
-    standard: '2031-04-30'
-    extended: '2036-04-30'
+    standard: '2031-05-29'
+    extended: '2036-04-23'
     is_rolling: false
     note: 'Stable release: 2026-04-23'
   status: beta
@@ -2810,7 +2810,7 @@ images:
     value: c2610520bf582976839a1724c669e1cfed0547427be5a0ad12d457b92b46ffbe
   eol:
     standard: '2029-05-31'
-    extended: '2036-05-31'
+    extended: '2034-04-25'
     is_rolling: false
   status: supported
 - id: ubuntu-24.04-server-arm64
@@ -2830,7 +2830,7 @@ images:
     value: 9a6ce6d7e66c8abed24d24944570a495caca80b3b0007df02818e13829f27f32
   eol:
     standard: '2029-05-31'
-    extended: '2036-05-31'
+    extended: '2034-04-25'
     is_rolling: false
   status: supported
 - id: debian-13-netinst-arm64
@@ -3101,8 +3101,8 @@ images:
     algorithm: sha256
     value: eafec62cfe760c30cac43f446463e628fada468c2de2f14e0e2bc27295187505
   eol:
-    standard: '2027-04-01'
-    extended: '2032-04-09'
+    standard: '2027-06-01'
+    extended: '2032-04-21'
     is_rolling: false
   status: supported
 - id: debian-12-netinst-arm64
@@ -3575,7 +3575,7 @@ images:
     value: e42d6373dd39173094af5c26cbf2497770426f42049f8b9ea3e60ce35bebdedf
   eol:
     standard: '2025-05-31'
-    extended: '2030-04-02'
+    extended: '2030-04-23'
     is_rolling: false
     note: ESM via Ubuntu Pro (free for personal use)
   status: eol-extended
@@ -3595,8 +3595,8 @@ images:
     algorithm: sha256
     value: c2afd538d66fdd77377d03f1ed2ac76a34f1c116baecc9a8170d68f833121f57
   eol:
-    standard: '2031-04-30'
-    extended: '2036-04-30'
+    standard: '2031-05-29'
+    extended: '2036-04-23'
     is_rolling: false
     note: 'Stable release: 2026-04-23. Daily build - checksum changes.'
   status: beta
@@ -3616,8 +3616,8 @@ images:
     algorithm: sha256
     value: c9aa567e6560b2eddae3af03fc686002e35b6fee96f97fd5df3271e846439fdd
   eol:
-    standard: '2031-04-30'
-    extended: '2036-04-30'
+    standard: '2031-05-29'
+    extended: '2036-04-23'
     is_rolling: false
     note: 'Stable release: 2026-04-23. Daily build - checksum changes.'
   status: beta
@@ -3639,8 +3639,8 @@ images:
     algorithm: sha256
     value: 4146595c3f784c2eb11bee837fd6a097289ed20727dd0ec75ebe457dd059a7ba
   eol:
-    standard: '2031-04-30'
-    extended: '2036-04-30'
+    standard: '2031-05-29'
+    extended: '2036-04-23'
     is_rolling: false
   status: supported
 - id: ubuntu-26.04-cloud-arm64
@@ -3661,8 +3661,8 @@ images:
     algorithm: sha256
     value: ce56d07a01c386ba737668dd84b0d89a3f0581112ce06a3da8853b79a4b08e0b
   eol:
-    standard: '2031-04-30'
-    extended: '2036-04-30'
+    standard: '2031-05-29'
+    extended: '2036-04-23'
     is_rolling: false
   status: supported
 - id: ubuntu-20.04-cloud-amd64
@@ -3684,7 +3684,7 @@ images:
     value: 18f2977d77dfea1b74aee14533bd21c34f789139e949c57023b7364894b7e5e9
   eol:
     standard: '2025-05-31'
-    extended: '2030-04-02'
+    extended: '2030-04-23'
     is_rolling: false
   status: eol-extended
 - id: ubuntu-20.04-cloud-arm64
@@ -3706,7 +3706,7 @@ images:
     value: d4603cd783e2578f838c63f7c3a8dae6b554bd6358870f2c8eb182aa51ade465
   eol:
     standard: '2025-05-31'
-    extended: '2030-04-02'
+    extended: '2030-04-23'
     is_rolling: false
   status: eol-extended
 - id: ubuntu-18.04-desktop
@@ -3725,7 +3725,7 @@ images:
     value: f730be589aa1ba923ebe6eca573fa66d09ba14c4c104da2c329df652d42aff11
   eol:
     standard: '2023-05-31'
-    extended: '2028-04-01'
+    extended: '2028-04-26'
     is_rolling: false
   status: eol-extended
 - id: ubuntu-18.04-server
@@ -3744,7 +3744,7 @@ images:
     value: 6c647b1ab4318e8c560d5748f908e108be654bad1e165f7cf4f3c1fc43995934
   eol:
     standard: '2023-05-31'
-    extended: '2028-04-01'
+    extended: '2028-04-26'
     is_rolling: false
   status: eol-extended
 - id: ubuntu-18.04-cloud-amd64
@@ -3766,7 +3766,7 @@ images:
     value: 8dd2e6b5e5aad20c3f836123b300cba9861249408cbb07c359145a65d6bab6b6
   eol:
     standard: '2023-05-31'
-    extended: '2028-04-01'
+    extended: '2028-04-26'
     is_rolling: false
   status: eol-extended
 - id: ubuntu-18.04-cloud-arm64
@@ -3788,7 +3788,7 @@ images:
     value: 9930a57427ad8c9e50a84a36132cd5ad81751b64ee678062dcc354a9b84654f7
   eol:
     standard: '2023-05-31'
-    extended: '2028-04-01'
+    extended: '2028-04-26'
     is_rolling: false
   status: eol-extended
 - id: debian-11-netinst-arm64
