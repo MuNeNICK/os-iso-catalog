@@ -2381,7 +2381,7 @@ images:
     extended: '2026-08-30'
     is_rolling: false
     note: Supported until NetBSD 11.0 release + 1 month
-  status: eol-extended
+  status: eol
 - id: netbsd-10.1
   name: NetBSD 10.1
   category: bsd
@@ -3536,7 +3536,7 @@ images:
     extended: '2026-08-30'
     is_rolling: false
     note: Supported until NetBSD 11.0 release + 1 month
-  status: eol-extended
+  status: eol
 - id: netbsd-10.1-arm64
   name: NetBSD 10.1
   category: bsd
