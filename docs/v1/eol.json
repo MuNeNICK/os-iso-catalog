@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-08-29T12:03:24Z",
+    "generated_at": "2026-08-31T12:19:50Z",
     "count": 46
   },
   "images": [
@@ -414,7 +414,7 @@
         "is_rolling": false,
         "note": "Supported until NetBSD 11.0 release + 1 month"
       },
-      "status": "eol-extended",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -638,7 +638,7 @@
         "is_rolling": false,
         "note": "Supported until NetBSD 11.0 release + 1 month"
       },
-      "status": "eol-extended",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
