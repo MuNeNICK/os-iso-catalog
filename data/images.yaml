@@ -766,7 +766,7 @@ images:
     extended: '2026-08-31'
     is_rolling: false
     note: LTS
-  status: eol-extended
+  status: eol
 - id: debian-11-cloud-amd64
   name: "Debian 11"
   category: linux
@@ -790,7 +790,7 @@ images:
     extended: '2026-08-31'
     is_rolling: false
     note: LTS
-  status: eol-extended
+  status: eol
 - id: debian-12-netinst
   name: "Debian 12.14"
   category: linux
@@ -3811,7 +3811,7 @@ images:
     extended: '2026-08-31'
     is_rolling: false
     note: LTS
-  status: eol-extended
+  status: eol
 - id: debian-11-cloud-arm64
   name: "Debian 11"
   category: linux
@@ -3834,7 +3834,7 @@ images:
     standard: '2024-08-14'
     extended: '2026-08-31'
     is_rolling: false
-  status: eol-extended
+  status: eol
 - id: fedora-43-workstation-arm64
   name: Fedora 43 Workstation
   category: linux
