@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-08-31T12:19:50Z",
+    "generated_at": "2026-09-01T10:53:38Z",
     "count": 202
   },
   "images": [
@@ -331,7 +331,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -359,7 +359,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended"
+      "status": "eol"
     },
     {
       "id": "debian-12-netinst",
@@ -4017,7 +4017,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -4044,7 +4044,7 @@
         "extended": "2026-08-31",
         "is_rolling": false
       },
-      "status": "eol-extended"
+      "status": "eol"
     },
     {
       "id": "fedora-43-workstation-arm64",

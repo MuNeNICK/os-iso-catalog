@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-08-31T12:19:50Z",
+    "generated_at": "2026-09-01T10:53:38Z",
     "count": 147
   },
   "images": [
@@ -231,7 +231,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -2826,7 +2826,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
