@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-01T10:53:38Z",
+    "generated_at": "2026-09-07T11:13:03Z",
     "count": 147
   },
   "images": [
@@ -1298,7 +1298,7 @@
       },
       "eol": {
         "standard": "2024-03-28",
-        "extended": "2026-08-30",
+        "extended": "2026-08-31",
         "is_rolling": false,
         "note": "Supported until NetBSD 11.0 release + 1 month"
       },
@@ -2643,7 +2643,7 @@
       },
       "eol": {
         "standard": "2024-03-28",
-        "extended": "2026-08-30",
+        "extended": "2026-08-31",
         "is_rolling": false,
         "note": "Supported until NetBSD 11.0 release + 1 month"
       },
