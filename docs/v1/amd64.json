@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-07T11:13:03Z",
+    "generated_at": "2026-09-08T10:22:16Z",
     "count": 120
   },
   "images": [
@@ -276,12 +276,12 @@
         "value": "cd5b2a6fc22050affa1d141adb3857af07e94ff886dca1ce17214e2761a3b316"
       },
       "eol": {
-        "standard": "2024-08-14",
-        "extended": "2026-08-31",
+        "standard": "2026-08-31",
+        "extended": "2031-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol",
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },
@@ -304,12 +304,12 @@
         "value": "c5cec14e342238f4d87417da99f1471e3da12ed85f224688eaeef17aed5f569756cde86bd58f5e6c0301afce3846ece9f713ef1f58ab67eaf5e9e10a87131bea"
       },
       "eol": {
-        "standard": "2024-08-14",
-        "extended": "2026-08-31",
+        "standard": "2026-08-31",
+        "extended": "2031-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol"
+      "status": "eol-extended"
     },
     {
       "id": "debian-12-netinst",
@@ -328,12 +328,12 @@
         "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
       },
       "eol": {
-        "standard": "2026-07-11",
-        "extended": "2028-06-30",
+        "standard": "2028-06-30",
+        "extended": "2033-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },
@@ -356,12 +356,12 @@
         "value": "6ea48973e8f36f5a29d5e4975224f8319a7f2b31cb90a7d60481f6f02a4eaa68fdb5ebca9869d80c22d5a229736e7f538eed75d240e416e37dd7d28941ba40a1"
       },
       "eol": {
-        "standard": "2026-07-11",
-        "extended": "2028-06-30",
+        "standard": "2028-06-30",
+        "extended": "2033-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended"
+      "status": "supported"
     },
     {
       "id": "debian-13-cloud-amd64",
@@ -382,8 +382,8 @@
         "value": "fdd700481ede658f0bc76a0a0016459d3403e1c6eff658fd2403bc24b46f071357f3709aded219fa573ce0cd12b3fda9d963e4343d28081c0e5265afd9f70207"
       },
       "eol": {
-        "standard": "2028-08-09",
-        "extended": "2030-06-30",
+        "standard": "2030-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
       },
@@ -406,8 +406,8 @@
         "value": "2c87761c60115c9323f306f386c2253eb4fc21e050187ab2bceede9da64713e3"
       },
       "eol": {
-        "standard": "2028-08-09",
-        "extended": "2030-06-30",
+        "standard": "2030-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
       },
@@ -432,8 +432,8 @@
         "value": "0b813535dd76f2ea96eff908c65e8521512c92a0631fd41c95756ffd7d4896dc"
       },
       "eol": {
-        "standard": "2028-08-09",
-        "extended": "2030-06-30",
+        "standard": "2030-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
       },

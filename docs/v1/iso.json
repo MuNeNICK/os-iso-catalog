@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-07T11:13:03Z",
+    "generated_at": "2026-09-08T10:22:16Z",
     "count": 147
   },
   "images": [
@@ -226,12 +226,12 @@
         "value": "cd5b2a6fc22050affa1d141adb3857af07e94ff886dca1ce17214e2761a3b316"
       },
       "eol": {
-        "standard": "2024-08-14",
-        "extended": "2026-08-31",
+        "standard": "2026-08-31",
+        "extended": "2031-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol",
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },
@@ -252,12 +252,12 @@
         "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
       },
       "eol": {
-        "standard": "2026-07-11",
-        "extended": "2028-06-30",
+        "standard": "2028-06-30",
+        "extended": "2033-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },
@@ -278,8 +278,8 @@
         "value": "2c87761c60115c9323f306f386c2253eb4fc21e050187ab2bceede9da64713e3"
       },
       "eol": {
-        "standard": "2028-08-09",
-        "extended": "2030-06-30",
+        "standard": "2030-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
       },
@@ -304,8 +304,8 @@
         "value": "0b813535dd76f2ea96eff908c65e8521512c92a0631fd41c95756ffd7d4896dc"
       },
       "eol": {
-        "standard": "2028-08-09",
-        "extended": "2030-06-30",
+        "standard": "2030-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
       },
@@ -1891,8 +1891,8 @@
         "value": "c31f8534597df52bd310f716d271bda30a1f58e6ff8fd9e8254eba66776c42d9"
       },
       "eol": {
-        "standard": "2028-08-09",
-        "extended": "2030-06-30",
+        "standard": "2030-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
       },
@@ -2233,12 +2233,12 @@
         "value": "2b043fea4737742cff0bc6106b9f367fc4e17543f0a9e42e10d26813c6f01eef"
       },
       "eol": {
-        "standard": "2026-07-11",
-        "extended": "2028-06-30",
+        "standard": "2028-06-30",
+        "extended": "2033-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },
@@ -2821,12 +2821,12 @@
         "value": "c81b6081d5dc5cfac49310b104eb9843252fd3c97cedbcd69ec0388798e7ef7e"
       },
       "eol": {
-        "standard": "2024-08-14",
-        "extended": "2026-08-31",
+        "standard": "2026-08-31",
+        "extended": "2031-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol",
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },
